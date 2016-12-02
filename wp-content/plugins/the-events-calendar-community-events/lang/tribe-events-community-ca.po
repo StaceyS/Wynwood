@@ -1,0 +1,885 @@
+# Translation of Community Events in Catalan
+# This file is distributed under the same license as the Community Events package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-09-14 15:55:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Community Events\n"
+
+#: src/Tribe/Captcha/Recaptcha_V2.php:139
+msgctxt "failed recaptcha response validation"
+msgid "reCAPTCHA verification failed"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:243
+msgid "Redirect for users who attempt to access the admin without permissions<br>Enter a full url to a post or page on your site<br>Leave blank for homepage"
+msgstr ""
+
+#: src/Tribe/Captcha/Recaptcha.php:247 src/Tribe/Captcha/Recaptcha_V2.php:125
+msgctxt "failed recaptcha response"
+msgid "reCAPTCHA failed unexpectedly"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:333
+msgid "%s %s is required"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:380 src/Tribe/Submission_Handler.php:412
+msgid "Name"
+msgstr "Nom"
+
+#: src/Tribe/Submission_Handler.php:392
+msgid "Province"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:396
+msgid "State"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:400
+msgid "Zip"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:404
+msgid "URL"
+msgstr "URL"
+
+#: src/admin-views/community-options-template.php:78
+msgid "<p>Community Events enables users to submit events through a form on your site. Whether soliciting contributions from anonymous users or registered members, you have complete editorial control over what makes it onto the calendar.</p><p>Check out our <a href=\"%s\">Community Events New User Primer</a> for information on configuring and using the plugin."
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:146 src/Tribe/Submission_Handler.php:160
+msgid "The file is not an Image"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:163
+msgid "The image size is invalid"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:166
+msgid "The file is not a valid image"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:487
+msgid "Invalid URL provided for %s"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:281
+msgid "Single geography mode"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:282
+msgid "Removes the country, state/province and timezone selectors from the submission form"
+msgstr ""
+
+#: src/Tribe/Event_Form.php:30
+msgid "Auto Draft"
+msgstr ""
+
+#: src/Tribe/Main.php:1028
+msgid "Delete Image"
+msgstr ""
+
+#: src/views/community/event-list.php:73
+msgid "View past events"
+msgstr ""
+
+#: src/views/community/event-list.php:77
+msgid "View upcoming events"
+msgstr ""
+
+#: src/Tribe/Main.php:1509
+msgid "The file you attempted to upload exceeded the maximum file size of %1$s."
+msgstr ""
+
+#: src/views/community/modules/cost.php:62
+msgctxt "Currency symbol position"
+msgid "Before cost"
+msgstr ""
+
+#: src/views/community/modules/cost.php:65
+msgctxt "Currency symbol position"
+msgid "After cost"
+msgstr ""
+
+#: src/views/community/modules/datepickers.php:94
+msgid "Timezone:"
+msgstr ""
+
+#: src/views/community/modules/image.php:49
+msgid "Images that are not png, jpg, or gif will not be uploaded. Images may not exceed %1$s in size."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "The Events Calendar: Community Events"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Community Events is an add-on providing additional functionality to the open source plugin The Events Calendar. Empower users to submit and manage their events on your website. <a href=\"http://tri.be/shop/wordpress-community-events/?utm_campaign=in-app&utm_source=docblock&utm_medium=plugin-community\">Check out the full feature list</a>. Need more features? Peruse our selection of <a href=\"http://tri.be/products/?utm_campaign=in-app&utm_source=docblock&utm_medium=plugin-community\" target=\"_blank\">plugins</a>."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Modern Tribe, Inc."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://m.tri.be/21"
+msgstr ""
+
+#: src/Tribe/Modules/Taxonomy_Block.php:87
+msgid "more"
+msgstr "més"
+
+#: src/views/community/modules/taxonomy.php:30
+msgid "%s Categories:"
+msgstr "Categories d'%s:"
+
+#: src/Tribe/Submission_Handler.php:384
+#: src/views/community/modules/venue.php:93
+msgid "Address"
+msgstr "Adreça"
+
+#: src/Tribe/Submission_Handler.php:388
+#: src/views/community/modules/venue.php:104
+msgid "City"
+msgstr "Ciutat"
+
+#: src/views/community/modules/venue.php:114
+msgid "Country"
+msgstr "País"
+
+#: src/views/community/modules/venue.php:140
+msgid "State or Province"
+msgstr "Estat o província"
+
+#: src/views/community/modules/venue.php:146
+msgid "Select a State"
+msgstr "Selecciona un estat"
+
+#: src/views/community/modules/venue.php:160
+msgid "Postal Code"
+msgstr "Codi postal"
+
+#: src/views/community/modules/venue.php:211
+msgid "Show Google Maps Link"
+msgstr "Mostrar l'enllaç a Google Maps"
+
+#: src/views/community/modules/venue.php:198
+msgid "Show Google Map"
+msgstr "Mostrar el mapa de Google"
+
+#: src/views/community/modules/website.php:37
+msgid "%s Website"
+msgstr "Web de l'%s"
+
+#: src/views/community/modules/website.php:43
+msgid "URL:"
+msgstr "URL:"
+
+#: tribe-community-events.php:84
+msgid "The Events Calendar"
+msgstr "The Events Calendar"
+
+#: tribe-community-events.php:85
+msgid "To begin using The Events Calendar: Community Events, please install the latest version of <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events Calendar</a>."
+msgstr "Per començar a utilitzar The Events Calendar: Community Events, si us plau, instal·la la darrera versió de <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events Calendar</a>."
+
+#: vendor/wp-router/WP_Route.class.php:36
+msgid "Missing %s"
+msgstr ""
+
+#: vendor/wp-router/WP_Route.class.php:63
+msgid "Property not found: %s."
+msgstr "No s'ha trobat la propietat: %s."
+
+#: vendor/wp-router/WP_Route.class.php:77
+msgid "Invalid value for %s. Value may not be empty."
+msgstr "El valor de %s no és vàlid. El valor no pot estar en blanc."
+
+#: vendor/wp-router/WP_Route.class.php:80
+msgid "Invalid value for %1$s: %2$s. Value must be an array."
+msgstr "El valor de %1$s: %2$s no és vàlid. El valor ha de ser un array."
+
+#: vendor/wp-router/WP_Route.class.php:250
+msgid "You are not authorized to access this page"
+msgstr "No tens autorització per accedir aquesta pàgina"
+
+#: vendor/wp-router/WP_Route.class.php:251
+msgid "Access Denied"
+msgstr "Accés denegat"
+
+#: vendor/wp-router/WP_Router_Page.class.php:74
+msgid "WP Router Placeholder Page"
+msgstr "Pàgina temporal de WP Router"
+
+#: vendor/wp-router/WP_Router_Utility.class.php:49
+msgid "%1$s requires WordPress %2$s or higher and PHP %3$s or higher."
+msgstr "%1$s necessita WordPress %2$s o superior i PHP %3$s o superior."
+
+#: src/Tribe/Captcha/Abstract_Captcha.php:143
+msgid "Invalid value for the Anti-Spam Check"
+msgstr "Valor invàlid per a la comprovació anti-spam"
+
+#: src/Tribe/Captcha/Recaptcha.php:20
+msgid "reCAPTCHA API Keys"
+msgstr "Claus de l'API reCAPTCHA"
+
+#: src/Tribe/Captcha/Recaptcha.php:24
+msgid "Provide reCAPTCHA API keys for both fields to enable reCAPTCHA on your community events form."
+msgstr "Proporciona les claus de l'API reCAPTCHA per a tots dos camps per habilitar el reCAPTCHA en el formulari d'esdeveniments de la comunitat."
+
+#: src/Tribe/Captcha/Recaptcha.php:24
+msgid "Note: reCAPTCHA only appears for users who are not logged in."
+msgstr "Nota: el reCAPTCHA només apareix per als usuaris que no han iniciat sessió."
+
+#: src/Tribe/Captcha/Recaptcha.php:28
+msgid "Site Key"
+msgstr "Clau del lloc"
+
+#: src/Tribe/Captcha/Recaptcha.php:29
+msgid "Get your Site Key at %s"
+msgstr "Aconsegueix la teva clau del lloc a %s"
+
+#: src/Tribe/Captcha/Recaptcha.php:38
+msgid "Secret Key"
+msgstr "Clau secreta"
+
+#: src/Tribe/Captcha/Recaptcha.php:39
+msgid "Get your Secret Key at %s"
+msgstr "Aconsegueix la teva clau secreta a %s"
+
+#: src/Tribe/Main.php:2684
+msgid "edit"
+msgstr "editar"
+
+#: src/Tribe/Main.php:2685 src/admin-views/community-options-template.php:303
+msgid "add"
+msgstr "afegir"
+
+#: src/Tribe/Main.php:2686
+msgid "delete"
+msgstr "eliminar"
+
+#: src/Tribe/Main.php:2687 src/admin-views/community-options-template.php:305
+msgid "list"
+msgstr "llista"
+
+#: src/Tribe/Main.php:2689
+msgid "venue"
+msgstr "recinte"
+
+#: src/Tribe/Main.php:2690
+msgid "organizer"
+msgstr "organitzador"
+
+#: src/Tribe/Main.php:2691
+msgid "event"
+msgstr "esdeveniment"
+
+#: src/Tribe/Main.php:534 src/Tribe/Main.php:1050
+msgid "Edit a Venue"
+msgstr "Editar un recinte"
+
+#: src/Tribe/Main.php:553 src/Tribe/Main.php:1051
+msgid "Edit an Organizer"
+msgstr "Editar un organitzador"
+
+#: src/Tribe/Main.php:571 src/Tribe/Main.php:1049
+msgid "Edit an Event"
+msgstr "Editar un esdeveniment"
+
+#: src/Tribe/Main.php:590
+msgid "Redirect"
+msgstr "Redireccionar"
+
+#: src/Tribe/Main.php:605 src/Tribe/Main.php:1160
+msgid "Submit an Event"
+msgstr "Enviar un esdeveniment"
+
+#: src/Tribe/Main.php:631 src/Tribe/Main.php:1042
+msgid "Remove an Event"
+msgstr "Eliminar un esdeveniment"
+
+#: src/Tribe/Main.php:647 src/Tribe/Main.php:1138
+#: src/admin-views/community-options-template.php:195
+msgid "My Events"
+msgstr "Els meus esdeveniments"
+
+#: src/Tribe/Main.php:731
+msgid "Not found."
+msgstr "No trobat."
+
+#: src/Tribe/Main.php:881
+msgid "Community Events requires non-default (pretty) permalinks to be enabled or the [tribe_community_events] shortcode to exist on a page."
+msgstr "Community Events requereix que els enllaços permanents amigables estiguin habilitats o que el shortcode [tribe_community_events] es trobi a una pàgina."
+
+#: src/Tribe/Main.php:965
+msgid "Delete"
+msgstr "Eliminar"
+
+#: src/Tribe/Main.php:966
+msgid "Are you sure?"
+msgstr "Estàs segur?"
+
+#: src/Tribe/Main.php:969
+msgid "Delete All"
+msgstr "Eliminar totes"
+
+#: src/Tribe/Main.php:970
+msgid "Are you sure you want to permanently delete all instances of this recurring event?"
+msgstr "Estàs segur de que vols eliminar totes les instàncies d'aquest esdeveniment recurrent de forma permanent?"
+
+#: src/Tribe/Main.php:972
+msgid "Are you sure you want to permanently delete this instance of a recurring event?"
+msgstr "Estàs segur de que vols eliminar aquesta instància d'un esdeveniment recurrent de forma permanent?"
+
+#: src/Tribe/Main.php:1043
+msgid "Remove a Venue"
+msgstr "Eliminar un recinte"
+
+#: src/Tribe/Main.php:1044
+msgid "Remove an Organizer"
+msgstr "Eliminar un organitzador"
+
+#: src/Tribe/Main.php:1045 src/Tribe/Main.php:1052
+msgid "Unknown Post Type"
+msgstr "Tipus d'entrada desconegut"
+
+#: src/Tribe/Main.php:1198
+msgid "This shortcode can only be used in pages."
+msgstr "Aquest shortcode només es pot utilitzar a les pàgines."
+
+#: src/Tribe/Main.php:1333
+msgid "Community Events Submission"
+msgstr "Enviament de Community Events"
+
+#: src/Tribe/Main.php:1425
+msgid "Trashed Event #"
+msgstr "Esdeveniment a la paperera #"
+
+#: src/Tribe/Main.php:1428
+msgid "Deleted Event #"
+msgstr "Esdeveniment eliminat #"
+
+#: src/Tribe/Main.php:1431
+msgid "This event (#%s) does not appear to exist."
+msgstr "Aquest esdeveniment (#%s) no sembla que existeixi."
+
+#: src/Tribe/Main.php:1434
+msgid "You do not have permission to delete this event."
+msgstr "No tens permís per eliminar aquest esdeveniment."
+
+#: src/Tribe/Main.php:1445
+msgctxt "As in \"go back to previous page\""
+msgid "Back"
+msgstr "Tornar"
+
+#: src/Tribe/Main.php:1480
+msgid "%sWarning:%s You are editing a recurring %s. All changes will be applied to the entire series."
+msgstr "%sAtenció:%s Estàs editant un %s recurrent. Tots els canvis s'aplicaran a tota la sèrie."
+
+#: src/Tribe/Main.php:1489
+msgid "%s not found."
+msgstr "%s no trobat."
+
+#: src/Tribe/Main.php:1497
+msgid "Please log in first."
+msgstr "Si us plau, inicia una sessió abans."
+
+#: src/Tribe/Main.php:1503
+msgid "You do not have permission to edit this %s."
+msgstr "No tens permís per editar aquest %s."
+
+#: src/Tribe/Main.php:1639 src/views/community/event-list.php:138
+msgid "View"
+msgstr "Veure"
+
+#: src/Tribe/Main.php:1645 src/views/community/event-list.php:144
+msgid "Edit"
+msgstr "Editar"
+
+#: src/Tribe/Main.php:1704
+msgid "Venue not found."
+msgstr "Recinte no trobat."
+
+#: src/Tribe/Main.php:1709
+msgid "Please log in to edit this venue"
+msgstr "Si us plau, inicia una sessió per editar aquest recinte"
+
+#: src/Tribe/Main.php:1713
+msgid "You do not have permission to edit this venue."
+msgstr "No tens permís per editar aquest recinte "
+
+#: src/Tribe/Main.php:1736
+msgid "Venue updated."
+msgstr "Recinte actualitzat."
+
+#: src/Tribe/Main.php:1746
+msgid "Venue name cannot be blank."
+msgstr "El nom del recinte no pot estar buit."
+
+#: src/Tribe/Main.php:1750
+msgid "There was a problem updating your venue, please try again."
+msgstr "Hi ha hagut un problema a l'hora d'actualitzar el teu recinte, si us plau, intenta-ho de nou."
+
+#: src/Tribe/Main.php:1787
+msgid "Organizer not found."
+msgstr "Organitzador no trobat."
+
+#: src/Tribe/Main.php:1791
+msgid "Please log in to edit this organizer"
+msgstr "Si us plau, inicia sessió per editar aquest organitzador"
+
+#: src/Tribe/Main.php:1795
+msgid "You do not have permission to edit this organizer."
+msgstr "No tens permís per editar aquest organitzador. "
+
+#: src/Tribe/Main.php:1817
+msgid "Organizer updated."
+msgstr "Organitzador actualitzat."
+
+#: src/Tribe/Main.php:1828
+msgid "Organizer name cannot be blank."
+msgstr "El nom de l'organitzador no pot estar buit."
+
+#: src/Tribe/Main.php:1832
+msgid "There was a problem updating this organizer, please try again."
+msgstr "Hi ha hagut un problema a l'hora d'actualitzar aquest organitzador, si us plau, intenta-ho de nou."
+
+#: src/Tribe/Main.php:1914
+msgid "Please log in to view your events"
+msgstr "Si us plau, inicia una sessió per veure els teus esdeveniments"
+
+#: src/Tribe/Main.php:1955
+msgid "Fake Title"
+msgstr ""
+
+#: src/Tribe/Modules/Taxonomy_Block.php:109
+msgid "Show all categories ( %d )"
+msgstr "Mostrar totes les categories ( %d )"
+
+#: src/Tribe/Main.php:2141
+msgid "The requested page number was not found."
+msgstr "No s'ha trobat el número de pàgina sol·licitat."
+
+#: src/Tribe/Main.php:2385
+msgid "Community"
+msgstr "Comunitat"
+
+#: src/Tribe/Main.php:2402
+msgid "This template is also used for Community Events."
+msgstr "Aquesta plantilla també s'utilitza per a Community Events."
+
+#: src/Tribe/Main.php:2617
+msgid "Community: Submit %s"
+msgstr "Comunitat: Enviar %s"
+
+#: src/Tribe/Main.php:2625
+msgid "Community: My %s"
+msgstr "Comunitat: Els meus %s"
+
+#: src/Tribe/Main.php:2634 src/Tribe/Templates.php:47
+msgid "Community Events"
+msgstr "Community Events"
+
+#: src/Tribe/Main.php:2650
+msgid "Settings"
+msgstr "Configuració"
+
+#: src/Tribe/Submission_Handler.php:68
+msgid "%s updated. "
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:69 src/Tribe/Submission_Handler.php:88
+msgid "Submit another %s"
+msgstr "Enviar un altre %s"
+
+#: src/Tribe/Submission_Handler.php:72
+msgid "There was a problem saving your %s, please try again."
+msgstr "Hi ha hagut un problema a l'hora de guardar el teu %s, si us plau, intenta-ho de nou."
+
+#: src/Tribe/Submission_Handler.php:87
+msgid "%s submitted."
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:91
+msgid "There was a problem submitting your %s, please try again."
+msgstr "Hi ha hagut un problema a l'hora d'enviar el teu %s, si us plau, intenta-ho de nou."
+
+#: src/Tribe/Submission_Handler.php:191
+msgid "%s is required"
+msgstr "%s és obligatori"
+
+#: src/Tribe/Submission_Handler.php:345
+msgid "%s Title"
+msgstr "Títol de l'%s"
+
+#: src/Tribe/Submission_Handler.php:348
+msgid "%s Description"
+msgstr "Descripció de l'%s"
+
+#: src/Tribe/Submission_Handler.php:456
+msgid "Invalid value for %s"
+msgstr "Valor invàlid per %s"
+
+#: src/Tribe/Submission_Handler.php:467
+msgid "Images must be png, jpg, or gif"
+msgstr "Les imatges han de ser png, jpg, o gif"
+
+#: src/Tribe/Submission_Handler.php:509
+msgid "Image exceeded the allowed file size"
+msgstr "La imatge supera la mida de fitxer permesa"
+
+#: src/Tribe/Submission_Handler.php:514
+msgid "The image failed to upload successfully"
+msgstr "La imatge no s'ha pujat correctament"
+
+#: src/Tribe/Submission_Handler.php:518
+msgid "The uploaded image could not be processed"
+msgstr "La imatge pujada no s'ha pogut processar"
+
+#: src/admin-views/community-options-template.php:42
+msgid "Placed in the Trash"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:43
+msgid "Permanently Deleted"
+msgstr "Eliminat de forma permanent"
+
+#: src/admin-views/community-options-template.php:50
+msgid "No Default"
+msgstr "No predeterminat"
+
+#: src/admin-views/community-options-template.php:58
+msgid "Use New Venue/No Default"
+msgstr "Utilitzar nou recinte/no predeterminat"
+
+#: src/admin-views/community-options-template.php:73
+msgid "Community Events Settings"
+msgstr "Configuració de Community Events"
+
+#: src/admin-views/community-options-template.php:88
+msgid "General"
+msgstr "General"
+
+#: src/admin-views/community-options-template.php:94
+msgid "Allow anonymous submissions"
+msgstr "Permetre enviaments anònims"
+
+#: src/admin-views/community-options-template.php:95
+msgid "Check this box to allow users to submit events without having a WordPress account"
+msgstr "Marca aquesta casella per permetre que els usuaris puguin enviar esdeveniments sense tenir un compte de WordPress"
+
+#: src/admin-views/community-options-template.php:103
+msgid "Use visual editor for event descriptions"
+msgstr "Utilitzar l'editor visual per a les descripcions d'esdeveniments"
+
+#: src/admin-views/community-options-template.php:111
+msgid "Default status for submitted events"
+msgstr "Estat predeterminat per als esdeveniments enviats"
+
+#: src/admin-views/community-options-template.php:121
+msgid "Community rewrite slug"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:125
+msgid "The slug used for building the community events URL - it is appended to the main events slug. Your current community events URLs are"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:138
+msgid "Alerts"
+msgstr "Avisos"
+
+#: src/admin-views/community-options-template.php:143
+msgid "Send an email alert when a new event is submitted"
+msgstr "Enviar una alerta per correu electrònic quan s'envia un nou esdeveniment"
+
+#: src/admin-views/community-options-template.php:151
+msgid "Email addresses to be notified"
+msgstr "Adreces de correu electrònic a notificar"
+
+#: src/admin-views/community-options-template.php:154
+msgid "One address per line"
+msgstr "Una adreça per línia"
+
+#: src/admin-views/community-options-template.php:160
+msgid "Members"
+msgstr "Membres"
+
+#: src/admin-views/community-options-template.php:165
+msgid "Control the permissions for your logged in users. Allow them to:"
+msgstr "Controla els permisos per als teus usuaris connectats. Dóna'ls permís per:"
+
+#: src/admin-views/community-options-template.php:170
+msgid "Edit their submissions"
+msgstr "Editar els seus enviaments"
+
+#: src/admin-views/community-options-template.php:178
+msgid "Remove their submissions"
+msgstr "Eliminar els seus enviaments"
+
+#: src/admin-views/community-options-template.php:186
+msgid "Deleted events should be:"
+msgstr "Els esdeveniments eliminats haurien de ser:"
+
+#: src/admin-views/community-options-template.php:200
+msgid "Events per page"
+msgstr "Esdeveniments per pàgina"
+
+#: src/admin-views/community-options-template.php:201
+msgid "This is the number of events displayed per page"
+msgstr "Número d'esdeveniments mostrats per pàgina"
+
+#: src/admin-views/community-options-template.php:209
+msgid "Date/time format"
+msgstr "Format de data/hora"
+
+#: src/admin-views/community-options-template.php:210
+msgid "Help with date &amp; time formatting"
+msgstr "Ajuda amb el format de les dates i les hores"
+
+#: src/admin-views/community-options-template.php:218
+msgid "Access Control"
+msgstr "Control d'accés"
+
+#: src/admin-views/community-options-template.php:223
+msgid "Block access to WordPress dashboard"
+msgstr "Bloquejar l'accés al tauler de WordPress"
+
+#: src/admin-views/community-options-template.php:224
+msgid "Also disables the admin bar"
+msgstr "També inhabilita la barra d'administració"
+
+#: src/admin-views/community-options-template.php:232
+msgid "Roles to block"
+msgstr "Rols a bloquejar"
+
+#: src/admin-views/community-options-template.php:242
+msgid "Redirect URL"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:253
+msgid "Form Defaults"
+msgstr "Valors predeterminats del formulari"
+
+#: src/admin-views/community-options-template.php:259
+msgid "Default venue for submitted events"
+msgstr "Recinte predeterminat per als esdeveniments enviats"
+
+#: src/admin-views/community-options-template.php:270
+msgid "Default organizer for submitted events"
+msgstr "Organitzador predeterminat per als esdeveniments enviats"
+
+#: src/functions/template-tags.php:492
+#: src/views/community/edit-organizer.php:33
+#: src/views/community/edit-venue.php:33
+msgid "(required)"
+msgstr "(obligatori)"
+
+#: src/views/community/edit-event.php:38
+msgid "%s Title:"
+msgstr "Títol de l'%s:"
+
+#: src/views/community/edit-event.php:49
+#: src/views/community/edit-organizer.php:43
+#: src/views/community/edit-venue.php:43
+msgid "%s Description:"
+msgstr "Descripció de l'%s:"
+
+#: src/views/community/edit-event.php:81
+#: src/views/community/edit-organizer.php:69
+#: src/views/community/edit-venue.php:69
+msgid "Update %s"
+msgstr "Actualitzar %s"
+
+#: src/views/community/edit-event.php:83
+#: src/views/community/edit-organizer.php:69
+#: src/views/community/edit-venue.php:69
+msgid "Submit %s"
+msgstr "Enviar %s"
+
+#: src/views/community/edit-organizer.php:32
+#: src/views/community/edit-venue.php:32
+msgid "%s Name:"
+msgstr "Nom de l'%s:"
+
+#: src/views/community/email-template.php:29
+msgid "%s Organizer"
+msgstr "Organitzador de l'%s"
+
+#: src/views/community/email-template.php:32
+msgid "%s Venue"
+msgstr "Recinte de l'%s"
+
+#: src/views/community/email-template.php:35
+msgid "Description"
+msgstr "Descripció"
+
+#: src/views/community/email-template.php:46
+msgid "Review %s"
+msgstr "Revisar %s"
+
+#: src/views/community/email-template.php:48
+msgid "View %s"
+msgstr "Veure %s"
+
+#: src/views/community/event-list.php:28
+#: src/views/community/modules/delete.php:22
+msgid "Add New"
+msgstr "Afegir nou"
+
+#: src/views/community/event-list.php:33
+msgid "Display"
+msgstr "Mostrar"
+
+#: src/views/community/event-list.php:48
+#: src/views/community/modules/delete.php:30
+#: src/views/community/modules/header-links.php:22
+msgid "Not"
+msgstr "No"
+
+#: src/views/community/event-list.php:51
+#: src/views/community/modules/delete.php:31
+#: src/views/community/modules/header-links.php:22
+msgid "Log Out"
+msgstr "Sortir"
+
+#: src/views/community/event-list.php:59
+msgid "There are no upcoming %s in your queue."
+msgstr "No hi ha %s programats a la teva cua."
+
+#: src/views/community/event-list.php:92
+msgid "Status"
+msgstr "Estat"
+
+#: src/views/community/event-list.php:93
+msgid "Title"
+msgstr "Títol"
+
+#: src/views/community/event-list.php:96
+msgid "Category"
+msgstr "Categoria"
+
+#: src/views/community/event-list.php:99
+msgid "Recurring?"
+msgstr "Recurrent?"
+
+#: src/views/community/event-list.php:102
+msgid "Start Date"
+msgstr "Data d'inici"
+
+#: src/views/community/event-list.php:103
+msgid "End Date"
+msgstr "Data de finalització"
+
+#: src/views/community/event-list.php:189
+msgid "Yes"
+msgstr "Sí"
+
+#: src/views/community/event-list.php:191
+msgid "No"
+msgstr "No"
+
+#: src/views/community/modules/captcha.php:31
+msgid "Anti-Spam Check"
+msgstr "Comprovació anti-spam"
+
+#: src/views/community/modules/cost.php:41
+msgid "%s Cost"
+msgstr "Cost de l'%s"
+
+#: src/views/community/modules/cost.php:46
+msgid "Currency Symbol:"
+msgstr "Símbol monetari:"
+
+#: src/views/community/modules/cost.php:71
+msgid "Cost:"
+msgstr "Cost:"
+
+#: src/views/community/modules/cost.php:77
+msgid "Leave blank to hide the field. Enter a 0 for %s that are free."
+msgstr "Deixa en blanc per amagar el camp. Introdueix un 0 per als %s gratuïts."
+
+#: src/views/community/modules/custom.php:35
+msgid "Additional Fields"
+msgstr "Camps addicionals"
+
+#: src/views/community/modules/custom.php:52
+msgctxt "custom field label"
+msgid "%s:"
+msgstr "%s:"
+
+#: src/views/community/modules/datepickers.php:48
+msgid "%s Time &amp; Date"
+msgstr "Hora i data de l'%s"
+
+#: src/views/community/modules/datepickers.php:54
+msgid "You have changed the recurrence rules of this %1$s. Saving the %1$s will update all future %2$s.  If you did not mean to change all %2$s, then please refresh the page."
+msgstr "Has canviat les regles de recurrència d'aquest %1$s. Si guardes l'%1$s s'actualitzaran tot els %2$s futurs. Si no volies canviar tots els %2$s, llavors refresca la pàgina."
+
+#: src/views/community/modules/datepickers.php:59
+msgid "All day %s?"
+msgstr "%s de tot el dia?"
+
+#: src/views/community/modules/datepickers.php:67
+msgid "Start Date / Time:"
+msgstr "Data / Hora d'inici:"
+
+#: src/views/community/modules/datepickers.php:71
+#: src/views/community/modules/datepickers.php:84
+msgid "YYYY-MM-DD"
+msgstr "AAAA-MM-DD"
+
+#: src/views/community/modules/datepickers.php:80
+msgid "End Date / Time:"
+msgstr "Data / Hora de finalització:"
+
+#: src/views/community/modules/delete.php:26
+#: src/views/community/modules/header-links.php:21
+msgid "My %s"
+msgstr "Els meus %s"
+
+#: src/views/community/modules/image.php:31
+msgid "%s Image"
+msgstr "Imatge de l'%s"
+
+#: src/views/community/modules/image.php:37
+msgid "Upload:"
+msgstr "Pujar:"
+
+#: src/views/community/modules/organizer-fields.php:47
+#: src/views/community/modules/organizer.php:34
+#: src/views/community/modules/venue.php:69
+msgid "%s Details"
+msgstr "Detalls de l'%s"
+
+#: src/views/community/modules/organizer-fields.php:59
+#: src/views/community/modules/venue.php:81
+msgid "%s Name"
+msgstr "Nom de l'%s"
+
+#: src/Tribe/Submission_Handler.php:408
+#: src/views/community/modules/organizer-fields.php:71
+#: src/views/community/modules/venue.php:171
+msgid "Phone"
+msgstr "Telèfon"
+
+#: src/Tribe/Submission_Handler.php:416
+#: src/views/community/modules/organizer-fields.php:81
+#: src/views/community/modules/venue.php:182
+msgid "Website"
+msgstr "Web"
+
+#: src/Tribe/Submission_Handler.php:420
+#: src/views/community/modules/organizer-fields.php:90
+msgid "Email"
+msgstr "Correu electrònic"
+
+#: src/views/community/modules/custom.php:70
+#: src/views/community/modules/custom.php:99
+msgid "None"
+msgstr "Cap"

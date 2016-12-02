@@ -1,0 +1,885 @@
+# Translation of Community Events in Swedish
+# This file is distributed under the same license as the Community Events package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-09-14 15:55:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Community Events\n"
+
+#: src/Tribe/Captcha/Recaptcha_V2.php:139
+msgctxt "failed recaptcha response validation"
+msgid "reCAPTCHA verification failed"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:243
+msgid "Redirect for users who attempt to access the admin without permissions<br>Enter a full url to a post or page on your site<br>Leave blank for homepage"
+msgstr ""
+
+#: src/Tribe/Captcha/Recaptcha.php:247 src/Tribe/Captcha/Recaptcha_V2.php:125
+msgctxt "failed recaptcha response"
+msgid "reCAPTCHA failed unexpectedly"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:333
+msgid "%s %s is required"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:380 src/Tribe/Submission_Handler.php:412
+msgid "Name"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:392
+msgid "Province"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:396
+msgid "State"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:400
+msgid "Zip"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:404
+msgid "URL"
+msgstr "URL"
+
+#: src/admin-views/community-options-template.php:78
+msgid "<p>Community Events enables users to submit events through a form on your site. Whether soliciting contributions from anonymous users or registered members, you have complete editorial control over what makes it onto the calendar.</p><p>Check out our <a href=\"%s\">Community Events New User Primer</a> for information on configuring and using the plugin."
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:146 src/Tribe/Submission_Handler.php:160
+msgid "The file is not an Image"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:163
+msgid "The image size is invalid"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:166
+msgid "The file is not a valid image"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:487
+msgid "Invalid URL provided for %s"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:281
+msgid "Single geography mode"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:282
+msgid "Removes the country, state/province and timezone selectors from the submission form"
+msgstr ""
+
+#: src/Tribe/Event_Form.php:30
+msgid "Auto Draft"
+msgstr "Automatiskt utkast"
+
+#: src/Tribe/Main.php:1028
+msgid "Delete Image"
+msgstr "Radera bild"
+
+#: src/views/community/event-list.php:73
+msgid "View past events"
+msgstr "Visa tidigare event"
+
+#: src/views/community/event-list.php:77
+msgid "View upcoming events"
+msgstr "Visa kommande events"
+
+#: src/Tribe/Main.php:1509
+msgid "The file you attempted to upload exceeded the maximum file size of %1$s."
+msgstr "Filen du försökte ladda upp överskrider den maximala filstorleken ( %1$s )."
+
+#: src/views/community/modules/cost.php:62
+msgctxt "Currency symbol position"
+msgid "Before cost"
+msgstr "Före kostnad"
+
+#: src/views/community/modules/cost.php:65
+msgctxt "Currency symbol position"
+msgid "After cost"
+msgstr "Efter kostnad"
+
+#: src/views/community/modules/datepickers.php:94
+msgid "Timezone:"
+msgstr "Tidszon:"
+
+#: src/views/community/modules/image.php:49
+msgid "Images that are not png, jpg, or gif will not be uploaded. Images may not exceed %1$s in size."
+msgstr "Bilder måste vara png, jpg eller gif för att laddas upp. Bilder får inte överskrida %1$s i storlek."
+
+#. Plugin Name of the plugin/theme
+msgid "The Events Calendar: Community Events"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Community Events is an add-on providing additional functionality to the open source plugin The Events Calendar. Empower users to submit and manage their events on your website. <a href=\"http://tri.be/shop/wordpress-community-events/?utm_campaign=in-app&utm_source=docblock&utm_medium=plugin-community\">Check out the full feature list</a>. Need more features? Peruse our selection of <a href=\"http://tri.be/products/?utm_campaign=in-app&utm_source=docblock&utm_medium=plugin-community\" target=\"_blank\">plugins</a>."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Modern Tribe, Inc."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://m.tri.be/21"
+msgstr ""
+
+#: src/Tribe/Modules/Taxonomy_Block.php:87
+msgid "more"
+msgstr "mer"
+
+#: src/views/community/modules/taxonomy.php:30
+msgid "%s Categories:"
+msgstr "%s kategorier:"
+
+#: src/Tribe/Submission_Handler.php:384
+#: src/views/community/modules/venue.php:93
+msgid "Address"
+msgstr "Adress"
+
+#: src/Tribe/Submission_Handler.php:388
+#: src/views/community/modules/venue.php:104
+msgid "City"
+msgstr "Stad"
+
+#: src/views/community/modules/venue.php:114
+msgid "Country"
+msgstr "Land"
+
+#: src/views/community/modules/venue.php:140
+msgid "State or Province"
+msgstr "Län"
+
+#: src/views/community/modules/venue.php:146
+msgid "Select a State"
+msgstr "Välj län"
+
+#: src/views/community/modules/venue.php:160
+msgid "Postal Code"
+msgstr "Postnummer"
+
+#: src/views/community/modules/venue.php:211
+msgid "Show Google Maps Link"
+msgstr "Visa Google Maps länk"
+
+#: src/views/community/modules/venue.php:198
+msgid "Show Google Map"
+msgstr "Visa Google Map"
+
+#: src/views/community/modules/website.php:37
+msgid "%s Website"
+msgstr "%s Webbplats"
+
+#: src/views/community/modules/website.php:43
+msgid "URL:"
+msgstr "URL:"
+
+#: tribe-community-events.php:84
+msgid "The Events Calendar"
+msgstr "The Events Calendar"
+
+#: tribe-community-events.php:85
+msgid "To begin using The Events Calendar: Community Events, please install the latest version of <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events Calendar</a>."
+msgstr "För att börja använda The Events Calendar: Community Events, installera den senaste versionen av <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events Calendar</a>."
+
+#: vendor/wp-router/WP_Route.class.php:36
+msgid "Missing %s"
+msgstr "Saknar %s"
+
+#: vendor/wp-router/WP_Route.class.php:63
+msgid "Property not found: %s."
+msgstr "Egenskap inte hittad: %s."
+
+#: vendor/wp-router/WP_Route.class.php:77
+msgid "Invalid value for %s. Value may not be empty."
+msgstr "Ogiltigt värde för %s. Värdet får ej vara tomt."
+
+#: vendor/wp-router/WP_Route.class.php:80
+msgid "Invalid value for %1$s: %2$s. Value must be an array."
+msgstr "Ogiltigt värde för %1$s: %2$s. Värdet måste vara en array."
+
+#: vendor/wp-router/WP_Route.class.php:250
+msgid "You are not authorized to access this page"
+msgstr "Du har inte behörighet att komma åt denna sida"
+
+#: vendor/wp-router/WP_Route.class.php:251
+msgid "Access Denied"
+msgstr "Tillträde nekat"
+
+#: vendor/wp-router/WP_Router_Page.class.php:74
+msgid "WP Router Placeholder Page"
+msgstr "WP Router platshållarsida"
+
+#: vendor/wp-router/WP_Router_Utility.class.php:49
+msgid "%1$s requires WordPress %2$s or higher and PHP %3$s or higher."
+msgstr "%1$s kräver WordPress %2$s eller senare och PHP %3$s eller senare."
+
+#: src/Tribe/Captcha/Abstract_Captcha.php:143
+msgid "Invalid value for the Anti-Spam Check"
+msgstr "Ofullständigt värde för Anti-Spam Check"
+
+#: src/Tribe/Captcha/Recaptcha.php:20
+msgid "reCAPTCHA API Keys"
+msgstr "reCAPTCHA API-nyckel"
+
+#: src/Tribe/Captcha/Recaptcha.php:24
+msgid "Provide reCAPTCHA API keys for both fields to enable reCAPTCHA on your community events form."
+msgstr "Tillhandahåll reCAPTCHA API-nyckel för båda fälten för att möjliggöra reCAPTCHA i ditt community events formulär."
+
+#: src/Tribe/Captcha/Recaptcha.php:24
+msgid "Note: reCAPTCHA only appears for users who are not logged in."
+msgstr "Observera: reCAPTCHA visas endast för användare som inte är inloggade"
+
+#: src/Tribe/Captcha/Recaptcha.php:28
+msgid "Site Key"
+msgstr "Hemsidenyckel"
+
+#: src/Tribe/Captcha/Recaptcha.php:29
+msgid "Get your Site Key at %s"
+msgstr "Hämta din hemsidenyckel på %s"
+
+#: src/Tribe/Captcha/Recaptcha.php:38
+msgid "Secret Key"
+msgstr "Hemlig nyckel"
+
+#: src/Tribe/Captcha/Recaptcha.php:39
+msgid "Get your Secret Key at %s"
+msgstr "Hämta din hemliga nyckel på %s"
+
+#: src/Tribe/Main.php:2684
+msgid "edit"
+msgstr "redigera"
+
+#: src/Tribe/Main.php:2685 src/admin-views/community-options-template.php:303
+msgid "add"
+msgstr "lägg till"
+
+#: src/Tribe/Main.php:2686
+msgid "delete"
+msgstr "radera"
+
+#: src/Tribe/Main.php:2687 src/admin-views/community-options-template.php:305
+msgid "list"
+msgstr "lista"
+
+#: src/Tribe/Main.php:2689
+msgid "venue"
+msgstr "plats"
+
+#: src/Tribe/Main.php:2690
+msgid "organizer"
+msgstr "arrangör"
+
+#: src/Tribe/Main.php:2691
+msgid "event"
+msgstr "evenemang"
+
+#: src/Tribe/Main.php:534 src/Tribe/Main.php:1050
+msgid "Edit a Venue"
+msgstr "Redigera en plats"
+
+#: src/Tribe/Main.php:553 src/Tribe/Main.php:1051
+msgid "Edit an Organizer"
+msgstr "Redigera en arrangör"
+
+#: src/Tribe/Main.php:571 src/Tribe/Main.php:1049
+msgid "Edit an Event"
+msgstr "Redigera ett evenemang"
+
+#: src/Tribe/Main.php:590
+msgid "Redirect"
+msgstr "Omdirigera"
+
+#: src/Tribe/Main.php:605 src/Tribe/Main.php:1160
+msgid "Submit an Event"
+msgstr "Skicka in ett evenemang"
+
+#: src/Tribe/Main.php:631 src/Tribe/Main.php:1042
+msgid "Remove an Event"
+msgstr "Ta bort ett evenemang"
+
+#: src/Tribe/Main.php:647 src/Tribe/Main.php:1138
+#: src/admin-views/community-options-template.php:195
+msgid "My Events"
+msgstr "Mina evenemang"
+
+#: src/Tribe/Main.php:731
+msgid "Not found."
+msgstr "Hittades inte."
+
+#: src/Tribe/Main.php:881
+msgid "Community Events requires non-default (pretty) permalinks to be enabled or the [tribe_community_events] shortcode to exist on a page."
+msgstr "Community Events kräver en egen permalänkstruktur utan frågetecken eller att [tribe_community_events] kortkod finns på varje sida."
+
+#: src/Tribe/Main.php:965
+msgid "Delete"
+msgstr "Radera"
+
+#: src/Tribe/Main.php:966
+msgid "Are you sure?"
+msgstr "Är du säker?"
+
+#: src/Tribe/Main.php:969
+msgid "Delete All"
+msgstr "Radera allt"
+
+#: src/Tribe/Main.php:970
+msgid "Are you sure you want to permanently delete all instances of this recurring event?"
+msgstr "Är du säker på att du permanent vill ta bort alla förekomster av detta återkommande evenemang?"
+
+#: src/Tribe/Main.php:972
+msgid "Are you sure you want to permanently delete this instance of a recurring event?"
+msgstr "Är du säker på att du permanent vill ta bort detta enskilda evenemang från ett återkommande evenemang?"
+
+#: src/Tribe/Main.php:1043
+msgid "Remove a Venue"
+msgstr "Ta bort en plats"
+
+#: src/Tribe/Main.php:1044
+msgid "Remove an Organizer"
+msgstr "Ta bort en arrangör"
+
+#: src/Tribe/Main.php:1045 src/Tribe/Main.php:1052
+msgid "Unknown Post Type"
+msgstr "Okänd inläggstyp"
+
+#: src/Tribe/Main.php:1198
+msgid "This shortcode can only be used in pages."
+msgstr "Denna shortcode kan bara användas på sidor."
+
+#: src/Tribe/Main.php:1333
+msgid "Community Events Submission"
+msgstr "Community Events inlägg"
+
+#: src/Tribe/Main.php:1425
+msgid "Trashed Event #"
+msgstr "Kastade evenemang #"
+
+#: src/Tribe/Main.php:1428
+msgid "Deleted Event #"
+msgstr "Raderade evenemang #"
+
+#: src/Tribe/Main.php:1431
+msgid "This event (#%s) does not appear to exist."
+msgstr "Detta evenemang (#%s) verkar inte finnas."
+
+#: src/Tribe/Main.php:1434
+msgid "You do not have permission to delete this event."
+msgstr "Du har inte rättigheter att radera detta evenemang."
+
+#: src/Tribe/Main.php:1445
+msgctxt "As in \"go back to previous page\""
+msgid "Back"
+msgstr "Tillbaka"
+
+#: src/Tribe/Main.php:1480
+msgid "%sWarning:%s You are editing a recurring %s. All changes will be applied to the entire series."
+msgstr "%sVarning:%s Du redigerar ett återkommande %s. Alla förändringar kommer appliceras på hela serien."
+
+#: src/Tribe/Main.php:1489
+msgid "%s not found."
+msgstr "%s hittades inte."
+
+#: src/Tribe/Main.php:1497
+msgid "Please log in first."
+msgstr "Logga in först."
+
+#: src/Tribe/Main.php:1503
+msgid "You do not have permission to edit this %s."
+msgstr "Du har inte behörighet att redigera detta %s."
+
+#: src/Tribe/Main.php:1639 src/views/community/event-list.php:138
+msgid "View"
+msgstr "Visa"
+
+#: src/Tribe/Main.php:1645 src/views/community/event-list.php:144
+msgid "Edit"
+msgstr "Redigera"
+
+#: src/Tribe/Main.php:1704
+msgid "Venue not found."
+msgstr "Platsen kunde inte hittas."
+
+#: src/Tribe/Main.php:1709
+msgid "Please log in to edit this venue"
+msgstr "Logga in för att redigera denna plats"
+
+#: src/Tribe/Main.php:1713
+msgid "You do not have permission to edit this venue."
+msgstr "Du har inte rättigheter att redigera denna plats."
+
+#: src/Tribe/Main.php:1736
+msgid "Venue updated."
+msgstr "Plats uppdaterad."
+
+#: src/Tribe/Main.php:1746
+msgid "Venue name cannot be blank."
+msgstr "Platsens namn kan ej vara tomt."
+
+#: src/Tribe/Main.php:1750
+msgid "There was a problem updating your venue, please try again."
+msgstr "Platsen kunde inte uppdateras, försök igen."
+
+#: src/Tribe/Main.php:1787
+msgid "Organizer not found."
+msgstr "Arrangören kunde inte hittas."
+
+#: src/Tribe/Main.php:1791
+msgid "Please log in to edit this organizer"
+msgstr "Logga in för att redigera denna arrangör"
+
+#: src/Tribe/Main.php:1795
+msgid "You do not have permission to edit this organizer."
+msgstr "Du har inte rättigheter att redigera denna arrangör."
+
+#: src/Tribe/Main.php:1817
+msgid "Organizer updated."
+msgstr "Arrangören uppdaterad."
+
+#: src/Tribe/Main.php:1828
+msgid "Organizer name cannot be blank."
+msgstr "Arrangörens namn kan ej vara tomt."
+
+#: src/Tribe/Main.php:1832
+msgid "There was a problem updating this organizer, please try again."
+msgstr "Arrangören kunde inte uppdateras, försök igen."
+
+#: src/Tribe/Main.php:1914
+msgid "Please log in to view your events"
+msgstr "Logga in för att visa dina evenemang"
+
+#: src/Tribe/Main.php:1955
+msgid "Fake Title"
+msgstr "Låtsastitel"
+
+#: src/Tribe/Modules/Taxonomy_Block.php:109
+msgid "Show all categories ( %d )"
+msgstr "Visa alla kategorier ( %d )"
+
+#: src/Tribe/Main.php:2141
+msgid "The requested page number was not found."
+msgstr "Det begärda sidnumret hittades inte."
+
+#: src/Tribe/Main.php:2385
+msgid "Community"
+msgstr "Community"
+
+#: src/Tribe/Main.php:2402
+msgid "This template is also used for Community Events."
+msgstr "Denna mall används även för Community Events."
+
+#: src/Tribe/Main.php:2617
+msgid "Community: Submit %s"
+msgstr "Community: Skicka %s"
+
+#: src/Tribe/Main.php:2625
+msgid "Community: My %s"
+msgstr "Community: Mina %s"
+
+#: src/Tribe/Main.php:2634 src/Tribe/Templates.php:47
+msgid "Community Events"
+msgstr "Community Events"
+
+#: src/Tribe/Main.php:2650
+msgid "Settings"
+msgstr "Inställningar"
+
+#: src/Tribe/Submission_Handler.php:68
+msgid "%s updated. "
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:69 src/Tribe/Submission_Handler.php:88
+msgid "Submit another %s"
+msgstr "Skicka ett till %s"
+
+#: src/Tribe/Submission_Handler.php:72
+msgid "There was a problem saving your %s, please try again."
+msgstr "Det uppstod ett problem när ditt %s skulle sparas, vänligen försök igen."
+
+#: src/Tribe/Submission_Handler.php:87
+msgid "%s submitted."
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:91
+msgid "There was a problem submitting your %s, please try again."
+msgstr "Ett problem uppstod när ditt %s skulle sparas, vänligen försök igen."
+
+#: src/Tribe/Submission_Handler.php:191
+msgid "%s is required"
+msgstr "%s krävs"
+
+#: src/Tribe/Submission_Handler.php:345
+msgid "%s Title"
+msgstr "%s titel"
+
+#: src/Tribe/Submission_Handler.php:348
+msgid "%s Description"
+msgstr "%s beskrivning"
+
+#: src/Tribe/Submission_Handler.php:456
+msgid "Invalid value for %s"
+msgstr "Ogiltigt värde för %s"
+
+#: src/Tribe/Submission_Handler.php:467
+msgid "Images must be png, jpg, or gif"
+msgstr "Bilder måste vara i png, jpg eller gif format"
+
+#: src/Tribe/Submission_Handler.php:509
+msgid "Image exceeded the allowed file size"
+msgstr "Bilden överskrider den tillåtna filstorleken"
+
+#: src/Tribe/Submission_Handler.php:514
+msgid "The image failed to upload successfully"
+msgstr "Det gick inte att ladda upp bilden"
+
+#: src/Tribe/Submission_Handler.php:518
+msgid "The uploaded image could not be processed"
+msgstr "Den uppladdade bilden kunde inte behandlas"
+
+#: src/admin-views/community-options-template.php:42
+msgid "Placed in the Trash"
+msgstr "Kastas i papperskorgen"
+
+#: src/admin-views/community-options-template.php:43
+msgid "Permanently Deleted"
+msgstr "Raderas permanent"
+
+#: src/admin-views/community-options-template.php:50
+msgid "No Default"
+msgstr "Ingen förvald"
+
+#: src/admin-views/community-options-template.php:58
+msgid "Use New Venue/No Default"
+msgstr "Ny plats/ingen förvald"
+
+#: src/admin-views/community-options-template.php:73
+msgid "Community Events Settings"
+msgstr "Community Events inställningar"
+
+#: src/admin-views/community-options-template.php:88
+msgid "General"
+msgstr "Generellt"
+
+#: src/admin-views/community-options-template.php:94
+msgid "Allow anonymous submissions"
+msgstr "Tillåt anonymt inskickade evenemang"
+
+#: src/admin-views/community-options-template.php:95
+msgid "Check this box to allow users to submit events without having a WordPress account"
+msgstr "Genom att kryssa i denna ruta kan användare lägga till evenemang utan att ha ett WordPress konto."
+
+#: src/admin-views/community-options-template.php:103
+msgid "Use visual editor for event descriptions"
+msgstr "Använd visuell redigerare för evenemangbeskrivningar"
+
+#: src/admin-views/community-options-template.php:111
+msgid "Default status for submitted events"
+msgstr "Förvald status för inskickade evenemang"
+
+#: src/admin-views/community-options-template.php:121
+msgid "Community rewrite slug"
+msgstr "Community slug"
+
+#: src/admin-views/community-options-template.php:125
+msgid "The slug used for building the community events URL - it is appended to the main events slug. Your current community events URLs are"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:138
+msgid "Alerts"
+msgstr "Varningar"
+
+#: src/admin-views/community-options-template.php:143
+msgid "Send an email alert when a new event is submitted"
+msgstr "Skicka en varning via mail när ett nytt evenemang är inskickat"
+
+#: src/admin-views/community-options-template.php:151
+msgid "Email addresses to be notified"
+msgstr "Mailadress för notifieringar"
+
+#: src/admin-views/community-options-template.php:154
+msgid "One address per line"
+msgstr "En adress per rad"
+
+#: src/admin-views/community-options-template.php:160
+msgid "Members"
+msgstr "Medlemmar"
+
+#: src/admin-views/community-options-template.php:165
+msgid "Control the permissions for your logged in users. Allow them to:"
+msgstr "Styr behörigheter för dina inloggade användare. Låt dem:"
+
+#: src/admin-views/community-options-template.php:170
+msgid "Edit their submissions"
+msgstr "Redigera sina evenemang"
+
+#: src/admin-views/community-options-template.php:178
+msgid "Remove their submissions"
+msgstr "Ta bort sina evenemang"
+
+#: src/admin-views/community-options-template.php:186
+msgid "Deleted events should be:"
+msgstr "Raderade evenemang skall:"
+
+#: src/admin-views/community-options-template.php:200
+msgid "Events per page"
+msgstr "Evenemang per sida"
+
+#: src/admin-views/community-options-template.php:201
+msgid "This is the number of events displayed per page"
+msgstr "Antal evenemang som visas per sida"
+
+#: src/admin-views/community-options-template.php:209
+msgid "Date/time format"
+msgstr "Datum/tidformat"
+
+#: src/admin-views/community-options-template.php:210
+msgid "Help with date &amp; time formatting"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:218
+msgid "Access Control"
+msgstr "Åtkomstkontroll"
+
+#: src/admin-views/community-options-template.php:223
+msgid "Block access to WordPress dashboard"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:224
+msgid "Also disables the admin bar"
+msgstr "Inaktiverar också verktygsrad på framsidan"
+
+#: src/admin-views/community-options-template.php:232
+msgid "Roles to block"
+msgstr "Roller att blockera"
+
+#: src/admin-views/community-options-template.php:242
+msgid "Redirect URL"
+msgstr "Omdiringerings URL"
+
+#: src/admin-views/community-options-template.php:253
+msgid "Form Defaults"
+msgstr "Standardval i formulär"
+
+#: src/admin-views/community-options-template.php:259
+msgid "Default venue for submitted events"
+msgstr "Förvald plats for inskickade evenemang"
+
+#: src/admin-views/community-options-template.php:270
+msgid "Default organizer for submitted events"
+msgstr "Förvald arrangör för inskickade evenemang"
+
+#: src/functions/template-tags.php:492
+#: src/views/community/edit-organizer.php:33
+#: src/views/community/edit-venue.php:33
+msgid "(required)"
+msgstr "(obligatoriskt)"
+
+#: src/views/community/edit-event.php:38
+msgid "%s Title:"
+msgstr "%s titel:"
+
+#: src/views/community/edit-event.php:49
+#: src/views/community/edit-organizer.php:43
+#: src/views/community/edit-venue.php:43
+msgid "%s Description:"
+msgstr "%s beskrivning:"
+
+#: src/views/community/edit-event.php:81
+#: src/views/community/edit-organizer.php:69
+#: src/views/community/edit-venue.php:69
+msgid "Update %s"
+msgstr "Uppdatera %s"
+
+#: src/views/community/edit-event.php:83
+#: src/views/community/edit-organizer.php:69
+#: src/views/community/edit-venue.php:69
+msgid "Submit %s"
+msgstr "Skicka in %s"
+
+#: src/views/community/edit-organizer.php:32
+#: src/views/community/edit-venue.php:32
+msgid "%s Name:"
+msgstr "%snamn:"
+
+#: src/views/community/email-template.php:29
+msgid "%s Organizer"
+msgstr "%s arrangör"
+
+#: src/views/community/email-template.php:32
+msgid "%s Venue"
+msgstr "%s plats"
+
+#: src/views/community/email-template.php:35
+msgid "Description"
+msgstr "Beskrivning"
+
+#: src/views/community/email-template.php:46
+msgid "Review %s"
+msgstr "Utvärdera %s"
+
+#: src/views/community/email-template.php:48
+msgid "View %s"
+msgstr "Visa %s"
+
+#: src/views/community/event-list.php:28
+#: src/views/community/modules/delete.php:22
+msgid "Add New"
+msgstr "Lägg till ny"
+
+#: src/views/community/event-list.php:33
+msgid "Display"
+msgstr "Visa"
+
+#: src/views/community/event-list.php:48
+#: src/views/community/modules/delete.php:30
+#: src/views/community/modules/header-links.php:22
+msgid "Not"
+msgstr "Ej"
+
+#: src/views/community/event-list.php:51
+#: src/views/community/modules/delete.php:31
+#: src/views/community/modules/header-links.php:22
+msgid "Log Out"
+msgstr "Logga ut"
+
+#: src/views/community/event-list.php:59
+msgid "There are no upcoming %s in your queue."
+msgstr "Inga kommande %s i din kö."
+
+#: src/views/community/event-list.php:92
+msgid "Status"
+msgstr "Status"
+
+#: src/views/community/event-list.php:93
+msgid "Title"
+msgstr "Titel"
+
+#: src/views/community/event-list.php:96
+msgid "Category"
+msgstr "Kategori"
+
+#: src/views/community/event-list.php:99
+msgid "Recurring?"
+msgstr "Återkommande?"
+
+#: src/views/community/event-list.php:102
+msgid "Start Date"
+msgstr "Startdatum"
+
+#: src/views/community/event-list.php:103
+msgid "End Date"
+msgstr "Slutdatum"
+
+#: src/views/community/event-list.php:189
+msgid "Yes"
+msgstr "Ja"
+
+#: src/views/community/event-list.php:191
+msgid "No"
+msgstr "Nej"
+
+#: src/views/community/modules/captcha.php:31
+msgid "Anti-Spam Check"
+msgstr "Anti-Spam kontroll"
+
+#: src/views/community/modules/cost.php:41
+msgid "%s Cost"
+msgstr "%s kostnad"
+
+#: src/views/community/modules/cost.php:46
+msgid "Currency Symbol:"
+msgstr "Valutasymbol:"
+
+#: src/views/community/modules/cost.php:71
+msgid "Cost:"
+msgstr "Kostnad:"
+
+#: src/views/community/modules/cost.php:77
+msgid "Leave blank to hide the field. Enter a 0 for %s that are free."
+msgstr "Lämna tomt för att gömma detta fält. Ange 0 om ditt %s är gratis."
+
+#: src/views/community/modules/custom.php:35
+msgid "Additional Fields"
+msgstr "Ytterligare fält"
+
+#: src/views/community/modules/custom.php:52
+msgctxt "custom field label"
+msgid "%s:"
+msgstr "%s:"
+
+#: src/views/community/modules/datepickers.php:48
+msgid "%s Time &amp; Date"
+msgstr "%s tid &amp; datum"
+
+#: src/views/community/modules/datepickers.php:54
+msgid "You have changed the recurrence rules of this %1$s. Saving the %1$s will update all future %2$s.  If you did not mean to change all %2$s, then please refresh the page."
+msgstr "Du har ändrat repeteringsreglerna för detta %1$s.  Om du sparar kommer alla kommande %2$s. Om du inte vill ändra alla %2$s, vänligen uppdatera sidan."
+
+#: src/views/community/modules/datepickers.php:59
+msgid "All day %s?"
+msgstr "Heldags%s?"
+
+#: src/views/community/modules/datepickers.php:67
+msgid "Start Date / Time:"
+msgstr "Startdatum / tid:"
+
+#: src/views/community/modules/datepickers.php:71
+#: src/views/community/modules/datepickers.php:84
+msgid "YYYY-MM-DD"
+msgstr "ÅÅÅÅ-MM-DD"
+
+#: src/views/community/modules/datepickers.php:80
+msgid "End Date / Time:"
+msgstr "Slutdatum / tid:"
+
+#: src/views/community/modules/delete.php:26
+#: src/views/community/modules/header-links.php:21
+msgid "My %s"
+msgstr "Mina %s"
+
+#: src/views/community/modules/image.php:31
+msgid "%s Image"
+msgstr "%s bild"
+
+#: src/views/community/modules/image.php:37
+msgid "Upload:"
+msgstr "Ladda upp:"
+
+#: src/views/community/modules/organizer-fields.php:47
+#: src/views/community/modules/organizer.php:34
+#: src/views/community/modules/venue.php:69
+msgid "%s Details"
+msgstr "%sinformation"
+
+#: src/views/community/modules/organizer-fields.php:59
+#: src/views/community/modules/venue.php:81
+msgid "%s Name"
+msgstr "%snamn"
+
+#: src/Tribe/Submission_Handler.php:408
+#: src/views/community/modules/organizer-fields.php:71
+#: src/views/community/modules/venue.php:171
+msgid "Phone"
+msgstr "Telefon"
+
+#: src/Tribe/Submission_Handler.php:416
+#: src/views/community/modules/organizer-fields.php:81
+#: src/views/community/modules/venue.php:182
+msgid "Website"
+msgstr "Hemsida"
+
+#: src/Tribe/Submission_Handler.php:420
+#: src/views/community/modules/organizer-fields.php:90
+msgid "Email"
+msgstr "Email"
+
+#: src/views/community/modules/custom.php:70
+#: src/views/community/modules/custom.php:99
+msgid "None"
+msgstr "Ingen"

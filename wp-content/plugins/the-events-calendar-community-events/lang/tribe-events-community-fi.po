@@ -1,0 +1,885 @@
+# Translation of Community Events in Finnish
+# This file is distributed under the same license as the Community Events package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-09-14 15:55:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Community Events\n"
+
+#: src/Tribe/Captcha/Recaptcha_V2.php:139
+msgctxt "failed recaptcha response validation"
+msgid "reCAPTCHA verification failed"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:243
+msgid "Redirect for users who attempt to access the admin without permissions<br>Enter a full url to a post or page on your site<br>Leave blank for homepage"
+msgstr ""
+
+#: src/Tribe/Captcha/Recaptcha.php:247 src/Tribe/Captcha/Recaptcha_V2.php:125
+msgctxt "failed recaptcha response"
+msgid "reCAPTCHA failed unexpectedly"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:333
+msgid "%s %s is required"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:380 src/Tribe/Submission_Handler.php:412
+msgid "Name"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:392
+msgid "Province"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:396
+msgid "State"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:400
+msgid "Zip"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:404
+msgid "URL"
+msgstr "URL"
+
+#: src/admin-views/community-options-template.php:78
+msgid "<p>Community Events enables users to submit events through a form on your site. Whether soliciting contributions from anonymous users or registered members, you have complete editorial control over what makes it onto the calendar.</p><p>Check out our <a href=\"%s\">Community Events New User Primer</a> for information on configuring and using the plugin."
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:146 src/Tribe/Submission_Handler.php:160
+msgid "The file is not an Image"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:163
+msgid "The image size is invalid"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:166
+msgid "The file is not a valid image"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:487
+msgid "Invalid URL provided for %s"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:281
+msgid "Single geography mode"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:282
+msgid "Removes the country, state/province and timezone selectors from the submission form"
+msgstr ""
+
+#: src/Tribe/Event_Form.php:30
+msgid "Auto Draft"
+msgstr ""
+
+#: src/Tribe/Main.php:1028
+msgid "Delete Image"
+msgstr ""
+
+#: src/views/community/event-list.php:73
+msgid "View past events"
+msgstr ""
+
+#: src/views/community/event-list.php:77
+msgid "View upcoming events"
+msgstr ""
+
+#: src/Tribe/Main.php:1509
+msgid "The file you attempted to upload exceeded the maximum file size of %1$s."
+msgstr "Tiedosto, joa yritit ladata on suurempi kuin %1$s."
+
+#: src/views/community/modules/cost.php:62
+msgctxt "Currency symbol position"
+msgid "Before cost"
+msgstr "Ennen hintaa"
+
+#: src/views/community/modules/cost.php:65
+msgctxt "Currency symbol position"
+msgid "After cost"
+msgstr "Hinnan jälkeen"
+
+#: src/views/community/modules/datepickers.php:94
+msgid "Timezone:"
+msgstr "Aikavyöhyke:"
+
+#: src/views/community/modules/image.php:49
+msgid "Images that are not png, jpg, or gif will not be uploaded. Images may not exceed %1$s in size."
+msgstr "Vain png, jpg tai gif -tiedostot, jotka ovat kooltaan alle %1$s ladataan."
+
+#. Plugin Name of the plugin/theme
+msgid "The Events Calendar: Community Events"
+msgstr "The Events Calendar: Community Events"
+
+#. Description of the plugin/theme
+msgid "Community Events is an add-on providing additional functionality to the open source plugin The Events Calendar. Empower users to submit and manage their events on your website. <a href=\"http://tri.be/shop/wordpress-community-events/?utm_campaign=in-app&utm_source=docblock&utm_medium=plugin-community\">Check out the full feature list</a>. Need more features? Peruse our selection of <a href=\"http://tri.be/products/?utm_campaign=in-app&utm_source=docblock&utm_medium=plugin-community\" target=\"_blank\">plugins</a>."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Modern Tribe, Inc."
+msgstr "Modern Tribe, Inc."
+
+#. Author URI of the plugin/theme
+msgid "http://m.tri.be/21"
+msgstr "http://m.tri.be/21"
+
+#: src/Tribe/Modules/Taxonomy_Block.php:87
+msgid "more"
+msgstr "lisää"
+
+#: src/views/community/modules/taxonomy.php:30
+msgid "%s Categories:"
+msgstr "%s: kategoriat"
+
+#: src/Tribe/Submission_Handler.php:384
+#: src/views/community/modules/venue.php:93
+msgid "Address"
+msgstr "Osoite"
+
+#: src/Tribe/Submission_Handler.php:388
+#: src/views/community/modules/venue.php:104
+msgid "City"
+msgstr "Kaupunki"
+
+#: src/views/community/modules/venue.php:114
+msgid "Country"
+msgstr "Maa"
+
+#: src/views/community/modules/venue.php:140
+msgid "State or Province"
+msgstr "Osavaltio tai alue"
+
+#: src/views/community/modules/venue.php:146
+msgid "Select a State"
+msgstr "Valitse osavaltio"
+
+#: src/views/community/modules/venue.php:160
+msgid "Postal Code"
+msgstr "Postinumero"
+
+#: src/views/community/modules/venue.php:211
+msgid "Show Google Maps Link"
+msgstr "Näytä Google Maps linkki"
+
+#: src/views/community/modules/venue.php:198
+msgid "Show Google Map"
+msgstr "Näytä Google Map"
+
+#: src/views/community/modules/website.php:37
+msgid "%s Website"
+msgstr "%s: verkkosivu"
+
+#: src/views/community/modules/website.php:43
+msgid "URL:"
+msgstr "URL:"
+
+#: tribe-community-events.php:84
+msgid "The Events Calendar"
+msgstr "The Events Calendar"
+
+#: tribe-community-events.php:85
+msgid "To begin using The Events Calendar: Community Events, please install the latest version of <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events Calendar</a>."
+msgstr "Aloittaaksesi The Events Calendar: Community Events:in käytön, asenna viimeisin versio <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events Calendar</a>:sta."
+
+#: vendor/wp-router/WP_Route.class.php:36
+msgid "Missing %s"
+msgstr "Puuttuvat %s"
+
+#: vendor/wp-router/WP_Route.class.php:63
+msgid "Property not found: %s."
+msgstr "Ominaisuutta ei löydy: %s."
+
+#: vendor/wp-router/WP_Route.class.php:77
+msgid "Invalid value for %s. Value may not be empty."
+msgstr "Virheellinen arvo %s. Arvo ei saa olla tyhjä."
+
+#: vendor/wp-router/WP_Route.class.php:80
+msgid "Invalid value for %1$s: %2$s. Value must be an array."
+msgstr "Virheellinen arvo %1$s: %2$s. Arvon on oltava \"array\"."
+
+#: vendor/wp-router/WP_Route.class.php:250
+msgid "You are not authorized to access this page"
+msgstr "Sinulla ei ole oikeutta päästä tälle sivulle"
+
+#: vendor/wp-router/WP_Route.class.php:251
+msgid "Access Denied"
+msgstr "Pääsy estetty"
+
+#: vendor/wp-router/WP_Router_Page.class.php:74
+msgid "WP Router Placeholder Page"
+msgstr "WP reititin placeholder sivu"
+
+#: vendor/wp-router/WP_Router_Utility.class.php:49
+msgid "%1$s requires WordPress %2$s or higher and PHP %3$s or higher."
+msgstr "%1$s vaatii WordPress %2$s tai uudempi ja PHP %3$s tai uudempi."
+
+#: src/Tribe/Captcha/Abstract_Captcha.php:143
+msgid "Invalid value for the Anti-Spam Check"
+msgstr "Virheellinen arvo \"Roskapostin esto\" -kentässä"
+
+#: src/Tribe/Captcha/Recaptcha.php:20
+msgid "reCAPTCHA API Keys"
+msgstr "reCAPTCHA API-avaimet"
+
+#: src/Tribe/Captcha/Recaptcha.php:24
+msgid "Provide reCAPTCHA API keys for both fields to enable reCAPTCHA on your community events form."
+msgstr "Syötä reCAPTCHA API-avaimet molempiin kenttiin ottaaksesi reCAPTCHAn käyttöön yhteisön tapahtumalomakkeessa."
+
+#: src/Tribe/Captcha/Recaptcha.php:24
+msgid "Note: reCAPTCHA only appears for users who are not logged in."
+msgstr "Huomio: reCAPTCHA näytetään vain jos käyttäjä ei ole kirjautunut sisään."
+
+#: src/Tribe/Captcha/Recaptcha.php:28
+msgid "Site Key"
+msgstr "Site Key"
+
+#: src/Tribe/Captcha/Recaptcha.php:29
+msgid "Get your Site Key at %s"
+msgstr "Luo Site Key osoitteessa %s"
+
+#: src/Tribe/Captcha/Recaptcha.php:38
+msgid "Secret Key"
+msgstr "Secret Key"
+
+#: src/Tribe/Captcha/Recaptcha.php:39
+msgid "Get your Secret Key at %s"
+msgstr "Luo Secret Key osoitteessa %s"
+
+#: src/Tribe/Main.php:2684
+msgid "edit"
+msgstr "muokkaa"
+
+#: src/Tribe/Main.php:2685 src/admin-views/community-options-template.php:303
+msgid "add"
+msgstr "lisää"
+
+#: src/Tribe/Main.php:2686
+msgid "delete"
+msgstr "poista"
+
+#: src/Tribe/Main.php:2687 src/admin-views/community-options-template.php:305
+msgid "list"
+msgstr "lista"
+
+#: src/Tribe/Main.php:2689
+msgid "venue"
+msgstr "tapahtumapaikka"
+
+#: src/Tribe/Main.php:2690
+msgid "organizer"
+msgstr "järjestäjä"
+
+#: src/Tribe/Main.php:2691
+msgid "event"
+msgstr "tapahtuma"
+
+#: src/Tribe/Main.php:534 src/Tribe/Main.php:1050
+msgid "Edit a Venue"
+msgstr "Muokkaa tapahtumapaikkaa"
+
+#: src/Tribe/Main.php:553 src/Tribe/Main.php:1051
+msgid "Edit an Organizer"
+msgstr "Muokkaa järjestäjää"
+
+#: src/Tribe/Main.php:571 src/Tribe/Main.php:1049
+msgid "Edit an Event"
+msgstr "Muokkaa tapahtumaa"
+
+#: src/Tribe/Main.php:590
+msgid "Redirect"
+msgstr "Uudelleenohjaus"
+
+#: src/Tribe/Main.php:605 src/Tribe/Main.php:1160
+msgid "Submit an Event"
+msgstr "Lisää tapahtuma"
+
+#: src/Tribe/Main.php:631 src/Tribe/Main.php:1042
+msgid "Remove an Event"
+msgstr "Poista tapahtuma"
+
+#: src/Tribe/Main.php:647 src/Tribe/Main.php:1138
+#: src/admin-views/community-options-template.php:195
+msgid "My Events"
+msgstr "Omat tapahtumat"
+
+#: src/Tribe/Main.php:731
+msgid "Not found."
+msgstr "Ei löytynyt."
+
+#: src/Tribe/Main.php:881
+msgid "Community Events requires non-default (pretty) permalinks to be enabled or the [tribe_community_events] shortcode to exist on a page."
+msgstr "Community Events vaatii ei-oletus (nättien) kestolinkkien sallimisen tai [tribe_community_events] lyhytkoodin olemassa oloa sivulla."
+
+#: src/Tribe/Main.php:965
+msgid "Delete"
+msgstr "Poista"
+
+#: src/Tribe/Main.php:966
+msgid "Are you sure?"
+msgstr "Oletko varma?"
+
+#: src/Tribe/Main.php:969
+msgid "Delete All"
+msgstr "Poista kaikki"
+
+#: src/Tribe/Main.php:970
+msgid "Are you sure you want to permanently delete all instances of this recurring event?"
+msgstr "Oletko varma, että haluat poistaa pysyvästi kaikki esiintymät tästä toistuvasta tapahtumasta?"
+
+#: src/Tribe/Main.php:972
+msgid "Are you sure you want to permanently delete this instance of a recurring event?"
+msgstr "Oletko varma, että haluat pysyvästi poistaa tämän esiintymän toistuvasta tapahtumasta?"
+
+#: src/Tribe/Main.php:1043
+msgid "Remove a Venue"
+msgstr "Poista tapahtumapaikka"
+
+#: src/Tribe/Main.php:1044
+msgid "Remove an Organizer"
+msgstr "Poista järjestäjä"
+
+#: src/Tribe/Main.php:1045 src/Tribe/Main.php:1052
+msgid "Unknown Post Type"
+msgstr "Tuntematon Lähetystapa"
+
+#: src/Tribe/Main.php:1198
+msgid "This shortcode can only be used in pages."
+msgstr "Tätä lyhytkoodia voidaan käyttää vain sivuilla."
+
+#: src/Tribe/Main.php:1333
+msgid "Community Events Submission"
+msgstr "Community Events Submission"
+
+#: src/Tribe/Main.php:1425
+msgid "Trashed Event #"
+msgstr "Siirretty roskakoriin tapahtuma #"
+
+#: src/Tribe/Main.php:1428
+msgid "Deleted Event #"
+msgstr "Poistettu tapahtuma #"
+
+#: src/Tribe/Main.php:1431
+msgid "This event (#%s) does not appear to exist."
+msgstr "Tätä tapahtumaa (#%s) ei näytä olevan olemassa."
+
+#: src/Tribe/Main.php:1434
+msgid "You do not have permission to delete this event."
+msgstr "Sinulla ei ole oikeutta poistaa tätä tapahtumaa."
+
+#: src/Tribe/Main.php:1445
+msgctxt "As in \"go back to previous page\""
+msgid "Back"
+msgstr "Takaisin"
+
+#: src/Tribe/Main.php:1480
+msgid "%sWarning:%s You are editing a recurring %s. All changes will be applied to the entire series."
+msgstr "%sVaroitus:%s Muokkaat toistuvaa %s. Kaikki muutokset kohdistuvat koko tapahtumasarjaan."
+
+#: src/Tribe/Main.php:1489
+msgid "%s not found."
+msgstr "%s: ei löydy"
+
+#: src/Tribe/Main.php:1497
+msgid "Please log in first."
+msgstr "Kirjaudu ensin sisään."
+
+#: src/Tribe/Main.php:1503
+msgid "You do not have permission to edit this %s."
+msgstr "Muokka tätä %s."
+
+#: src/Tribe/Main.php:1639 src/views/community/event-list.php:138
+msgid "View"
+msgstr "Näytä"
+
+#: src/Tribe/Main.php:1645 src/views/community/event-list.php:144
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: src/Tribe/Main.php:1704
+msgid "Venue not found."
+msgstr "Tapahtumapaikkaa ei löytynyt."
+
+#: src/Tribe/Main.php:1709
+msgid "Please log in to edit this venue"
+msgstr "Kirjaudu sisään voidaksesi muokata tätä tapahtumapaikkaa"
+
+#: src/Tribe/Main.php:1713
+msgid "You do not have permission to edit this venue."
+msgstr "Sinulla ei ole lupaa muokata tätä tapahtumapaikkaa."
+
+#: src/Tribe/Main.php:1736
+msgid "Venue updated."
+msgstr "Tapahtumapaikka päivitetty."
+
+#: src/Tribe/Main.php:1746
+msgid "Venue name cannot be blank."
+msgstr "Tapahtumapaikan nimi ei voi olla tyhjä."
+
+#: src/Tribe/Main.php:1750
+msgid "There was a problem updating your venue, please try again."
+msgstr "Ongelma tapahtumapaikkaa päivitettäessä, yritä uudelleen."
+
+#: src/Tribe/Main.php:1787
+msgid "Organizer not found."
+msgstr "Järjestäjää ei löytynyt."
+
+#: src/Tribe/Main.php:1791
+msgid "Please log in to edit this organizer"
+msgstr "Kirjaudu sisään voidaksesi muokata tätä järjestäjää"
+
+#: src/Tribe/Main.php:1795
+msgid "You do not have permission to edit this organizer."
+msgstr "Sinulla ei ole lupaa muokata tätä järjestäjää."
+
+#: src/Tribe/Main.php:1817
+msgid "Organizer updated."
+msgstr "Järjestäjä päivitetty."
+
+#: src/Tribe/Main.php:1828
+msgid "Organizer name cannot be blank."
+msgstr "Järjestäjän nimi ei voi olla tyhjä."
+
+#: src/Tribe/Main.php:1832
+msgid "There was a problem updating this organizer, please try again."
+msgstr "Ongelma päivitettäessä tätä järjestäjää, yritä uudelleen."
+
+#: src/Tribe/Main.php:1914
+msgid "Please log in to view your events"
+msgstr "Kirjaudu sisään nähdäksesi tapahtumasi"
+
+#: src/Tribe/Main.php:1955
+msgid "Fake Title"
+msgstr "Teko-otsikko"
+
+#: src/Tribe/Modules/Taxonomy_Block.php:109
+msgid "Show all categories ( %d )"
+msgstr "Näytä kaikki kategoriat ( %d )"
+
+#: src/Tribe/Main.php:2141
+msgid "The requested page number was not found."
+msgstr "Etsittyä sivunumeroa ei löytynyt."
+
+#: src/Tribe/Main.php:2385
+msgid "Community"
+msgstr "Yhteisö"
+
+#: src/Tribe/Main.php:2402
+msgid "This template is also used for Community Events."
+msgstr "Tätä teemaa käytetään myös Community Events:lle."
+
+#: src/Tribe/Main.php:2617
+msgid "Community: Submit %s"
+msgstr "Tallenna %s"
+
+#: src/Tribe/Main.php:2625
+msgid "Community: My %s"
+msgstr ""
+
+#: src/Tribe/Main.php:2634 src/Tribe/Templates.php:47
+msgid "Community Events"
+msgstr "Community Events"
+
+#: src/Tribe/Main.php:2650
+msgid "Settings"
+msgstr "Asetukset"
+
+#: src/Tribe/Submission_Handler.php:68
+msgid "%s updated. "
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:69 src/Tribe/Submission_Handler.php:88
+msgid "Submit another %s"
+msgstr "Ehdota uusi %s"
+
+#: src/Tribe/Submission_Handler.php:72
+msgid "There was a problem saving your %s, please try again."
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:87
+msgid "%s submitted."
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:91
+msgid "There was a problem submitting your %s, please try again."
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:191
+msgid "%s is required"
+msgstr "%s on pakollinen"
+
+#: src/Tribe/Submission_Handler.php:345
+msgid "%s Title"
+msgstr "%s: otsikko"
+
+#: src/Tribe/Submission_Handler.php:348
+msgid "%s Description"
+msgstr "%s: kuvaus"
+
+#: src/Tribe/Submission_Handler.php:456
+msgid "Invalid value for %s"
+msgstr "Virheellinen arvo %s"
+
+#: src/Tribe/Submission_Handler.php:467
+msgid "Images must be png, jpg, or gif"
+msgstr "Kuvien täytyy olla muotoa: png, jpg tai gif"
+
+#: src/Tribe/Submission_Handler.php:509
+msgid "Image exceeded the allowed file size"
+msgstr "Kuvan koko on yli sallitun."
+
+#: src/Tribe/Submission_Handler.php:514
+msgid "The image failed to upload successfully"
+msgstr "Kuvaa ei onnistuttu lataamaan."
+
+#: src/Tribe/Submission_Handler.php:518
+msgid "The uploaded image could not be processed"
+msgstr "Ladattua kuvaa ei voitu käsitellä."
+
+#: src/admin-views/community-options-template.php:42
+msgid "Placed in the Trash"
+msgstr "Siirretty roskakoriin"
+
+#: src/admin-views/community-options-template.php:43
+msgid "Permanently Deleted"
+msgstr "Pysyvästi poistettu"
+
+#: src/admin-views/community-options-template.php:50
+msgid "No Default"
+msgstr "Ei oletus"
+
+#: src/admin-views/community-options-template.php:58
+msgid "Use New Venue/No Default"
+msgstr "Käytä uutta tapahtumapaikkaa/Ei oletus"
+
+#: src/admin-views/community-options-template.php:73
+msgid "Community Events Settings"
+msgstr "Community Events:in asetukset"
+
+#: src/admin-views/community-options-template.php:88
+msgid "General"
+msgstr "Yleinen"
+
+#: src/admin-views/community-options-template.php:94
+msgid "Allow anonymous submissions"
+msgstr "Salli anonyymit lisäykset"
+
+#: src/admin-views/community-options-template.php:95
+msgid "Check this box to allow users to submit events without having a WordPress account"
+msgstr "Tee tämä valinta salliaksesi tapahtumien lisäämisen ilman WordPress-käyttäjätiliä"
+
+#: src/admin-views/community-options-template.php:103
+msgid "Use visual editor for event descriptions"
+msgstr "Käytä visuaalista editoria tapahtuman kuvauksiin"
+
+#: src/admin-views/community-options-template.php:111
+msgid "Default status for submitted events"
+msgstr "Oletustila lisätyille tapahtumille"
+
+#: src/admin-views/community-options-template.php:121
+msgid "Community rewrite slug"
+msgstr "Yhteisö rewrite slug"
+
+#: src/admin-views/community-options-template.php:125
+msgid "The slug used for building the community events URL - it is appended to the main events slug. Your current community events URLs are"
+msgstr "Yhteisön lisäämien tapahtumien URL:in muodostamiseksi käytetään slug:ia - se liitetään päätapahtuman slug:iin. Nykyiset yhteisön lisäämien tapahtumien URL-osoitteet ovat"
+
+#: src/admin-views/community-options-template.php:138
+msgid "Alerts"
+msgstr "Hälytykset"
+
+#: src/admin-views/community-options-template.php:143
+msgid "Send an email alert when a new event is submitted"
+msgstr "Lähetä sähköpostihälytys, kun uusi tapahtuma on lisätty"
+
+#: src/admin-views/community-options-template.php:151
+msgid "Email addresses to be notified"
+msgstr "Sähköpostiosoitteet joihin ilmoitus lähetetään"
+
+#: src/admin-views/community-options-template.php:154
+msgid "One address per line"
+msgstr "Yksi osoite per rivi"
+
+#: src/admin-views/community-options-template.php:160
+msgid "Members"
+msgstr "Jäsenet"
+
+#: src/admin-views/community-options-template.php:165
+msgid "Control the permissions for your logged in users. Allow them to:"
+msgstr "Kontrolloi sisäänkirjautuneiden käyttäjien oikeuksia. Salli heidän:"
+
+#: src/admin-views/community-options-template.php:170
+msgid "Edit their submissions"
+msgstr "Muokkaa heidän lisäämiä tapahtumia"
+
+#: src/admin-views/community-options-template.php:178
+msgid "Remove their submissions"
+msgstr "Poista heidän lisäämiä tapahtumia"
+
+#: src/admin-views/community-options-template.php:186
+msgid "Deleted events should be:"
+msgstr "Poistettujen tapahtumien pitäisi olla:"
+
+#: src/admin-views/community-options-template.php:200
+msgid "Events per page"
+msgstr "Tapahtumia sivulla"
+
+#: src/admin-views/community-options-template.php:201
+msgid "This is the number of events displayed per page"
+msgstr "Tämä on sivulla näytettävien tapahtumien lukumäärä"
+
+#: src/admin-views/community-options-template.php:209
+msgid "Date/time format"
+msgstr "Päivämäärän/ajan muoto"
+
+#: src/admin-views/community-options-template.php:210
+msgid "Help with date &amp; time formatting"
+msgstr "Apua päivämäärän ja ajan muotoiluun"
+
+#: src/admin-views/community-options-template.php:218
+msgid "Access Control"
+msgstr "Kulunvalvonta"
+
+#: src/admin-views/community-options-template.php:223
+msgid "Block access to WordPress dashboard"
+msgstr "Estä pääsy WordPress kojelautaan"
+
+#: src/admin-views/community-options-template.php:224
+msgid "Also disables the admin bar"
+msgstr "Poistaa käytöstä myös ylläpitäjän paneelin"
+
+#: src/admin-views/community-options-template.php:232
+msgid "Roles to block"
+msgstr "Estettävät roolit"
+
+#: src/admin-views/community-options-template.php:242
+msgid "Redirect URL"
+msgstr "Uudelleenohjaus URL"
+
+#: src/admin-views/community-options-template.php:253
+msgid "Form Defaults"
+msgstr "Lomakkeen oletusasetukset"
+
+#: src/admin-views/community-options-template.php:259
+msgid "Default venue for submitted events"
+msgstr "Lisättyjen tapahtumien oletustapahtumapaikka"
+
+#: src/admin-views/community-options-template.php:270
+msgid "Default organizer for submitted events"
+msgstr "Lisättyjen tapahtumien oletusjärjestäjä"
+
+#: src/functions/template-tags.php:492
+#: src/views/community/edit-organizer.php:33
+#: src/views/community/edit-venue.php:33
+msgid "(required)"
+msgstr "(pakollinen)"
+
+#: src/views/community/edit-event.php:38
+msgid "%s Title:"
+msgstr "%s otsikko:"
+
+#: src/views/community/edit-event.php:49
+#: src/views/community/edit-organizer.php:43
+#: src/views/community/edit-venue.php:43
+msgid "%s Description:"
+msgstr "%s kuvaus:"
+
+#: src/views/community/edit-event.php:81
+#: src/views/community/edit-organizer.php:69
+#: src/views/community/edit-venue.php:69
+msgid "Update %s"
+msgstr "Päivitä %s"
+
+#: src/views/community/edit-event.php:83
+#: src/views/community/edit-organizer.php:69
+#: src/views/community/edit-venue.php:69
+msgid "Submit %s"
+msgstr "Lisää %s"
+
+#: src/views/community/edit-organizer.php:32
+#: src/views/community/edit-venue.php:32
+msgid "%s Name:"
+msgstr "%s nimi:"
+
+#: src/views/community/email-template.php:29
+msgid "%s Organizer"
+msgstr "%s: järjestäjä"
+
+#: src/views/community/email-template.php:32
+msgid "%s Venue"
+msgstr "%s: tapahtumapaikka"
+
+#: src/views/community/email-template.php:35
+msgid "Description"
+msgstr "Kuvaus"
+
+#: src/views/community/email-template.php:46
+msgid "Review %s"
+msgstr "Katselmoi %s"
+
+#: src/views/community/email-template.php:48
+msgid "View %s"
+msgstr "Näytä %s"
+
+#: src/views/community/event-list.php:28
+#: src/views/community/modules/delete.php:22
+msgid "Add New"
+msgstr "Lisää uusi"
+
+#: src/views/community/event-list.php:33
+msgid "Display"
+msgstr "Näytä"
+
+#: src/views/community/event-list.php:48
+#: src/views/community/modules/delete.php:30
+#: src/views/community/modules/header-links.php:22
+msgid "Not"
+msgstr "Ei"
+
+#: src/views/community/event-list.php:51
+#: src/views/community/modules/delete.php:31
+#: src/views/community/modules/header-links.php:22
+msgid "Log Out"
+msgstr "Kirjaudu ulos"
+
+#: src/views/community/event-list.php:59
+msgid "There are no upcoming %s in your queue."
+msgstr ""
+
+#: src/views/community/event-list.php:92
+msgid "Status"
+msgstr "Tila"
+
+#: src/views/community/event-list.php:93
+msgid "Title"
+msgstr "Otsikko"
+
+#: src/views/community/event-list.php:96
+msgid "Category"
+msgstr "Luokka"
+
+#: src/views/community/event-list.php:99
+msgid "Recurring?"
+msgstr "Toistuva?"
+
+#: src/views/community/event-list.php:102
+msgid "Start Date"
+msgstr "Aloituspäivä"
+
+#: src/views/community/event-list.php:103
+msgid "End Date"
+msgstr "Päättymispäivä"
+
+#: src/views/community/event-list.php:189
+msgid "Yes"
+msgstr "Kyllä"
+
+#: src/views/community/event-list.php:191
+msgid "No"
+msgstr "Ei"
+
+#: src/views/community/modules/captcha.php:31
+msgid "Anti-Spam Check"
+msgstr "Roskapostin esto"
+
+#: src/views/community/modules/cost.php:41
+msgid "%s Cost"
+msgstr "%s: hinta"
+
+#: src/views/community/modules/cost.php:46
+msgid "Currency Symbol:"
+msgstr "Valuuttasymboli:"
+
+#: src/views/community/modules/cost.php:71
+msgid "Cost:"
+msgstr "Hinta:"
+
+#: src/views/community/modules/cost.php:77
+msgid "Leave blank to hide the field. Enter a 0 for %s that are free."
+msgstr ""
+
+#: src/views/community/modules/custom.php:35
+msgid "Additional Fields"
+msgstr "Lisäkentät"
+
+#: src/views/community/modules/custom.php:52
+msgctxt "custom field label"
+msgid "%s:"
+msgstr "%s:"
+
+#: src/views/community/modules/datepickers.php:48
+msgid "%s Time &amp; Date"
+msgstr "%s: päivä ja aika"
+
+#: src/views/community/modules/datepickers.php:54
+msgid "You have changed the recurrence rules of this %1$s. Saving the %1$s will update all future %2$s.  If you did not mean to change all %2$s, then please refresh the page."
+msgstr ""
+
+#: src/views/community/modules/datepickers.php:59
+msgid "All day %s?"
+msgstr "Koko päivän %s?"
+
+#: src/views/community/modules/datepickers.php:67
+msgid "Start Date / Time:"
+msgstr "Aloituspäivä -ja aika:"
+
+#: src/views/community/modules/datepickers.php:71
+#: src/views/community/modules/datepickers.php:84
+msgid "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+
+#: src/views/community/modules/datepickers.php:80
+msgid "End Date / Time:"
+msgstr "Päättymispäivä -ja aika:"
+
+#: src/views/community/modules/delete.php:26
+#: src/views/community/modules/header-links.php:21
+msgid "My %s"
+msgstr ""
+
+#: src/views/community/modules/image.php:31
+msgid "%s Image"
+msgstr "%s: kuva"
+
+#: src/views/community/modules/image.php:37
+msgid "Upload:"
+msgstr "Lähetä:"
+
+#: src/views/community/modules/organizer-fields.php:47
+#: src/views/community/modules/organizer.php:34
+#: src/views/community/modules/venue.php:69
+msgid "%s Details"
+msgstr "%s Yksityiskohdat"
+
+#: src/views/community/modules/organizer-fields.php:59
+#: src/views/community/modules/venue.php:81
+msgid "%s Name"
+msgstr "%s Nimi"
+
+#: src/Tribe/Submission_Handler.php:408
+#: src/views/community/modules/organizer-fields.php:71
+#: src/views/community/modules/venue.php:171
+msgid "Phone"
+msgstr "Puhelin"
+
+#: src/Tribe/Submission_Handler.php:416
+#: src/views/community/modules/organizer-fields.php:81
+#: src/views/community/modules/venue.php:182
+msgid "Website"
+msgstr "Verkkosivu"
+
+#: src/Tribe/Submission_Handler.php:420
+#: src/views/community/modules/organizer-fields.php:90
+msgid "Email"
+msgstr "Sähköposti"
+
+#: src/views/community/modules/custom.php:70
+#: src/views/community/modules/custom.php:99
+msgid "None"
+msgstr "Ei mitään"

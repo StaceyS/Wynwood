@@ -1,0 +1,48 @@
+// Core breakpoints
+    $phone: 320px;
+    $widephone: 680px;
+    $tablet: 768px;
+    $desktop: 940px;
+    $widedesktop: 1140px;
+
+// Assign a default size (for IE, or if the site is not responsive)
+    $default-viewport-size: $desktop;
+
+// Colors by NAME
+    $cyan: #00abc4;
+    $mint: #00ae8d;
+    $dk-mint: #2e5d51;
+    $orange: #f47920;
+    $magenta: #ed027e; // from branding? #ec017e
+    $ltest-grey: #dbdbdb;
+    $lt-grey: #ccc;
+    $md-grey: #4f4f4f; // #58585b
+    $dk-grey: #2d2d2d;
+    $black: #231f20;
+
+// Colors by USAGE
+    $body-copy-color: #333;
+
+    $link-color: #607890;
+    $link-hover-color: #036;
+    $link-tap-highlight-color: #FF5E99;
+
+    //$required-color: #CC0000;
+    //$error-color: #CC0000;
+
+    $input-color: #444;
+    $placeholder-color: #444;
+
+    $selection-highlight-color: #1fb9e7; 
+    $selection-text-color: #fff;
+
+// Font Stacks & Sizes
+    //$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    //$serif: Georgia, Times, "Times New Roman", serif;
+    $roboto-cond: 'Roboto Condensed', sans-serif;
+    $roboto-reg: 'Roboto', sans-serif;
+
+
+// Frills and dimensions
+    $default-corner-radius: 3px;
+    $default-shadow: 0.1em 0.1em 3px black;

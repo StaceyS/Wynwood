@@ -1,0 +1,219 @@
+/* COMMON STYLES
+------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  }
+
+h1 {
+    font: 300 42px/1.1 $roboto-cond;
+    text-transform: uppercase;
+    color: $black;
+    margin: 0 0 10px 0;
+    }
+
+h2 {
+  font: 400 26px/1.4 $roboto-cond;
+  letter-spacing: -.5px;
+  }
+
+h3 {
+  font: 400 18px/1.4 $roboto-cond;
+  text-transform: uppercase;
+  margin: 20px 0 10px;
+  }
+
+h4 {
+  font: 700 17px/1.4 $roboto-cond;
+  text-transform: uppercase;
+  }
+
+h5 {
+  font: 600 14px/1.4 $roboto-cond;
+  text-transform: uppercase;
+  }
+
+p {
+  font: 400 15px/1.6 $roboto-reg;
+  margin-bottom: 15px;
+  }
+
+a:hover, a:active {
+  outline: none;
+  }
+
+a, a:active, a:visited {
+  text-decoration: none;
+  }
+
+a:hover, a:focus {
+  }
+
+a:link {
+  -webkit-tap-highlight-color: $orange;
+  }
+
+blockquote {
+
+  }
+
+// Form Elements
+
+label {
+  font: 600 16px/1.4 $roboto-cond;
+  //text-transform: uppercase;
+  }
+
+select, input, textarea {
+  color: $input-color;
+  }
+
+input[type='text'] {
+  height: 20px;
+  padding: 5px;
+  }
+
+.half {
+  width: 50%;
+  }
+
+.third {
+  width: 33.33%;
+  }
+
+.fourth {
+  width: 25%;
+  }
+
+.fifth {
+  width: 20%;
+  }
+
+.section-marker {
+  height: 24px;
+  display: inline-block;
+  background: white;
+  padding: 4px 16px;
+  position: absolute;
+  top: -38px;
+  right: 0;
+  font: 18px/1.4 $roboto-cond;
+  color: white;
+  background: $md-grey;
+  text-transform: uppercase;
+  }
+
+.biz-cta-button,
+.simplefavorite-button {
+  display: inline-block;
+  width: 184px;
+  max-width: 90%;
+  height: 18px;
+  border: 2px solid $magenta;
+  padding: 6px 8px 4px 8px;
+  margin: 5px 0;
+  background: $magenta; 
+  font: 700 13px/1.4 $roboto-reg;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  transition: background .2s, color .2s;
+
+  i {
+    display: inline-block;
+    float: right;
+    font-size: 15px;
+
+    &.fa-compass {
+      font-size: 18px;
+      }
+    }
+
+  &:hover {
+    color: $magenta;
+    background: none;
+
+    i {color: $magenta;}
+    }
+  }
+
+.simplefavorite-button {
+  height: 32px;
+  }
+
+
+// Index Pages
+.filter-sidebar {
+  width: 18%;
+  padding: 15px 1.5%;
+  margin-top: 20px;
+  float: left;
+  background: $md-grey;
+  color: white;
+
+  a {
+    width: 94%;
+    display: inline-block;
+    color: white;
+    font: 700 13px/1.4 $roboto-reg;
+    text-transform: uppercase;
+    padding: 4px 3% 3px 3%;
+    transition: background .2s, color .2s;
+
+    &.active,
+    &:hover {
+      $base-color: $md-grey !default; // overwritten in each post type sass template
+      background: lighten($base-color, 20%);
+      color: $black;
+      }
+    }
+  }
+
+.learn-more-link {
+  display: inline-block;
+  color: $magenta;
+  font: 800 14px/1.4 $roboto-reg;
+  text-transform: uppercase;
+  margin-top: 10px;
+  transition: border-bottom .2s;
+
+  .fa-angle-right {
+    font-size: 15px;
+    padding-left: 2px;
+    }
+
+  &:hover {
+    border-bottom: 1px solid $magenta;
+    }
+  }
+
+.results {
+  width: 76%;
+  padding: 20px 0 50px 3%;
+  float: left;
+  }
+
+.results.list-view,
+.tribe-events-loop {
+
+  .single-listing,
+  .type-tribe_events {
+    width: 31.25%;
+    float: left;
+    padding: 10px 0 0 0;
+    margin: 0 3% 40px 0;
+    border-top: 3px solid $md-grey;
+
+
+    &:nth-child(3n) {
+      margin-right: 0;
+      }
+
+    h2, h2 a {
+      font-size: 19px;
+      line-height: 1.2;
+      color: $black;
+      margin: 5px 0;
+      }
+    }
+  }

@@ -1,0 +1,885 @@
+# Translation of Community Events in Bulgarian
+# This file is distributed under the same license as the Community Events package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-09-14 15:55:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Community Events\n"
+
+#: src/Tribe/Captcha/Recaptcha_V2.php:139
+msgctxt "failed recaptcha response validation"
+msgid "reCAPTCHA verification failed"
+msgstr ""
+
+#: src/admin-views/community-options-template.php:243
+msgid "Redirect for users who attempt to access the admin without permissions<br>Enter a full url to a post or page on your site<br>Leave blank for homepage"
+msgstr ""
+
+#: src/Tribe/Captcha/Recaptcha.php:247 src/Tribe/Captcha/Recaptcha_V2.php:125
+msgctxt "failed recaptcha response"
+msgid "reCAPTCHA failed unexpectedly"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:333
+msgid "%s %s is required"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:380 src/Tribe/Submission_Handler.php:412
+msgid "Name"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:392
+msgid "Province"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:396
+msgid "State"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:400
+msgid "Zip"
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:404
+msgid "URL"
+msgstr "URL"
+
+#: src/admin-views/community-options-template.php:78
+msgid "<p>Community Events enables users to submit events through a form on your site. Whether soliciting contributions from anonymous users or registered members, you have complete editorial control over what makes it onto the calendar.</p><p>Check out our <a href=\"%s\">Community Events New User Primer</a> for information on configuring and using the plugin."
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:146 src/Tribe/Submission_Handler.php:160
+msgid "The file is not an Image"
+msgstr "Файлът не е изображение"
+
+#: src/Tribe/Submission_Handler.php:163
+msgid "The image size is invalid"
+msgstr "Размерът на изображението е невалиден"
+
+#: src/Tribe/Submission_Handler.php:166
+msgid "The file is not a valid image"
+msgstr "Файлът не е валидно изображение"
+
+#: src/Tribe/Submission_Handler.php:487
+msgid "Invalid URL provided for %s"
+msgstr "Въведеният URL за %s е невалиден"
+
+#: src/admin-views/community-options-template.php:281
+msgid "Single geography mode"
+msgstr "Режим с опростена география"
+
+#: src/admin-views/community-options-template.php:282
+msgid "Removes the country, state/province and timezone selectors from the submission form"
+msgstr "Премахва държавата, щата/областта и часовата зона от формата за регистрация"
+
+#: src/Tribe/Event_Form.php:30
+msgid "Auto Draft"
+msgstr "Автоматична чернова"
+
+#: src/Tribe/Main.php:1028
+msgid "Delete Image"
+msgstr "Изтриване на снимка"
+
+#: src/views/community/event-list.php:73
+msgid "View past events"
+msgstr "Преглед на минали събития"
+
+#: src/views/community/event-list.php:77
+msgid "View upcoming events"
+msgstr "Преглед на предстоящи събития"
+
+#: src/Tribe/Main.php:1509
+msgid "The file you attempted to upload exceeded the maximum file size of %1$s."
+msgstr "Файлът, който се опитвате да качите, надвишава максимално допустимия размер от %1$s."
+
+#: src/views/community/modules/cost.php:62
+msgctxt "Currency symbol position"
+msgid "Before cost"
+msgstr "Преди цената"
+
+#: src/views/community/modules/cost.php:65
+msgctxt "Currency symbol position"
+msgid "After cost"
+msgstr "След цената"
+
+#: src/views/community/modules/datepickers.php:94
+msgid "Timezone:"
+msgstr "Часова зона:"
+
+#: src/views/community/modules/image.php:49
+msgid "Images that are not png, jpg, or gif will not be uploaded. Images may not exceed %1$s in size."
+msgstr "Не е позволено качването на картинки във формат различен от png, jpg и gif. Размера на файловете не може да превишава %1$s."
+
+#. Plugin Name of the plugin/theme
+msgid "The Events Calendar: Community Events"
+msgstr "The Events Calendar: Community Events"
+
+#. Description of the plugin/theme
+msgid "Community Events is an add-on providing additional functionality to the open source plugin The Events Calendar. Empower users to submit and manage their events on your website. <a href=\"http://tri.be/shop/wordpress-community-events/?utm_campaign=in-app&utm_source=docblock&utm_medium=plugin-community\">Check out the full feature list</a>. Need more features? Peruse our selection of <a href=\"http://tri.be/products/?utm_campaign=in-app&utm_source=docblock&utm_medium=plugin-community\" target=\"_blank\">plugins</a>."
+msgstr "Community Events е добавка, която осигурява допълнителна функционалност към проекта с отворен код The Events Calendar. Осигурете възможност на потребителите си да изпращат и/или редактират техните събития на вашия уебсайт. <a href=\"http://tri.be/shop/wordpress-community-events/?utm_campaign=in-app&utm_source=docblock&utm_medium=plugin-community\">Към пълният списък с възможности на добавката</a>. Имате нужда от повече функции? Разгледайте нашето портфолио с <a href=\"http://tri.be/products/?utm_campaign=in-app&utm_source=docblock&utm_medium=plugin-community\" target=\"_blank\">разширения</a>."
+
+#. Author of the plugin/theme
+msgid "Modern Tribe, Inc."
+msgstr "Modern Tribe, Inc."
+
+#. Author URI of the plugin/theme
+msgid "http://m.tri.be/21"
+msgstr "http://m.tri.be/21"
+
+#: src/Tribe/Modules/Taxonomy_Block.php:87
+msgid "more"
+msgstr "още"
+
+#: src/views/community/modules/taxonomy.php:30
+msgid "%s Categories:"
+msgstr "%s Категории:"
+
+#: src/Tribe/Submission_Handler.php:384
+#: src/views/community/modules/venue.php:93
+msgid "Address"
+msgstr "Адрес"
+
+#: src/Tribe/Submission_Handler.php:388
+#: src/views/community/modules/venue.php:104
+msgid "City"
+msgstr "Град"
+
+#: src/views/community/modules/venue.php:114
+msgid "Country"
+msgstr "Страна"
+
+#: src/views/community/modules/venue.php:140
+msgid "State or Province"
+msgstr "Щат или област"
+
+#: src/views/community/modules/venue.php:146
+msgid "Select a State"
+msgstr "Избор на щат"
+
+#: src/views/community/modules/venue.php:160
+msgid "Postal Code"
+msgstr "Пощенски код"
+
+#: src/views/community/modules/venue.php:211
+msgid "Show Google Maps Link"
+msgstr "Показвай линк към Google карти"
+
+#: src/views/community/modules/venue.php:198
+msgid "Show Google Map"
+msgstr "Показвай Google Карта"
+
+#: src/views/community/modules/website.php:37
+msgid "%s Website"
+msgstr "%s Уебсайт"
+
+#: src/views/community/modules/website.php:43
+msgid "URL:"
+msgstr "URL:"
+
+#: tribe-community-events.php:84
+msgid "The Events Calendar"
+msgstr "The Events Calendar"
+
+#: tribe-community-events.php:85
+msgid "To begin using The Events Calendar: Community Events, please install the latest version of <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events Calendar</a>."
+msgstr "За да започнете да използвате The Events Calendar: Community Events, моля инсталирайте най-новата версия на <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events Calendar</a>."
+
+#: vendor/wp-router/WP_Route.class.php:36
+msgid "Missing %s"
+msgstr "Липсващ %s"
+
+#: vendor/wp-router/WP_Route.class.php:63
+msgid "Property not found: %s."
+msgstr "Записа не е намерен: %s."
+
+#: vendor/wp-router/WP_Route.class.php:77
+msgid "Invalid value for %s. Value may not be empty."
+msgstr "Невалидна стойност за %s. Полето не може да остане празно."
+
+#: vendor/wp-router/WP_Route.class.php:80
+msgid "Invalid value for %1$s: %2$s. Value must be an array."
+msgstr "Невалидна стойност за %1$s: %2$s. Стойността трябва да бъде масив."
+
+#: vendor/wp-router/WP_Route.class.php:250
+msgid "You are not authorized to access this page"
+msgstr "Нямате достъп до тази страница"
+
+#: vendor/wp-router/WP_Route.class.php:251
+msgid "Access Denied"
+msgstr "Достъпът отказан"
+
+#: vendor/wp-router/WP_Router_Page.class.php:74
+msgid "WP Router Placeholder Page"
+msgstr ""
+
+#: vendor/wp-router/WP_Router_Utility.class.php:49
+msgid "%1$s requires WordPress %2$s or higher and PHP %3$s or higher."
+msgstr "%1$s изисква WordPress %2$s или по-нова версия и PHP %3$s или по-нова версия."
+
+#: src/Tribe/Captcha/Abstract_Captcha.php:143
+msgid "Invalid value for the Anti-Spam Check"
+msgstr "Невалидна стойност за Anti Spam проверката"
+
+#: src/Tribe/Captcha/Recaptcha.php:20
+msgid "reCAPTCHA API Keys"
+msgstr "reCAPTCHA API Ключове"
+
+#: src/Tribe/Captcha/Recaptcha.php:24
+msgid "Provide reCAPTCHA API keys for both fields to enable reCAPTCHA on your community events form."
+msgstr "Въведете reCAPTCHA API ключове в двете полета, за да активирате reCAPTCHA на формата за добавяне на събития."
+
+#: src/Tribe/Captcha/Recaptcha.php:24
+msgid "Note: reCAPTCHA only appears for users who are not logged in."
+msgstr "Забележка: reCAPTCHA се появява само на потребители, които не са вписани."
+
+#: src/Tribe/Captcha/Recaptcha.php:28
+msgid "Site Key"
+msgstr "Site Key"
+
+#: src/Tribe/Captcha/Recaptcha.php:29
+msgid "Get your Site Key at %s"
+msgstr "Вземете своя Site Key на %s"
+
+#: src/Tribe/Captcha/Recaptcha.php:38
+msgid "Secret Key"
+msgstr "Secret Key"
+
+#: src/Tribe/Captcha/Recaptcha.php:39
+msgid "Get your Secret Key at %s"
+msgstr "Вземете своя Secret Key на %s"
+
+#: src/Tribe/Main.php:2684
+msgid "edit"
+msgstr "edit"
+
+#: src/Tribe/Main.php:2685 src/admin-views/community-options-template.php:303
+msgid "add"
+msgstr "add"
+
+#: src/Tribe/Main.php:2686
+msgid "delete"
+msgstr "delete"
+
+#: src/Tribe/Main.php:2687 src/admin-views/community-options-template.php:305
+msgid "list"
+msgstr "list"
+
+#: src/Tribe/Main.php:2689
+msgid "venue"
+msgstr "venue"
+
+#: src/Tribe/Main.php:2690
+msgid "organizer"
+msgstr "organizer"
+
+#: src/Tribe/Main.php:2691
+msgid "event"
+msgstr "event"
+
+#: src/Tribe/Main.php:534 src/Tribe/Main.php:1050
+msgid "Edit a Venue"
+msgstr "Редакция на Място"
+
+#: src/Tribe/Main.php:553 src/Tribe/Main.php:1051
+msgid "Edit an Organizer"
+msgstr "Редакция на Организатор"
+
+#: src/Tribe/Main.php:571 src/Tribe/Main.php:1049
+msgid "Edit an Event"
+msgstr "Редакция на Събитие"
+
+#: src/Tribe/Main.php:590
+msgid "Redirect"
+msgstr "Препращане"
+
+#: src/Tribe/Main.php:605 src/Tribe/Main.php:1160
+msgid "Submit an Event"
+msgstr "Изпращане на Събитие"
+
+#: src/Tribe/Main.php:631 src/Tribe/Main.php:1042
+msgid "Remove an Event"
+msgstr "Премахване на Събитие"
+
+#: src/Tribe/Main.php:647 src/Tribe/Main.php:1138
+#: src/admin-views/community-options-template.php:195
+msgid "My Events"
+msgstr "Моите събития"
+
+#: src/Tribe/Main.php:731
+msgid "Not found."
+msgstr "Не е намерено."
+
+#: src/Tribe/Main.php:881
+msgid "Community Events requires non-default (pretty) permalinks to be enabled or the [tribe_community_events] shortcode to exist on a page."
+msgstr "Community Events изисква да бъдат активирани pretty permalinks, което е различно от настройката по подразбиране. Друг вариант е да вмъкнете shortcode [tribe_community_events] в страница."
+
+#: src/Tribe/Main.php:965
+msgid "Delete"
+msgstr "Изтриване"
+
+#: src/Tribe/Main.php:966
+msgid "Are you sure?"
+msgstr "Сигурни ли сте?"
+
+#: src/Tribe/Main.php:969
+msgid "Delete All"
+msgstr "Изтрий всички"
+
+#: src/Tribe/Main.php:970
+msgid "Are you sure you want to permanently delete all instances of this recurring event?"
+msgstr "Сигурни ли сте, че искате да изтриете завинаги всички бъдещи повторения на това събитие?"
+
+#: src/Tribe/Main.php:972
+msgid "Are you sure you want to permanently delete this instance of a recurring event?"
+msgstr "Сигурни ли сте, че искате да изтриете завинаги това събитие, от поредицата повтарящи се събития?"
+
+#: src/Tribe/Main.php:1043
+msgid "Remove a Venue"
+msgstr "Премахване на Място"
+
+#: src/Tribe/Main.php:1044
+msgid "Remove an Organizer"
+msgstr "Премахване на Организатор"
+
+#: src/Tribe/Main.php:1045 src/Tribe/Main.php:1052
+msgid "Unknown Post Type"
+msgstr "Неизвестен тип публикация"
+
+#: src/Tribe/Main.php:1198
+msgid "This shortcode can only be used in pages."
+msgstr "Този пряк път може да се използва само в страници."
+
+#: src/Tribe/Main.php:1333
+msgid "Community Events Submission"
+msgstr "Покупка на Community Events"
+
+#: src/Tribe/Main.php:1425
+msgid "Trashed Event #"
+msgstr "В кошчето е изпратено събитие #"
+
+#: src/Tribe/Main.php:1428
+msgid "Deleted Event #"
+msgstr "Изтрито събитие #"
+
+#: src/Tribe/Main.php:1431
+msgid "This event (#%s) does not appear to exist."
+msgstr "Събитието (#%s) не съществува."
+
+#: src/Tribe/Main.php:1434
+msgid "You do not have permission to delete this event."
+msgstr "Нямате права да изтрието това събитие."
+
+#: src/Tribe/Main.php:1445
+msgctxt "As in \"go back to previous page\""
+msgid "Back"
+msgstr "Назад"
+
+#: src/Tribe/Main.php:1480
+msgid "%sWarning:%s You are editing a recurring %s. All changes will be applied to the entire series."
+msgstr "%sВнимание:%s Редактирате повтарящо се %s. Промените ще бъдат приложени на всички събития от серията."
+
+#: src/Tribe/Main.php:1489
+msgid "%s not found."
+msgstr "%s не е намерен."
+
+#: src/Tribe/Main.php:1497
+msgid "Please log in first."
+msgstr "Моля, първо се впишете."
+
+#: src/Tribe/Main.php:1503
+msgid "You do not have permission to edit this %s."
+msgstr "Нямате права да редактирате този %s."
+
+#: src/Tribe/Main.php:1639 src/views/community/event-list.php:138
+msgid "View"
+msgstr "Преглед"
+
+#: src/Tribe/Main.php:1645 src/views/community/event-list.php:144
+msgid "Edit"
+msgstr "Редакция"
+
+#: src/Tribe/Main.php:1704
+msgid "Venue not found."
+msgstr "Мястото не е намерено."
+
+#: src/Tribe/Main.php:1709
+msgid "Please log in to edit this venue"
+msgstr "Моля, впишете се, за да видите това Място"
+
+#: src/Tribe/Main.php:1713
+msgid "You do not have permission to edit this venue."
+msgstr "Нямате права да редактирате това Място."
+
+#: src/Tribe/Main.php:1736
+msgid "Venue updated."
+msgstr "Мястото е обновено."
+
+#: src/Tribe/Main.php:1746
+msgid "Venue name cannot be blank."
+msgstr "Името на Мястото не може да остане празно."
+
+#: src/Tribe/Main.php:1750
+msgid "There was a problem updating your venue, please try again."
+msgstr "Възникна проблем при обновяването на това Място, моля опитайте отново."
+
+#: src/Tribe/Main.php:1787
+msgid "Organizer not found."
+msgstr "Организатора не е намерен."
+
+#: src/Tribe/Main.php:1791
+msgid "Please log in to edit this organizer"
+msgstr "Моля, впишете се, за да редактирате този организатор."
+
+#: src/Tribe/Main.php:1795
+msgid "You do not have permission to edit this organizer."
+msgstr "Нямате права да редактирате този Организатор."
+
+#: src/Tribe/Main.php:1817
+msgid "Organizer updated."
+msgstr "Организатора е обновен."
+
+#: src/Tribe/Main.php:1828
+msgid "Organizer name cannot be blank."
+msgstr "Името на Организатора не може да остане празно."
+
+#: src/Tribe/Main.php:1832
+msgid "There was a problem updating this organizer, please try again."
+msgstr "Възникна проблем при обновяването на Организатора, моля опитайте отново."
+
+#: src/Tribe/Main.php:1914
+msgid "Please log in to view your events"
+msgstr "Моля, впишете се, за да видите събитията си"
+
+#: src/Tribe/Main.php:1955
+msgid "Fake Title"
+msgstr "Фалшиво заглавие"
+
+#: src/Tribe/Modules/Taxonomy_Block.php:109
+msgid "Show all categories ( %d )"
+msgstr "Покажи всички категории ( %d )"
+
+#: src/Tribe/Main.php:2141
+msgid "The requested page number was not found."
+msgstr "Търсения номер на страница не е открит."
+
+#: src/Tribe/Main.php:2385
+msgid "Community"
+msgstr "Общност"
+
+#: src/Tribe/Main.php:2402
+msgid "This template is also used for Community Events."
+msgstr "Този шаблон се използва и за Community Events."
+
+#: src/Tribe/Main.php:2617
+msgid "Community: Submit %s"
+msgstr "Общност: Изпращане на %s"
+
+#: src/Tribe/Main.php:2625
+msgid "Community: My %s"
+msgstr "Общност: Моите %s"
+
+#: src/Tribe/Main.php:2634 src/Tribe/Templates.php:47
+msgid "Community Events"
+msgstr "Community Events"
+
+#: src/Tribe/Main.php:2650
+msgid "Settings"
+msgstr "Настройки"
+
+#: src/Tribe/Submission_Handler.php:68
+msgid "%s updated. "
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:69 src/Tribe/Submission_Handler.php:88
+msgid "Submit another %s"
+msgstr "Изпращане на ново %s"
+
+#: src/Tribe/Submission_Handler.php:72
+msgid "There was a problem saving your %s, please try again."
+msgstr "Възникна проблем при записването на вашето %s, моля опитайте отново."
+
+#: src/Tribe/Submission_Handler.php:87
+msgid "%s submitted."
+msgstr ""
+
+#: src/Tribe/Submission_Handler.php:91
+msgid "There was a problem submitting your %s, please try again."
+msgstr "Възникна проблем при изпращането на вашето %s, моля опитайте отново."
+
+#: src/Tribe/Submission_Handler.php:191
+msgid "%s is required"
+msgstr "%s е задължително"
+
+#: src/Tribe/Submission_Handler.php:345
+msgid "%s Title"
+msgstr "%s Заглавие"
+
+#: src/Tribe/Submission_Handler.php:348
+msgid "%s Description"
+msgstr "%s Описание"
+
+#: src/Tribe/Submission_Handler.php:456
+msgid "Invalid value for %s"
+msgstr "Невалидна стойност за %s"
+
+#: src/Tribe/Submission_Handler.php:467
+msgid "Images must be png, jpg, or gif"
+msgstr "Картинките трябва да са png, jpg или gif"
+
+#: src/Tribe/Submission_Handler.php:509
+msgid "Image exceeded the allowed file size"
+msgstr "Картинката превишава максимално допустимия размер"
+
+#: src/Tribe/Submission_Handler.php:514
+msgid "The image failed to upload successfully"
+msgstr "Неуспешно качване на картинката"
+
+#: src/Tribe/Submission_Handler.php:518
+msgid "The uploaded image could not be processed"
+msgstr "Качената картинка не може да бъде обработена"
+
+#: src/admin-views/community-options-template.php:42
+msgid "Placed in the Trash"
+msgstr "Преместени в кошчето"
+
+#: src/admin-views/community-options-template.php:43
+msgid "Permanently Deleted"
+msgstr "Изтрити завинаги"
+
+#: src/admin-views/community-options-template.php:50
+msgid "No Default"
+msgstr "Няма стойност по подразбиране"
+
+#: src/admin-views/community-options-template.php:58
+msgid "Use New Venue/No Default"
+msgstr "Използвай ново Място/Няма по подразбиране"
+
+#: src/admin-views/community-options-template.php:73
+msgid "Community Events Settings"
+msgstr "Настройки на Community Events"
+
+#: src/admin-views/community-options-template.php:88
+msgid "General"
+msgstr "Общи"
+
+#: src/admin-views/community-options-template.php:94
+msgid "Allow anonymous submissions"
+msgstr "Позволи анонимно добавяне"
+
+#: src/admin-views/community-options-template.php:95
+msgid "Check this box to allow users to submit events without having a WordPress account"
+msgstr "Сложете отметка, за да позволите на потребителите да изпращат събития без да имат WordPress регистрация"
+
+#: src/admin-views/community-options-template.php:103
+msgid "Use visual editor for event descriptions"
+msgstr "Използване на визуален редактор за описанията на събитията"
+
+#: src/admin-views/community-options-template.php:111
+msgid "Default status for submitted events"
+msgstr "Статус по подразбиране за изпратени събития"
+
+#: src/admin-views/community-options-template.php:121
+msgid "Community rewrite slug"
+msgstr "Промяна на пътя към Community Events"
+
+#: src/admin-views/community-options-template.php:125
+msgid "The slug used for building the community events URL - it is appended to the main events slug. Your current community events URLs are"
+msgstr "Пътят, използван за сглобяване на URL адреса към Community events - добавя се към адреса на каледара. В момента URL адреса към Community events e"
+
+#: src/admin-views/community-options-template.php:138
+msgid "Alerts"
+msgstr "Известия"
+
+#: src/admin-views/community-options-template.php:143
+msgid "Send an email alert when a new event is submitted"
+msgstr "Изпращане на email, когато е добавено ново събитие"
+
+#: src/admin-views/community-options-template.php:151
+msgid "Email addresses to be notified"
+msgstr "Email адрес за известяване"
+
+#: src/admin-views/community-options-template.php:154
+msgid "One address per line"
+msgstr "Един адрес на ред"
+
+#: src/admin-views/community-options-template.php:160
+msgid "Members"
+msgstr "Членове"
+
+#: src/admin-views/community-options-template.php:165
+msgid "Control the permissions for your logged in users. Allow them to:"
+msgstr "Управление на правата на вписани потребители. Позволете им да:"
+
+#: src/admin-views/community-options-template.php:170
+msgid "Edit their submissions"
+msgstr "Редактират изпратените от тях събития"
+
+#: src/admin-views/community-options-template.php:178
+msgid "Remove their submissions"
+msgstr "Изтриват изпратените от тях събития"
+
+#: src/admin-views/community-options-template.php:186
+msgid "Deleted events should be:"
+msgstr "Изтритите събития трябва да бъдат:"
+
+#: src/admin-views/community-options-template.php:200
+msgid "Events per page"
+msgstr "Събития на страница"
+
+#: src/admin-views/community-options-template.php:201
+msgid "This is the number of events displayed per page"
+msgstr "Брой показани събития на страница"
+
+#: src/admin-views/community-options-template.php:209
+msgid "Date/time format"
+msgstr "Формат на датата и часа"
+
+#: src/admin-views/community-options-template.php:210
+msgid "Help with date &amp; time formatting"
+msgstr "Помощ за форматирането на датата и часа"
+
+#: src/admin-views/community-options-template.php:218
+msgid "Access Control"
+msgstr "Контрол на достъпа"
+
+#: src/admin-views/community-options-template.php:223
+msgid "Block access to WordPress dashboard"
+msgstr "Блокиране на достъпа до таблото на WordPress "
+
+#: src/admin-views/community-options-template.php:224
+msgid "Also disables the admin bar"
+msgstr "Изключване на администраторската лента"
+
+#: src/admin-views/community-options-template.php:232
+msgid "Roles to block"
+msgstr "Блокиране на роли"
+
+#: src/admin-views/community-options-template.php:242
+msgid "Redirect URL"
+msgstr "Redirect URL"
+
+#: src/admin-views/community-options-template.php:253
+msgid "Form Defaults"
+msgstr "Стойности по подразбиране за формата за изпращане на събития"
+
+#: src/admin-views/community-options-template.php:259
+msgid "Default venue for submitted events"
+msgstr "Място по подразбиране при изпращане на събития"
+
+#: src/admin-views/community-options-template.php:270
+msgid "Default organizer for submitted events"
+msgstr "Организатор по подразбиране при изпращане на събития"
+
+#: src/functions/template-tags.php:492
+#: src/views/community/edit-organizer.php:33
+#: src/views/community/edit-venue.php:33
+msgid "(required)"
+msgstr "(задължително)"
+
+#: src/views/community/edit-event.php:38
+msgid "%s Title:"
+msgstr "%s Заглавие:"
+
+#: src/views/community/edit-event.php:49
+#: src/views/community/edit-organizer.php:43
+#: src/views/community/edit-venue.php:43
+msgid "%s Description:"
+msgstr "%s Описание:"
+
+#: src/views/community/edit-event.php:81
+#: src/views/community/edit-organizer.php:69
+#: src/views/community/edit-venue.php:69
+msgid "Update %s"
+msgstr "Обновяване %s"
+
+#: src/views/community/edit-event.php:83
+#: src/views/community/edit-organizer.php:69
+#: src/views/community/edit-venue.php:69
+msgid "Submit %s"
+msgstr "Изпращане %s"
+
+#: src/views/community/edit-organizer.php:32
+#: src/views/community/edit-venue.php:32
+msgid "%s Name:"
+msgstr "%s Име:"
+
+#: src/views/community/email-template.php:29
+msgid "%s Organizer"
+msgstr "%s Организатор"
+
+#: src/views/community/email-template.php:32
+msgid "%s Venue"
+msgstr "%s Място"
+
+#: src/views/community/email-template.php:35
+msgid "Description"
+msgstr "Описание"
+
+#: src/views/community/email-template.php:46
+msgid "Review %s"
+msgstr "Мнение за %s"
+
+#: src/views/community/email-template.php:48
+msgid "View %s"
+msgstr "Преглед на %s"
+
+#: src/views/community/event-list.php:28
+#: src/views/community/modules/delete.php:22
+msgid "Add New"
+msgstr "Добавяне"
+
+#: src/views/community/event-list.php:33
+msgid "Display"
+msgstr "Показване"
+
+#: src/views/community/event-list.php:48
+#: src/views/community/modules/delete.php:30
+#: src/views/community/modules/header-links.php:22
+msgid "Not"
+msgstr ""
+
+#: src/views/community/event-list.php:51
+#: src/views/community/modules/delete.php:31
+#: src/views/community/modules/header-links.php:22
+msgid "Log Out"
+msgstr "Излизане"
+
+#: src/views/community/event-list.php:59
+msgid "There are no upcoming %s in your queue."
+msgstr "Няма предстоящи %s на вашата опашка."
+
+#: src/views/community/event-list.php:92
+msgid "Status"
+msgstr "Статус"
+
+#: src/views/community/event-list.php:93
+msgid "Title"
+msgstr "Заглавие"
+
+#: src/views/community/event-list.php:96
+msgid "Category"
+msgstr "Категория"
+
+#: src/views/community/event-list.php:99
+msgid "Recurring?"
+msgstr "Повтарящо се събитие?"
+
+#: src/views/community/event-list.php:102
+msgid "Start Date"
+msgstr "Начална дата"
+
+#: src/views/community/event-list.php:103
+msgid "End Date"
+msgstr "Крайна дата"
+
+#: src/views/community/event-list.php:189
+msgid "Yes"
+msgstr "Да"
+
+#: src/views/community/event-list.php:191
+msgid "No"
+msgstr "Не"
+
+#: src/views/community/modules/captcha.php:31
+msgid "Anti-Spam Check"
+msgstr "Anti-Spam проверка"
+
+#: src/views/community/modules/cost.php:41
+msgid "%s Cost"
+msgstr "%s Цена"
+
+#: src/views/community/modules/cost.php:46
+msgid "Currency Symbol:"
+msgstr "Символ за валута:"
+
+#: src/views/community/modules/cost.php:71
+msgid "Cost:"
+msgstr "Цена:"
+
+#: src/views/community/modules/cost.php:77
+msgid "Leave blank to hide the field. Enter a 0 for %s that are free."
+msgstr "Оставете празно, за да скриете полето. Въведете 0 за безплатно %s."
+
+#: src/views/community/modules/custom.php:35
+msgid "Additional Fields"
+msgstr "Допълнителни полета"
+
+#: src/views/community/modules/custom.php:52
+msgctxt "custom field label"
+msgid "%s:"
+msgstr "%s:"
+
+#: src/views/community/modules/datepickers.php:48
+msgid "%s Time &amp; Date"
+msgstr "%s Час &amp; Дата"
+
+#: src/views/community/modules/datepickers.php:54
+msgid "You have changed the recurrence rules of this %1$s. Saving the %1$s will update all future %2$s.  If you did not mean to change all %2$s, then please refresh the page."
+msgstr "Променихте правилата за повтаряемост на това %1$s. Записването на промените на това %1$s ще презапише всички бъдещи %2$s. Ако не желаете да променяте всички %2$s, моля, презаредете страницата."
+
+#: src/views/community/modules/datepickers.php:59
+msgid "All day %s?"
+msgstr "Целодневно %s?"
+
+#: src/views/community/modules/datepickers.php:67
+msgid "Start Date / Time:"
+msgstr "Начална дата/час:"
+
+#: src/views/community/modules/datepickers.php:71
+#: src/views/community/modules/datepickers.php:84
+msgid "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+
+#: src/views/community/modules/datepickers.php:80
+msgid "End Date / Time:"
+msgstr "Крайна дата/час:"
+
+#: src/views/community/modules/delete.php:26
+#: src/views/community/modules/header-links.php:21
+msgid "My %s"
+msgstr "Моите %s"
+
+#: src/views/community/modules/image.php:31
+msgid "%s Image"
+msgstr "%s Снимка"
+
+#: src/views/community/modules/image.php:37
+msgid "Upload:"
+msgstr "Качване:"
+
+#: src/views/community/modules/organizer-fields.php:47
+#: src/views/community/modules/organizer.php:34
+#: src/views/community/modules/venue.php:69
+msgid "%s Details"
+msgstr "Подробности за %s"
+
+#: src/views/community/modules/organizer-fields.php:59
+#: src/views/community/modules/venue.php:81
+msgid "%s Name"
+msgstr "%s Име"
+
+#: src/Tribe/Submission_Handler.php:408
+#: src/views/community/modules/organizer-fields.php:71
+#: src/views/community/modules/venue.php:171
+msgid "Phone"
+msgstr "Телефон"
+
+#: src/Tribe/Submission_Handler.php:416
+#: src/views/community/modules/organizer-fields.php:81
+#: src/views/community/modules/venue.php:182
+msgid "Website"
+msgstr "Уеб сайт"
+
+#: src/Tribe/Submission_Handler.php:420
+#: src/views/community/modules/organizer-fields.php:90
+msgid "Email"
+msgstr "Email"
+
+#: src/views/community/modules/custom.php:70
+#: src/views/community/modules/custom.php:99
+msgid "None"
+msgstr "Няма"

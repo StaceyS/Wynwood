@@ -1,0 +1,257 @@
+/* LAYOUT
+------------------------- */
+html, body {
+	width: 100%;
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	}
+
+.header {
+	width: 100%;
+	height: 90px;
+	background: $md-grey;
+	color: white;
+	position: relative;
+	z-index: 5;
+
+	a {color: white;}
+	}
+
+.header-logo {
+	width: auto;
+	height: auto;
+	display: inline-block;
+	float: left;
+	padding: 0;
+	position: relative;
+
+	img {
+		width: auto;
+		height: 113px;		
+		}
+	}
+
+
+#menu-primary-nav {
+	height: 100%;
+
+	li.menu-item {
+		display: block;
+		width: 13%;
+		height: 100%;
+		float: left;
+		position: relative;
+		padding: 0 1%;
+		font: 24px/1.4 $roboto-cond;
+		text-transform: uppercase;
+
+		a {	
+			display: inline-block;
+			height: 60%;
+			padding: 20% 0 0 0;
+			position: relative;
+
+			&:after {
+				display: inline-block;
+				content: "";
+				width: 13px;
+				height: 5px;
+				background: url(../images/layout/arrow_down_white.svg) no-repeat center center;
+				background-size: 100% auto;
+				position: absolute;
+				top: 50%;
+				right: -30px;
+				} 
+
+			}
+
+		&:hover {cursor: pointer;}
+
+		&:hover > .sub-menu {
+			display: block;
+			opacity: 1;
+			}
+		}
+
+	.sub-menu {
+		display: none;
+		width: 100%;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background: $magenta;
+		opacity: 0;
+		transition: opacity .5s;
+
+		li {
+			width: 90%;
+			height: auto;
+			font: 18px/1.3 $roboto-cond;
+			text-transform: uppercase;
+			padding: 13px 5% 10px 5%;
+			border: none;
+			border-bottom: 1px solid rgba(white,.25);
+			transition: background .2s;
+
+			a {
+				padding: 0;
+
+				&:after {display: none;}
+				}
+			&:hover {
+				background: darken($magenta, 10%);
+				}
+			}
+
+		&:before {
+			display: inline-block;
+			content: "";
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: -18px;
+			left: 20px;
+			border-left: 18px solid transparent;
+			border-right: 18px solid transparent;
+			border-bottom: 18px solid $magenta;
+			}
+		}
+	}
+
+.hero-img {
+	width: 100%;
+	height: 40%;
+	position: relative;
+	z-index: 0;
+	background-color: $lt-grey;
+	}
+
+.main-content {
+	width: 81%;
+	margin: 0 auto;
+	position: relative;
+	top: -10%;
+	z-index: 2;
+	background: white;
+	padding: 30px 2%;
+	border-top: 6px solid $md-grey;
+	}
+
+.footer {
+	background: $md-grey;
+	clear: both;
+	color: white;
+	padding: 50px 5%;
+
+	section {
+		width: 20%;
+		float: left;
+		}
+
+	.branding {
+		text-align: left;
+		
+		p {
+			opacity: .3;
+			clear: both;
+			}
+		}
+
+	.social-links {
+		h3 {
+			border-bottom: 1px solid $lt-grey;
+			padding-bottom: 4px;
+			margin-top: 0;
+			}
+	
+		a {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			border: 1px solid $lt-grey;
+			background: $lt-grey;
+			border-radius: 30px;
+			text-align: center;
+			color: $md-grey;
+			font-size: 16px;
+			line-height: 2;
+			margin: 0 5px 0 0;
+			transition: background .2s, color .2s;
+
+			&:hover {
+				background: $md-grey;
+				color: $lt-grey;
+				}
+			}
+		}
+
+	.email-signup {
+		margin-top: 30px;
+		}
+
+	#mc_embed_signup {
+
+		.email {
+			width: 64%;
+			border: 1px solid $lt-grey;
+			background: #efefef;
+			padding: 6px;
+			}
+
+		#mc-embedded-subscribe {
+			width: 28%;
+			background: $magenta; 
+			border: 2px solid $magenta;
+			color: white;
+			padding: 6px 0;
+			font: 11px/1.4 $roboto-reg;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			transition: color .2s, background .2s;
+
+			&:hover {
+				color: $magenta;
+				background: none;
+				}
+			}
+		}
+	}
+
+#menu-footer-nav {
+	width: 60%;
+	float: left;
+
+	.menu-item {
+		width: 25%;
+		float: left;
+		
+		a {
+			display: inline-block;
+			font: 700 14px/1.3 $roboto-reg;
+			text-transform: uppercase;
+			color: white;
+			transition: color .2s;
+			margin: 0 0 4px 0;
+
+			&:hover {
+				color: $dk-grey;
+				}
+			}
+
+		.sub-menu {
+
+			.menu-item {
+				width: 100%;
+
+				a {
+					font-size: 13px;
+					text-transform: none;
+					font-weight: 400;
+					}
+				}
+			}
+		}
+	}
+
+
