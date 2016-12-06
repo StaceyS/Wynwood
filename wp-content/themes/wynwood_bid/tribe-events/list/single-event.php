@@ -3,6 +3,7 @@
  * List View Single Event
  * This file contains one event in the list view
  *
+ * CUSTOMIZED FOR WYNWOOD:
  * This template overrides plugins/tribe-events/list/single-event.php
  *
  * @package TribeEventsCalendar

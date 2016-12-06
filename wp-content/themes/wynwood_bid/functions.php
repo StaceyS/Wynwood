@@ -210,12 +210,25 @@ add_action('wp_tag_cloud', 'html5boilerplate_tag_cloud');
 
 // ======================== GOOGLE MAPS API ======================== 
 
-function my_acf_google_map_api( $api ){
-	
+function my_acf_google_map_api( $api ){	
 	$api['key'] = 'AIzaSyB1h91LTtrATtXoLYLAwmUP1Sz3g6pheQ0';
-	
 	return $api;
-	
 }
 
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+// ======================== ACF FRONT END EDITOR ======================== 
+
+/**
+ * Deregister admin styles on the front end when using ACF forms
+ *
+ * ACF makes sure that admin styles are queued when it loads its head, this almost always causes problems with front end forms and isn't needed for our purpose
+ */
+add_action( 'wp_print_styles', 'custom_acf_deregister_styles', 100 );
+function custom_acf_deregister_styles()
+{
+    if (! is_admin() )
+    {
+        wp_deregister_style( 'wp-admin' );
+    }
+}

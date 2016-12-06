@@ -319,3 +319,115 @@
 		}
 	}
 
+
+// Edit Profile (Front End Editor)
+
+.toggle-profile-edit {
+	border: 2px solid $orange;
+	background: lighten($orange, 40%);
+	padding:  0 20px 20px 20px;
+	margin-bottom: 30px;
+
+	a {
+		display: inline-block;
+		@extend .learn-more-link;
+		background: white;
+		color: $orange;
+		border: 2px solid $orange;
+		padding: 5px 10px;
+		margin: 0 5px 0 0;
+		transition: background .2s, color .2s;
+
+		&:hover {
+			border: 2px solid $orange;
+			background: $orange;
+			color: white;
+			}
+		}
+	}
+
+.edit-biz-details-form {
+	//border-top: 4px dashed $lt-grey;
+	display: none;
+	padding-top: 30px;
+	clear: both;
+
+	h2 {
+		@extend h1;
+		}
+
+	input[type="submit"] {
+		display: inline-block;
+	    border: 2px solid $magenta;
+	    padding: 10px 20px 8px;
+	    margin: 5px 0;
+	    background: #ed027e;
+	    font: 700 15px/1.4 $roboto-reg;
+	    color: white;
+	    text-transform: uppercase;
+	    text-align: left;
+	    transition: background .2s, color .2s;
+
+	    &:hover {
+	    	background: white;
+	    	color: $magenta;
+		    }
+		}
+
+	p.label {
+		font: italic 400 13px/1.4 $roboto-reg !important;
+		color: $md-grey !important;
+
+		label {
+			font: 700 18px/1.4 $roboto-cond !important;
+			color: $black !important;
+			}
+		}
+
+	.acf_postbox .field input[type="text"], 
+	.acf_postbox .field input[type="number"], 
+	.acf_postbox .field input[type="password"], 
+	.acf_postbox .field input[type="email"] {
+		width: 84%;
+	    font: 400 15px/1.6 $roboto-reg;
+	    color: $black;
+		}
+
+	#acf-field-phone {
+		width: 200px;
+		}
+
+	.acf_postbox .field textarea {
+		    width: 95%;
+		    padding: 20px;
+		    font: 400 15px/1.6 $roboto-reg;
+		    color: $black;
+		    border: 1px solid $lt-grey;
+		}
+
+	.acf_postbox .field select {
+		height: 36px;
+		}
+
+	.repeater > table {
+		width: 100%;
+		}
+
+	table.acf-input-table {
+		box-shadow: none;
+		// border: 1px solid $lt-grey;
+
+		table {
+			border: 1px solid $lt-grey;
+			}
+		}
+
+
+	table.acf-input-table > thead > tr > th,
+	table.acf-input-table > tbody > tr > td {
+		border-right: none;
+		}
+
+
+	} // end .edit-biz-details-form 
+

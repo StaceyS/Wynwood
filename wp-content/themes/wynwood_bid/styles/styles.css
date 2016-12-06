@@ -24,7 +24,9 @@ STYLESHEET COMPILED USING SASS
 ---------------------------------------------------------- */
 /* HTML5 Boilerplate
 ------------------------- */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, .tribe-event-date-start, h6, p, blockquote, pre,
+html, body, div, span, object, iframe, h1, .edit-biz-details-form h2, h2, h3, .tribe-events-meta-group-details dt, h4, h5, .tribe-events-loop .type-tribe_events, h6, p, .tribe-events-sub-nav a, .event-details-section .tribe-events-venue-details, .event-details-section .tribe-event-schedule-details,
+.event-details-section .tribe-events-meta-group-venue,
+.event-details-section .tribe-events-event-cost, .tribe-events-meta-group-details, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
@@ -175,10 +177,10 @@ caption, th {
 
 /* COMMON STYLES
 ------------------------- */
-h1, h2, h3, h4, h5, .tribe-event-date-start, h6 {
+h1, .edit-biz-details-form h2, h2, h3, .tribe-events-meta-group-details dt, h4, h5, .tribe-events-loop .type-tribe_events, h6 {
   font-weight: normal; }
 
-h1 {
+h1, .edit-biz-details-form h2 {
   font: 300 42px/1.1 "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   color: #231f20;
@@ -188,7 +190,7 @@ h2 {
   font: 400 26px/1.4 "Roboto Condensed", sans-serif;
   letter-spacing: -.5px; }
 
-h3 {
+h3, .tribe-events-meta-group-details dt {
   font: 400 18px/1.4 "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   margin: 20px 0 10px; }
@@ -197,11 +199,13 @@ h4 {
   font: 700 17px/1.4 "Roboto Condensed", sans-serif;
   text-transform: uppercase; }
 
-h5, .tribe-event-date-start {
+h5, .tribe-events-loop .type-tribe_events {
   font: 600 14px/1.4 "Roboto Condensed", sans-serif;
   text-transform: uppercase; }
 
-p {
+p, .tribe-events-sub-nav a, .event-details-section .tribe-events-venue-details, .event-details-section .tribe-event-schedule-details,
+.event-details-section .tribe-events-meta-group-venue,
+.event-details-section .tribe-events-event-cost, .tribe-events-meta-group-details {
   font: 400 15px/1.6 "Roboto", sans-serif;
   margin-bottom: 15px; }
 
@@ -223,6 +227,13 @@ select, input, textarea {
 input[type='text'] {
   height: 20px;
   padding: 5px; }
+
+#tinymce p, #tinymce .tribe-events-sub-nav a, .tribe-events-sub-nav #tinymce a, #tinymce .event-details-section .tribe-events-venue-details, .event-details-section #tinymce .tribe-events-venue-details, #tinymce .event-details-section .tribe-event-schedule-details, .event-details-section #tinymce .tribe-event-schedule-details,
+#tinymce .event-details-section .tribe-events-meta-group-venue,
+.event-details-section #tinymce .tribe-events-meta-group-venue,
+#tinymce .event-details-section .tribe-events-event-cost,
+.event-details-section #tinymce .tribe-events-event-cost, #tinymce .tribe-events-meta-group-details {
+  padding: 15px 30px !important; }
 
 .half {
   width: 50%; }
@@ -302,17 +313,17 @@ input[type='text'] {
       background: #828282;
       color: #231f20; }
 
-.learn-more-link {
+.learn-more-link, .toggle-profile-edit a {
   display: inline-block;
   color: #ed027e;
   font: 800 14px/1.4 "Roboto", sans-serif;
   text-transform: uppercase;
   margin-top: 10px;
   transition: border-bottom .2s; }
-  .learn-more-link .fa-angle-right {
+  .learn-more-link .fa-angle-right, .toggle-profile-edit a .fa-angle-right {
     font-size: 15px;
     padding-left: 2px; }
-  .learn-more-link:hover {
+  .learn-more-link:hover, .toggle-profile-edit a:hover {
     border-bottom: 1px solid #ed027e; }
 
 .results {
@@ -469,10 +480,14 @@ html, body {
     float: left; }
   .footer .branding {
     text-align: left; }
-    .footer .branding p {
+    .footer .branding p, .footer .branding .tribe-events-sub-nav a, .tribe-events-sub-nav .footer .branding a, .footer .branding .event-details-section .tribe-events-venue-details, .event-details-section .footer .branding .tribe-events-venue-details, .footer .branding .event-details-section .tribe-event-schedule-details, .event-details-section .footer .branding .tribe-event-schedule-details,
+    .footer .branding .event-details-section .tribe-events-meta-group-venue,
+    .event-details-section .footer .branding .tribe-events-meta-group-venue,
+    .footer .branding .event-details-section .tribe-events-event-cost,
+    .event-details-section .footer .branding .tribe-events-event-cost, .footer .branding .tribe-events-meta-group-details {
       opacity: .3;
       clear: both; }
-  .footer .social-links h3 {
+  .footer .social-links h3, .footer .social-links .tribe-events-meta-group-details dt, .tribe-events-meta-group-details .footer .social-links dt {
     border-bottom: 1px solid #ccc;
     padding-bottom: 4px;
     margin-top: 0; }
@@ -572,12 +587,16 @@ html, body {
   font: 900 24px/1.3 "Roboto", sans-serif;
   text-transform: uppercase;
   color: #ed027e; }
-.splash h3 {
+.splash h3, .splash .tribe-events-meta-group-details dt, .tribe-events-meta-group-details .splash dt {
   font: 700 15px/1.4 "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   color: #4f4f4f;
   margin-bottom: 8px; }
-.splash p {
+.splash p, .splash .tribe-events-sub-nav a, .tribe-events-sub-nav .splash a, .splash .event-details-section .tribe-events-venue-details, .event-details-section .splash .tribe-events-venue-details, .splash .event-details-section .tribe-event-schedule-details, .event-details-section .splash .tribe-event-schedule-details,
+.splash .event-details-section .tribe-events-meta-group-venue,
+.event-details-section .splash .tribe-events-meta-group-venue,
+.splash .event-details-section .tribe-events-event-cost,
+.event-details-section .splash .tribe-events-event-cost, .splash .tribe-events-meta-group-details {
   font: 400 16px/1.5 "Roboto Condensed", sans-serif;
   text-transform: uppercase; }
 .splash section {
@@ -629,7 +648,11 @@ html, body {
   bottom: 0;
   text-align: right;
   color: white; }
-  .splash .footer p {
+  .splash .footer p, .splash .footer .tribe-events-sub-nav a, .tribe-events-sub-nav .splash .footer a, .splash .footer .event-details-section .tribe-events-venue-details, .event-details-section .splash .footer .tribe-events-venue-details, .splash .footer .event-details-section .tribe-event-schedule-details, .event-details-section .splash .footer .tribe-event-schedule-details,
+  .splash .footer .event-details-section .tribe-events-meta-group-venue,
+  .event-details-section .splash .footer .tribe-events-meta-group-venue,
+  .splash .footer .event-details-section .tribe-events-event-cost,
+  .event-details-section .splash .footer .tribe-events-event-cost, .splash .footer .tribe-events-meta-group-details {
     font: 300 12px/1.4 "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     text-transform: none;
@@ -679,7 +702,7 @@ html, body {
 .main-content.business-index .filter-sidebar a.active, .main-content.business-index .filter-sidebar a:hover {
   background: #15ffd3; }
 
-.results.list-view h5, .results.list-view .tribe-event-date-start {
+.results.list-view h5, .results.list-view .tribe-events-loop .type-tribe_events, .tribe-events-loop .results.list-view .type-tribe_events {
   display: inline-block;
   height: 20px;
   color: #00ae8d; }
@@ -737,12 +760,16 @@ html, body {
     width: 27%;
     float: left;
     padding-left: 3%; }
-    .summary-card-details .biz-detail-sidebar h3 {
+    .summary-card-details .biz-detail-sidebar h3, .summary-card-details .biz-detail-sidebar .tribe-events-meta-group-details dt, .tribe-events-meta-group-details .summary-card-details .biz-detail-sidebar dt {
       text-transform: none;
       font-weight: 600;
       margin: 10px 0 0 0;
       font-size: 16px; }
-    .summary-card-details .biz-detail-sidebar p {
+    .summary-card-details .biz-detail-sidebar p, .summary-card-details .biz-detail-sidebar .tribe-events-sub-nav a, .tribe-events-sub-nav .summary-card-details .biz-detail-sidebar a, .summary-card-details .biz-detail-sidebar .event-details-section .tribe-events-venue-details, .event-details-section .summary-card-details .biz-detail-sidebar .tribe-events-venue-details, .summary-card-details .biz-detail-sidebar .event-details-section .tribe-event-schedule-details, .event-details-section .summary-card-details .biz-detail-sidebar .tribe-event-schedule-details,
+    .summary-card-details .biz-detail-sidebar .event-details-section .tribe-events-meta-group-venue,
+    .event-details-section .summary-card-details .biz-detail-sidebar .tribe-events-meta-group-venue,
+    .summary-card-details .biz-detail-sidebar .event-details-section .tribe-events-event-cost,
+    .event-details-section .summary-card-details .biz-detail-sidebar .tribe-events-event-cost, .summary-card-details .biz-detail-sidebar .tribe-events-meta-group-details {
       font: 400 14px/1.5 "Roboto", sans-serif;
       margin-bottom: 8px; }
     .summary-card-details .biz-detail-sidebar .biz-full-address:hover {
@@ -756,7 +783,11 @@ html, body {
     width: 62%;
     float: right;
     padding-right: 3%; }
-    .summary-card-details .biz-summary p {
+    .summary-card-details .biz-summary p, .summary-card-details .biz-summary .tribe-events-sub-nav a, .tribe-events-sub-nav .summary-card-details .biz-summary a, .summary-card-details .biz-summary .event-details-section .tribe-events-venue-details, .event-details-section .summary-card-details .biz-summary .tribe-events-venue-details, .summary-card-details .biz-summary .event-details-section .tribe-event-schedule-details, .event-details-section .summary-card-details .biz-summary .tribe-event-schedule-details,
+    .summary-card-details .biz-summary .event-details-section .tribe-events-meta-group-venue,
+    .event-details-section .summary-card-details .biz-summary .tribe-events-meta-group-venue,
+    .summary-card-details .biz-summary .event-details-section .tribe-events-event-cost,
+    .event-details-section .summary-card-details .biz-summary .tribe-events-event-cost, .summary-card-details .biz-summary .tribe-events-meta-group-details {
       font: 400 14px/1.5 "Roboto", sans-serif; }
 
 .biz-full-address {
@@ -769,23 +800,35 @@ html, body {
   width: 55%;
   float: left;
   padding-right: 5%; }
-  .biz-details h1 {
+  .biz-details h1, .biz-details .edit-biz-details-form h2, .edit-biz-details-form .biz-details h2 {
     margin-top: 20px; }
 
 .biz-detail-sidebar {
   width: 40%;
   float: right; }
-  .biz-detail-sidebar h3 {
+  .biz-detail-sidebar h3, .biz-detail-sidebar .tribe-events-meta-group-details dt, .tribe-events-meta-group-details .biz-detail-sidebar dt {
     text-transform: none;
     font-weight: 700;
     margin: 20px 0 0 0; }
-  .biz-detail-sidebar p, .biz-detail-sidebar li {
+  .biz-detail-sidebar p, .biz-detail-sidebar .tribe-events-sub-nav a, .tribe-events-sub-nav .biz-detail-sidebar a, .biz-detail-sidebar .event-details-section .tribe-events-venue-details, .event-details-section .biz-detail-sidebar .tribe-events-venue-details, .biz-detail-sidebar .event-details-section .tribe-event-schedule-details, .event-details-section .biz-detail-sidebar .tribe-event-schedule-details,
+  .biz-detail-sidebar .event-details-section .tribe-events-meta-group-venue,
+  .event-details-section .biz-detail-sidebar .tribe-events-meta-group-venue,
+  .biz-detail-sidebar .event-details-section .tribe-events-event-cost,
+  .event-details-section .biz-detail-sidebar .tribe-events-event-cost, .biz-detail-sidebar .tribe-events-meta-group-details, .biz-detail-sidebar li {
     font: 400 15px/1.6 "Roboto", sans-serif; }
-    .biz-detail-sidebar p a, .biz-detail-sidebar li a {
+    .biz-detail-sidebar p a, .biz-detail-sidebar .tribe-events-sub-nav a a, .tribe-events-sub-nav .biz-detail-sidebar a a, .biz-detail-sidebar .event-details-section .tribe-events-venue-details a, .event-details-section .biz-detail-sidebar .tribe-events-venue-details a, .biz-detail-sidebar .event-details-section .tribe-event-schedule-details a, .event-details-section .biz-detail-sidebar .tribe-event-schedule-details a,
+    .biz-detail-sidebar .event-details-section .tribe-events-meta-group-venue a,
+    .event-details-section .biz-detail-sidebar .tribe-events-meta-group-venue a,
+    .biz-detail-sidebar .event-details-section .tribe-events-event-cost a,
+    .event-details-section .biz-detail-sidebar .tribe-events-event-cost a, .biz-detail-sidebar .tribe-events-meta-group-details a, .biz-detail-sidebar li a {
       color: #ed027e;
       border-bottom: 1px solid rgba(237, 2, 126, 0);
       transition: border-color .2s; }
-      .biz-detail-sidebar p a:hover, .biz-detail-sidebar li a:hover {
+      .biz-detail-sidebar p a:hover, .biz-detail-sidebar .tribe-events-sub-nav a a:hover, .tribe-events-sub-nav .biz-detail-sidebar a a:hover, .biz-detail-sidebar .event-details-section .tribe-events-venue-details a:hover, .event-details-section .biz-detail-sidebar .tribe-events-venue-details a:hover, .biz-detail-sidebar .event-details-section .tribe-event-schedule-details a:hover, .event-details-section .biz-detail-sidebar .tribe-event-schedule-details a:hover,
+      .biz-detail-sidebar .event-details-section .tribe-events-meta-group-venue a:hover,
+      .event-details-section .biz-detail-sidebar .tribe-events-meta-group-venue a:hover,
+      .biz-detail-sidebar .event-details-section .tribe-events-event-cost a:hover,
+      .event-details-section .biz-detail-sidebar .tribe-events-event-cost a:hover, .biz-detail-sidebar .tribe-events-meta-group-details a:hover, .biz-detail-sidebar li a:hover {
         border-color: #ed027e; }
   .biz-detail-sidebar .social-icons {
     margin-left: -10px; }
@@ -806,7 +849,11 @@ html, body {
   color: white; }
   .deal-wrapper h4 {
     color: #2e5d51; }
-  .deal-wrapper p {
+  .deal-wrapper p, .deal-wrapper .tribe-events-sub-nav a, .tribe-events-sub-nav .deal-wrapper a, .deal-wrapper .event-details-section .tribe-events-venue-details, .event-details-section .deal-wrapper .tribe-events-venue-details, .deal-wrapper .event-details-section .tribe-event-schedule-details, .event-details-section .deal-wrapper .tribe-event-schedule-details,
+  .deal-wrapper .event-details-section .tribe-events-meta-group-venue,
+  .event-details-section .deal-wrapper .tribe-events-meta-group-venue,
+  .deal-wrapper .event-details-section .tribe-events-event-cost,
+  .event-details-section .deal-wrapper .tribe-events-event-cost, .deal-wrapper .tribe-events-meta-group-details {
     font-size: 14px;
     line-height: 1.3; }
   .deal-wrapper a {
@@ -836,6 +883,83 @@ html, body {
   .biz-full-address:hover {
     color: #ed027e !important; }
 
+.toggle-profile-edit {
+  border: 2px solid #f47920;
+  background: #feeee2;
+  padding: 0 20px 20px 20px;
+  margin-bottom: 30px; }
+  .toggle-profile-edit a {
+    display: inline-block;
+    background: white;
+    color: #f47920;
+    border: 2px solid #f47920;
+    padding: 5px 10px;
+    margin: 0 5px 0 0;
+    transition: background .2s, color .2s; }
+    .toggle-profile-edit a:hover {
+      border: 2px solid #f47920;
+      background: #f47920;
+      color: white; }
+
+.edit-biz-details-form {
+  display: none;
+  padding-top: 30px;
+  clear: both; }
+  .edit-biz-details-form input[type="submit"] {
+    display: inline-block;
+    border: 2px solid #ed027e;
+    padding: 10px 20px 8px;
+    margin: 5px 0;
+    background: #ed027e;
+    font: 700 15px/1.4 "Roboto", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    transition: background .2s, color .2s; }
+    .edit-biz-details-form input[type="submit"]:hover {
+      background: white;
+      color: #ed027e; }
+  .edit-biz-details-form p.label, .edit-biz-details-form .tribe-events-sub-nav a.label, .tribe-events-sub-nav .edit-biz-details-form a.label, .edit-biz-details-form .event-details-section .label.tribe-events-venue-details, .event-details-section .edit-biz-details-form .label.tribe-events-venue-details, .edit-biz-details-form .event-details-section .label.tribe-event-schedule-details, .event-details-section .edit-biz-details-form .label.tribe-event-schedule-details,
+  .edit-biz-details-form .event-details-section .label.tribe-events-meta-group-venue,
+  .event-details-section .edit-biz-details-form .label.tribe-events-meta-group-venue,
+  .edit-biz-details-form .event-details-section .label.tribe-events-event-cost,
+  .event-details-section .edit-biz-details-form .label.tribe-events-event-cost, .edit-biz-details-form .label.tribe-events-meta-group-details {
+    font: italic 400 13px/1.4 "Roboto", sans-serif !important;
+    color: #4f4f4f !important; }
+    .edit-biz-details-form p.label label, .edit-biz-details-form .tribe-events-sub-nav a.label label, .tribe-events-sub-nav .edit-biz-details-form a.label label, .edit-biz-details-form .event-details-section .label.tribe-events-venue-details label, .event-details-section .edit-biz-details-form .label.tribe-events-venue-details label, .edit-biz-details-form .event-details-section .label.tribe-event-schedule-details label, .event-details-section .edit-biz-details-form .label.tribe-event-schedule-details label,
+    .edit-biz-details-form .event-details-section .label.tribe-events-meta-group-venue label,
+    .event-details-section .edit-biz-details-form .label.tribe-events-meta-group-venue label,
+    .edit-biz-details-form .event-details-section .label.tribe-events-event-cost label,
+    .event-details-section .edit-biz-details-form .label.tribe-events-event-cost label, .edit-biz-details-form .label.tribe-events-meta-group-details label {
+      font: 700 18px/1.4 "Roboto Condensed", sans-serif !important;
+      color: #231f20 !important; }
+  .edit-biz-details-form .acf_postbox .field input[type="text"],
+  .edit-biz-details-form .acf_postbox .field input[type="number"],
+  .edit-biz-details-form .acf_postbox .field input[type="password"],
+  .edit-biz-details-form .acf_postbox .field input[type="email"] {
+    width: 84%;
+    font: 400 15px/1.6 "Roboto", sans-serif;
+    color: #231f20; }
+  .edit-biz-details-form #acf-field-phone {
+    width: 200px; }
+  .edit-biz-details-form .acf_postbox .field textarea {
+    width: 95%;
+    padding: 20px;
+    font: 400 15px/1.6 "Roboto", sans-serif;
+    color: #231f20;
+    border: 1px solid #ccc; }
+  .edit-biz-details-form .acf_postbox .field select {
+    height: 36px; }
+  .edit-biz-details-form .repeater > table {
+    width: 100%; }
+  .edit-biz-details-form table.acf-input-table {
+    box-shadow: none; }
+    .edit-biz-details-form table.acf-input-table table {
+      border: 1px solid #ccc; }
+  .edit-biz-details-form table.acf-input-table > thead > tr > th,
+  .edit-biz-details-form table.acf-input-table > tbody > tr > td {
+    border-right: none; }
+
 /* EVENTS LIST
 ------------------------- */
 .main-content.events-index {
@@ -843,6 +967,8 @@ html, body {
   .main-content.events-index .section-marker,
   .main-content.events-index .filter-sidebar {
     background: #00abc4; }
+  .main-content.events-index .filter-sidebar a.active, .main-content.events-index .filter-sidebar a:hover {
+    background: #2be4ff; }
 
 .tribe-bar-views-select,
 .tribe-bar-views-inner label {
@@ -884,11 +1010,13 @@ html, body {
       #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a.active-view, #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a:hover {
         background-color: #00ae8d; }
     #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-views-option-list a {
-      background: #00abc4 url(../images/layout/grid_view.svg) no-repeat center 3px;
+      background: #ccc url(../images/layout/grid_view.svg) no-repeat center 3px;
       background-size: 80% auto; }
     #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-views-option-month a {
-      background: #00abc4 url(../images/layout/calendar_view.svg) no-repeat center 10px;
+      background: #ccc url(../images/layout/calendar_view.svg) no-repeat center 10px;
       background-size: 45% auto; }
+    #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-active a {
+      background-color: #00abc4; }
 
 .tribe-bar-filters {
   background: #ccc;
@@ -946,6 +1074,28 @@ html, body {
   #tribe-events-content h2.tribe-events-page-title {
     text-align: left; }
 
+.tribe-events-back {
+  display: none; }
+  .tribe-events-back a {
+    color: #00abc4;
+    transition: color .2s; }
+    .tribe-events-back a:hover {
+      color: #ed027e; }
+
+.tribe-events-sub-nav {
+  text-align: left !important; }
+  .tribe-events-sub-nav a {
+    color: #00abc4;
+    transition: color .2s; }
+    .tribe-events-sub-nav a:hover {
+      color: #ed027e; }
+
+#tribe-events-header .tribe-events-sub-nav {
+  display: none; }
+
+#tribe-events-footer {
+  clear: both; }
+
 .tribe-events-calendar thead {
   background: #4f4f4f;
   color: white; }
@@ -967,27 +1117,135 @@ html, body {
     .tribe-events-month-event-title a:hover {
       color: #ed027e; }
 
-.tribe-events-loop .type-tribe_events {
-  border-top-color: #00abc4;
-  display: inline-block; }
-.tribe-events-loop .tribe-events-event-image figcaption {
+.tribe-events-list h2.tribe-events-page-title {
   display: none; }
-.tribe-events-loop .tribe-events-event-image img {
-  width: 100%;
-  height: auto; }
+
+.tribe-events-loop {
+  clear: none !important; }
+  .tribe-events-loop .type-tribe_events {
+    display: inline-block;
+    border-top-color: #00abc4;
+    color: #00abc4;
+    padding-top: 10px; }
+    .tribe-events-loop .type-tribe_events.tribe-events-first {
+      padding-top: 10px !important; }
+  .tribe-events-loop .tribe-events-event-image figure {
+    max-height: 250px;
+    overflow: hidden; }
+  .tribe-events-loop .tribe-events-event-image figcaption {
+    display: none; }
+  .tribe-events-loop .tribe-events-event-image img {
+    width: 100%;
+    height: auto; }
+    .tribe-events-loop .tribe-events-event-image img:hover {
+      opacity: .85; }
 
 .recurringinfo {
   display: none !important; }
 
 .tribe-event-date-start {
-  display: inline-block;
-  color: #00abc4;
   padding-top: 10px; }
 
 .tribe-events-list-event-title {
-  margin: 0 0 10px 0 !important; }
+  margin: 2px 0 10px 0 !important;
+  text-transform: none; }
   .tribe-events-list-event-title a {
     color: inherit; }
+
+/* EVENTS DETAIL PAGE
+------------------------- */
+.event-summary-section {
+  margin: 30px 0; }
+  .event-summary-section .tribe-events-event-image {
+    width: 45%;
+    float: left;
+    margin-right: 2.5%; }
+    .event-summary-section .tribe-events-event-image a {
+      display: inline-block;
+      width: 100%; }
+    .event-summary-section .tribe-events-event-image figure {
+      width: 100%; }
+    .event-summary-section .tribe-events-event-image figcaption {
+      display: none; }
+    .event-summary-section .tribe-events-event-image img {
+      width: 100%;
+      height: auto; }
+
+.tribe-events-single-event-description {
+  width: 50%;
+  float: right; }
+
+.tribe-events-cal-links {
+  width: 50%;
+  float: right;
+  display: inline-block; }
+  .tribe-events-cal-links .tribe-events-button {
+    margin-right: 2.5%; }
+
+.event-details-section {
+  position: relative;
+  margin-top: 0; }
+  .event-details-section h2 {
+    margin-bottom: 10px; }
+  .event-details-section h3, .event-details-section .tribe-events-meta-group-details dt, .tribe-events-meta-group-details .event-details-section dt {
+    font: 700 17px/1.4 "Roboto Condensed", sans-serif;
+    text-transform: none; }
+  .event-details-section .tribe-events-venue-details a {
+    color: inherit;
+    transition: color .2s; }
+    .event-details-section .tribe-events-venue-details a:hover {
+      color: #ed027e; }
+  .event-details-section .tribe-events-venue-details .tribe-address {
+    display: block; }
+  .event-details-section .tribe-events-meta-group-venue dt {
+    display: none; }
+  .event-details-section .tribe-events-meta-group-venue a {
+    color: #ed027e;
+    border-bottom: 1px solid rgba(237, 2, 126, 0);
+    transition: border-bottom-color .2s; }
+    .event-details-section .tribe-events-meta-group-venue a:hover {
+      border-bottom-color: #ed027e; }
+  .event-details-section .tribe-venue-tel {
+    margin-top: 10px; }
+
+.tribe-address {
+  font-style: normal; }
+
+.tribe-events-event-meta {
+  width: 30%;
+  padding: 20px 2.5% 0 0; }
+  .tribe-events-event-meta:first-child {
+    border-top: none !important;
+    margin-top: -75px; }
+
+.tribe-events-meta-group-details {
+  margin-bottom: 0; }
+  .tribe-events-meta-group-details a {
+    color: #ed027e;
+    border-bottom: 1px solid rgba(237, 2, 126, 0);
+    transition: border-bottom-color .2s; }
+    .tribe-events-meta-group-details a:hover {
+      border-bottom-color: #ed027e; }
+  .tribe-events-meta-group-details dt {
+    margin: 20px 0 0 0; }
+  .tribe-events-meta-group-details dl {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0 0 0;
+    margin-top: -100px;
+    background: white; }
+
+.tribe-events-meta-group-organizer {
+  display: none; }
+
+.tribe-events-venue-map {
+  width: 65%;
+  height: 300px;
+  background: #aaa;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 0; }
 
 /* 08 =UTILITY
 ------------------------- */
@@ -1081,14 +1339,18 @@ html, body {
 
   @page {
     margin: 0.5cm; }
-  p,
+  p, .tribe-events-sub-nav a, .event-details-section .tribe-events-venue-details, .event-details-section .tribe-event-schedule-details,
+  .event-details-section .tribe-events-meta-group-venue,
+  .event-details-section .tribe-events-event-cost, .tribe-events-meta-group-details,
   h2,
-  h3 {
+  h3,
+  .tribe-events-meta-group-details dt {
     orphans: 3;
     widows: 3; }
 
   h2,
-  h3 {
+  h3,
+  .tribe-events-meta-group-details dt {
     page-break-after: avoid; }
 
   #sidebar,
@@ -1157,7 +1419,11 @@ html, body {
     color: #4f4f4f;
     text-align: center;
     padding: 20px 0; }
-    .splash .footer p {
+    .splash .footer p, .splash .footer .tribe-events-sub-nav a, .tribe-events-sub-nav .splash .footer a, .splash .footer .event-details-section .tribe-events-venue-details, .event-details-section .splash .footer .tribe-events-venue-details, .splash .footer .event-details-section .tribe-event-schedule-details, .event-details-section .splash .footer .tribe-event-schedule-details,
+    .splash .footer .event-details-section .tribe-events-meta-group-venue,
+    .event-details-section .splash .footer .tribe-events-meta-group-venue,
+    .splash .footer .event-details-section .tribe-events-event-cost,
+    .event-details-section .splash .footer .tribe-events-event-cost, .splash .footer .tribe-events-meta-group-details {
       opacity: 1; } }
 /* CROSS-BROWSER
 ------------------------- */

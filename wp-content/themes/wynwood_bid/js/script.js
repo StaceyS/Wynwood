@@ -85,7 +85,7 @@ jQuery(document).ready(function($){
 	    });
 
 	    // show info window when marker is clicked
-	    google.maps.event.addListener(marker, 'click', function() {
+	    	google.maps.event.addListener(marker, 'click', function() {
 	      infowindow.open( map, marker );
 	    });
 	  }
@@ -181,6 +181,21 @@ jQuery(document).ready(function($){
 	$('.grid-map-view-toggle button').click(function(){
 		$('.active-view').toggleClass('active-view');
 		$(this).toggleClass('active-view');
+		});
+
+
+	// Toggle 'Edit/Preview' Profile
+	$('.edit-profile').click(function(){
+		if ($(this).hasClass('now-editing')) {
+			$(this).text('Edit Business Details');
+			}
+		else {
+			$(this).text('Preview Business Listing');
+			}
+			$('.biz-details-wrapper').fadeToggle();
+			$('.edit-biz-details-form').fadeToggle();
+			$(this).toggleClass('now-editing');
+			return false;
 		});
 
 
