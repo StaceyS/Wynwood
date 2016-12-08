@@ -1,4 +1,4 @@
-// * BUSINESS DIRECTORY 
+// *  BUSINESS DIRECTORY 
 // -----------------------
 
 .main-content.biz-detail-pg,
@@ -356,23 +356,23 @@
 		@extend h1;
 		}
 
-	input[type="submit"] {
-		display: inline-block;
-	    border: 2px solid $magenta;
-	    padding: 10px 20px 8px;
-	    margin: 5px 0;
-	    background: #ed027e;
-	    font: 700 15px/1.4 $roboto-reg;
-	    color: white;
-	    text-transform: uppercase;
-	    text-align: left;
-	    transition: background .2s, color .2s;
+	// input[type="submit"] {
+	// 	display: inline-block;
+	//     border: 2px solid $magenta;
+	//     padding: 10px 20px 8px;
+	//     margin: 5px 0;
+	//     background: #ed027e;
+	//     font: 700 15px/1.4 $roboto-reg;
+	//     color: white;
+	//     text-transform: uppercase;
+	//     text-align: left;
+	//     transition: background .2s, color .2s;
 
-	    &:hover {
-	    	background: white;
-	    	color: $magenta;
-		    }
-		}
+	//     &:hover {
+	//     	background: white;
+	//     	color: $magenta;
+	// 	    }
+	// 	}
 
 	p.label {
 		font: italic 400 13px/1.4 $roboto-reg !important;

@@ -53,7 +53,7 @@
 					//echo 'Username: ' . $current_user->user_login . '<br />';
 			    	echo "<div class='toggle-profile-edit'>";
 					echo "<h3>Hi " . $current_user->user_login . ", Youre Logged In.</h3>";
-					echo "<a class='edit-profile' href='#'>Edit Business Details</a>";
+					echo "<a class='edit-profile' href='#'>Edit Business Details</a> <a href='http://localhost:8888/community/business-owner-dashboard/'>Account Dashboard</a>";
 					echo "</div>"; 
 					}
 				else {

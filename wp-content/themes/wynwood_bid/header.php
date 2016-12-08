@@ -60,5 +60,11 @@
   				'sort_column' => 'menu_order',
   				'container' => 'false' 
   			) ); ?>
+
+      <div class="utility-nav">
+        <a class="login-link" title="User Login/Logout" href="http://localhost:8888/community/login/"><img src="<?php bloginfo('template_url'); ?>/images/icons/icon_user.svg"></a><span class="v-rule"></span><a class="search-icon" title="Search the Wynwood website" href="#"><img src="<?php bloginfo('template_url'); ?>/images/icons/icon_search.svg"></a>        
+      </div>
+      <?php dynamic_sidebar('Utility Nav'); ?>
+
     </header>
         

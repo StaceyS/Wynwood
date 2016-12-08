@@ -1,0 +1,35 @@
+/*  USER ACCOUNTS / LOGIN
+------------------------- */
+.user-login {
+	text-align: center;
+	padding-top: 60px;
+	border-top-color: $magenta;
+	
+	h1 {
+		//color: $magenta;
+
+		a {color: inherit;}
+		}
+
+	// Theme My Login plugin files
+	.tml {
+		margin: auto;
+
+		input[type="text"],
+		input[type="password"]{
+			height: 40px;
+			padding: 10px;
+			}
+
+		input[type="submit"]{display: block;}
+
+		.tml-rememberme-wrap {
+			display: none; 			// **** Fix this styling before launch
+			}
+		}
+
+	// Hide Favorite button on account/login screens
+	.simplefavorite-button {
+		display: none;
+		}
+	}

@@ -1,26 +1,12 @@
 /*
 STYLESHEET COMPILED USING SASS
 */
-/* MIXINS
+/*  GLOBAL VARIABLES
+------------------------- */
+/*  MIXINS
 ------------------------- */
 /* ----------------------------------------------------------
-    Client Name CSS
-    Managed by: Stacey Simmons Design
-
-    TABLE OF CONTENT
-
-    - HTML5 Boilerplate
-    - COMMON STYLES
-    - LAYOUT
-    - HOMEPAGE 
-    - SUBPAGES
-    - SIDEBAR
-    - FRAMEWORK
-    - UTILITY
-    - PRINT
-    - RESPONSIVE
-    - CROSS-BROWSER
-        
+    WYNWOOD BID - Custom Theme CSS        
 ---------------------------------------------------------- */
 /* HTML5 Boilerplate
 ------------------------- */
@@ -175,7 +161,7 @@ button {
 caption, th {
   text-align: left; }
 
-/* COMMON STYLES
+/*  COMMON STYLES
 ------------------------- */
 h1, .edit-biz-details-form h2, h2, h3, .tribe-events-meta-group-details dt, h4, h5, .tribe-events-loop .type-tribe_events, h6 {
   font-weight: normal; }
@@ -222,11 +208,31 @@ label {
   font: 600 16px/1.4 "Roboto Condensed", sans-serif; }
 
 select, input, textarea {
-  color: #444; }
+  color: #444;
+  -webkit-appearance: none;
+  box-shadow: none !important; }
 
-input[type='text'] {
+input[type='text'],
+input[type='password'] {
   height: 20px;
-  padding: 5px; }
+  padding: 10px;
+  box-shadow: none !important;
+  border: 1px solid #ccc; }
+
+input[type="submit"] {
+  display: inline-block;
+  border: 2px solid #ed027e;
+  padding: 10px 20px 8px;
+  margin: 5px 0;
+  background: #ed027e;
+  font: 700 15px/1.4 "Roboto", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  transition: background .2s, color .2s; }
+  input[type="submit"]:hover {
+    background: white;
+    color: #ed027e; }
 
 #tinymce p, #tinymce .tribe-events-sub-nav a, .tribe-events-sub-nav #tinymce a, #tinymce .event-details-section .tribe-events-venue-details, .event-details-section #tinymce .tribe-events-venue-details, #tinymce .event-details-section .tribe-event-schedule-details, .event-details-section #tinymce .tribe-event-schedule-details,
 #tinymce .event-details-section .tribe-events-meta-group-venue,
@@ -357,7 +363,7 @@ input[type='text'] {
     color: #231f20;
     margin: 5px 0; }
 
-/* LAYOUT
+/*  LAYOUT
 ------------------------- */
 html, body {
   width: 100%;
@@ -452,6 +458,61 @@ html, body {
       border-left: 18px solid transparent;
       border-right: 18px solid transparent;
       border-bottom: 18px solid #ed027e; }
+
+.utility-nav {
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  right: 6%;
+  top: 0; }
+  .utility-nav a {
+    display: inline-block;
+    width: 60px;
+    height: 100%;
+    text-align: center; }
+    .utility-nav a img {
+      display: inline-block;
+      width: auto;
+      height: 30%;
+      position: relative;
+      top: 35%; }
+  .utility-nav .v-rule {
+    display: inline-block;
+    width: 1px;
+    height: 30%;
+    border-right: 1px solid #ccc;
+    position: relative;
+    top: 35%; }
+
+#searchform {
+  display: none;
+  width: 70%;
+  height: 90px;
+  position: absolute;
+  top: 90px;
+  right: 0; }
+  #searchform div {
+    width: 100%;
+    height: 100%; }
+    #searchform div input[type="search"] {
+      height: 90px;
+      width: 100%;
+      padding: 20px 2.5%;
+      font: 300 24px/1.4 "Roboto", sans-serif;
+      color: white;
+      border: none;
+      background: #ed027e; }
+      #searchform div input[type="search"]::-webkit-input-placeholder, #searchform div input[type="search"]::-moz-placeholder, #searchform div input[type="search"]:-ms-input-placeholder {
+        color: white; }
+
+.utility-nav-option {
+  border: 1px solid orange; }
+  .utility-nav-option .login-link,
+  .utility-nav-option .search-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid blue; }
 
 .hero-img {
   width: 100%;
@@ -550,7 +611,7 @@ html, body {
         text-transform: none;
         font-weight: 400; }
 
-/* HOMEPAGE
+/*  HOMEPAGE
 ------------------------- */
 .splash-bg {
   width: 80%;
@@ -658,7 +719,7 @@ html, body {
     text-transform: none;
     opacity: .5; }
 
-/* 05 =SUBPAGES
+/*   SUBPAGES
 ------------------------- */
 .main-content.biz-detail-pg,
 .main-content.business-index {
@@ -905,20 +966,6 @@ html, body {
   display: none;
   padding-top: 30px;
   clear: both; }
-  .edit-biz-details-form input[type="submit"] {
-    display: inline-block;
-    border: 2px solid #ed027e;
-    padding: 10px 20px 8px;
-    margin: 5px 0;
-    background: #ed027e;
-    font: 700 15px/1.4 "Roboto", sans-serif;
-    color: white;
-    text-transform: uppercase;
-    text-align: left;
-    transition: background .2s, color .2s; }
-    .edit-biz-details-form input[type="submit"]:hover {
-      background: white;
-      color: #ed027e; }
   .edit-biz-details-form p.label, .edit-biz-details-form .tribe-events-sub-nav a.label, .tribe-events-sub-nav .edit-biz-details-form a.label, .edit-biz-details-form .event-details-section .label.tribe-events-venue-details, .event-details-section .edit-biz-details-form .label.tribe-events-venue-details, .edit-biz-details-form .event-details-section .label.tribe-event-schedule-details, .event-details-section .edit-biz-details-form .label.tribe-event-schedule-details,
   .edit-biz-details-form .event-details-section .label.tribe-events-meta-group-venue,
   .event-details-section .edit-biz-details-form .label.tribe-events-meta-group-venue,
@@ -960,7 +1007,7 @@ html, body {
   .edit-biz-details-form table.acf-input-table > tbody > tr > td {
     border-right: none; }
 
-/* EVENTS LIST
+/*  EVENTS LIST
 ------------------------- */
 .main-content.events-index {
   border-top-color: #00abc4; }
@@ -1247,7 +1294,28 @@ html, body {
   right: 0;
   top: 0; }
 
-/* 08 =UTILITY
+/*  USER ACCOUNTS / LOGIN
+------------------------- */
+.user-login {
+  text-align: center;
+  padding-top: 60px;
+  border-top-color: #ed027e; }
+  .user-login h1 a, .user-login .edit-biz-details-form h2 a, .edit-biz-details-form .user-login h2 a {
+    color: inherit; }
+  .user-login .tml {
+    margin: auto; }
+    .user-login .tml input[type="text"],
+    .user-login .tml input[type="password"] {
+      height: 40px;
+      padding: 10px; }
+    .user-login .tml input[type="submit"] {
+      display: block; }
+    .user-login .tml .tml-rememberme-wrap {
+      display: none; }
+  .user-login .simplefavorite-button {
+    display: none; }
+
+/*   UTILITY
 ------------------------- */
 .floatl {
   float: left;
@@ -1303,7 +1371,7 @@ html, body {
   color: #fff;
   text-shadow: none; }
 
-/* PRINT
+/*  PRINT
 ------------------------- */
 @media print {
   * {
@@ -1378,9 +1446,9 @@ html, body {
     clear: both;
     /*keeps images from piling up next to each other*/
     margin: 0 10px 10px 0; } }
-/* RESPONSIVE - TABLET
+/*  RESPONSIVE - TABLET
 ------------------------- */
-/* RESPONSIVE - MOBILE
+/*  RESPONSIVE - MOBILE
 ------------------------- */
 @media (max-width: 680px) {
   .splash .splash-bg {
@@ -1425,7 +1493,7 @@ html, body {
     .splash .footer .event-details-section .tribe-events-event-cost,
     .event-details-section .splash .footer .tribe-events-event-cost, .splash .footer .tribe-events-meta-group-details {
       opacity: 1; } }
-/* CROSS-BROWSER
+/*  CROSS-BROWSER
 ------------------------- */
 
 /*# sourceMappingURL=styles.css.map */

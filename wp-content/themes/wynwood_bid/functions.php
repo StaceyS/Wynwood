@@ -5,22 +5,29 @@
 
 // ======================== SIDEBARS ======================== 
 
-// Registers a widgetized sidebar and replaces default WordPress HTML code with a better HTML
+// Registers a widgetized header section
+register_sidebar(array(
+    'name' => 'Utility Nav',
+    'before_widget' => '',
+    'after_widget' => ''
+));
+
+// Registers a widgetized sidebar section
 register_sidebar(array(
     'name' => 'Sidebar',
     'before_widget' => '<section>',
     'after_widget' => '</section>',
     'before_title' => '<h2>',
-    'after_title' => '</h2>',
+    'after_title' => '</h2>'
 ));
 
-// Registers a widgetized sidebar and replaces default WordPress HTML code with a better HTML
+// Registers a widgetized footer section
 register_sidebar(array(
     'name' => 'Footer',
     'before_widget' => '<section>',
     'after_widget' => '</section>',
     'before_title' => '<h2>',
-    'after_title' => '</h2>',
+    'after_title' => '</h2>'
 ));
 
 
@@ -232,3 +239,9 @@ function custom_acf_deregister_styles()
         wp_deregister_style( 'wp-admin' );
     }
 }
+
+
+//add_cap($role,$cap,$grant);
+//add_cap("business_ownder", "edit_posts", true);
+//remove_menu_page('Posts', 'Posts', 'edit_posts','posts','menu_function');
+ 

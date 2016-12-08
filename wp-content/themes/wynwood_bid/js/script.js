@@ -2,6 +2,19 @@
 
 jQuery(document).ready(function($){
 
+	// Utility Nav 
+
+	// Set search input placeholcer text 
+	$('#searchform input').attr('placeholder', 'Enter search term');
+
+	// Toggle search visibility on click
+	$('.utility-nav .search-icon').click(function(){
+		$('#searchform').slideToggle();
+		return false;
+		});
+
+
+
 	// GOOGLE MAPS API + ADVANCED CUSTOM FIELDS PLUGIN
 
 	/*

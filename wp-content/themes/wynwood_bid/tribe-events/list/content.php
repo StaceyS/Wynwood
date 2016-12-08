@@ -17,7 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div id="tribe-events-content clearfix" class="tribe-events-list">
 
-
 	<?php
 	/**
 	 * Fires before any content is printed inside the list view.
