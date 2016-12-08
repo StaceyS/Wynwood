@@ -463,11 +463,11 @@ html, body {
   display: inline-block;
   height: 100%;
   position: absolute;
-  right: 6%;
+  right: 1%;
   top: 0; }
   .utility-nav a {
     display: inline-block;
-    width: 60px;
+    width: auto;
     height: 100%;
     text-align: center; }
     .utility-nav a img {
@@ -476,6 +476,37 @@ html, body {
       height: 30%;
       position: relative;
       top: 35%; }
+    .utility-nav a.login-link {
+      padding-right: 10px; }
+    .utility-nav a.logout-link span, .utility-nav a.favorites-link span, .utility-nav a.my-account-link span {
+      display: inline-block;
+      font: 700 12px/1.2 "Roboto", sans-serif;
+      text-transform: uppercase;
+      position: relative;
+      top: 25%;
+      padding: 0 5px;
+      color: #dbdbdb;
+      transition: color .2s; }
+    .utility-nav a.logout-link:hover span {
+      color: white; }
+    .utility-nav a.favorites-link, .utility-nav a.my-account-link {
+      height: 85%; }
+      .utility-nav a.favorites-link span, .utility-nav a.my-account-link span {
+        top: 30%; }
+      .utility-nav a.favorites-link i, .utility-nav a.my-account-link i {
+        display: inline-block;
+        width: 10px;
+        height: 12px;
+        transition: color .2s;
+        padding: 0 5px; }
+        .utility-nav a.favorites-link i.fa-cog, .utility-nav a.my-account-link i.fa-cog {
+          font-size: 16px;
+          position: relative;
+          padding-right: 10px; }
+      .utility-nav a.favorites-link:hover i, .utility-nav a.my-account-link:hover i {
+        color: #ed027e; }
+    .utility-nav a.search-icon {
+      padding: 0 15px; }
   .utility-nav .v-rule {
     display: inline-block;
     width: 1px;
@@ -504,15 +535,6 @@ html, body {
       background: #ed027e; }
       #searchform div input[type="search"]::-webkit-input-placeholder, #searchform div input[type="search"]::-moz-placeholder, #searchform div input[type="search"]:-ms-input-placeholder {
         color: white; }
-
-.utility-nav-option {
-  border: 1px solid orange; }
-  .utility-nav-option .login-link,
-  .utility-nav-option .search-icon {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid blue; }
 
 .hero-img {
   width: 100%;
@@ -945,24 +967,25 @@ html, body {
     color: #ed027e !important; }
 
 .toggle-profile-edit {
-  border: 2px solid #f47920;
-  background: #feeee2;
-  padding: 0 20px 20px 20px;
-  margin-bottom: 30px; }
+  position: absolute;
+  top: 20px;
+  right: 2%; }
   .toggle-profile-edit a {
     display: inline-block;
-    background: white;
-    color: #f47920;
-    border: 2px solid #f47920;
-    padding: 5px 10px;
-    margin: 0 5px 0 0;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin: 0;
     transition: background .2s, color .2s; }
     .toggle-profile-edit a:hover {
-      border: 2px solid #f47920;
-      background: #f47920;
+      border: 2px solid #ed027e;
+      background: #ed027e;
       color: white; }
 
 .edit-biz-details-form {
+  width: 60%;
+  min-width: 300px;
   display: none;
   padding-top: 30px;
   clear: both; }
@@ -1018,8 +1041,10 @@ html, body {
     background: #2be4ff; }
 
 .tribe-bar-views-select,
-.tribe-bar-views-inner label {
-  display: none; }
+.tribe-bar-views-inner label,
+.tribe-events-cal-links,
+.tribe-events-ical {
+  display: none !important; }
 
 #tribe-bar-form {
   margin-top: 20px; }

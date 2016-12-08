@@ -11,58 +11,30 @@
 <?php acf_form_head(); ?>
 
 <?php get_header(); ?>
-	<div class="hero-img" style="background: url(<?php bloginfo(template_url); ?>/images/layout/hero/wy_hero_images_businesses.jpg) no-repeat center center; background-size: cover;"></div>
-
-	<div class="main-content biz-detail-pg clearfix">
-		<span class="section-marker">Business Directory</span>
-
-		<?php
+	<div class="hero-img" style="background: url(<?php bloginfo(template_url); ?>/images/layout/hero/wy_hero_images_businesses.jpg) no-repeat center center; background-size: cover;">
+				<?php 
 			// Check to see if the current site visitor is a registered WP user
-		    $current_user = wp_get_current_user();
-
-		    // Safe usage:https://developer.wordpress.org/reference/functions/wp_get_current_user/ 
-		    if ( !($current_user instanceof WP_User) ) {
-			      return;
-		    }
-
-		    else {
-			    // echo 'Username: ' . $current_user->user_login . '<br />';
-			    // echo 'User email: ' . $current_user->user_email . '<br />';
-			    // echo 'User first name: ' . $current_user->user_firstname . '<br />';
-			    // echo 'User last name: ' . $current_user->user_lastname . '<br />';
-			    // echo 'User display name: ' . $current_user->display_name . '<br />';
-			    // echo 'User ID: ' . $current_user->ID . '<br />';
-			}
-			 
-			 $user_info = get_userdata($current_user->ID);
-		      // echo 'Username: ' . $user_info->user_login . "\n";
-		      // echo 'User roles: ' . implode(', ', $user_info->roles) . "\n";
-		      // echo 'User ID: ' . $user_info->ID . "\n";
-		?>
-		
-		<?php 
-			// If not logged in, hide preview/edit options
 			// **** This needs some troubleshooting
+		    // Safe usage:https://developer.wordpress.org/reference/functions/wp_get_current_user/ 
+		    $current_user = wp_get_current_user();
 		    if ( !($current_user instanceof WP_User) ) {
 			      return false;
 		    } 
-		    // Otherwise, if logged in, show listing preview/edit options
+		    // Otherwise, if so, and they're logged in, show listing preview/edit options
 		    else {
 		    	
 		    	if ( is_user_logged_in() ) {
-					//echo 'Username: ' . $current_user->user_login . '<br />';
 			    	echo "<div class='toggle-profile-edit'>";
-					echo "<h3>Hi " . $current_user->user_login . ", Youre Logged In.</h3>";
-					echo "<a class='edit-profile' href='#'>Edit Business Details</a> <a href='http://localhost:8888/community/business-owner-dashboard/'>Account Dashboard</a>";
+					echo "<a class='edit-profile' href='#'>Edit Business Details</a>";
 					echo "</div>"; 
 					}
-				else {
-					//echo 'Visitor is not logged in.';
-					}
-
+				else {}
 		    	} 
 		?>
+	</div>
 
+	<div class="main-content biz-detail-pg clearfix">
+		<span class="section-marker">Business Directory</span>
 
 		<div class="biz-details-wrapper">
 
@@ -239,7 +211,6 @@
 									<?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
 								</section>
 								
-
 							<?php endwhile; ?>
 						<?php endif; ?>	
 						</aside>

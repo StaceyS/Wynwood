@@ -23,12 +23,12 @@
 		}
 	}
 
-
-
 // Hide These
 .tribe-bar-views-select,
-.tribe-bar-views-inner label {
-	display: none;
+.tribe-bar-views-inner label,
+.tribe-events-cal-links,
+.tribe-events-ical {
+	display: none !important;
 	}
 
 // Event Filters

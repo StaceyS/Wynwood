@@ -42,6 +42,8 @@ $organizer = tribe_get_organizer();
 		<div class="tribe-events-single-event-description tribe-events-content">
 			<!-- Event content -->
 			<?php the_content(); ?>
+		<!-- See 'Favorite Posts' plugin site for details https://favoriteposts.com/ -->
+		<?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
 		</div><!-- .tribe-events-list-event-description -->
 		<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>			
 	</div>

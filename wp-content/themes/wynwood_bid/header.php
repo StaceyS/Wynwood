@@ -61,8 +61,25 @@
   				'container' => 'false' 
   			) ); ?>
 
+      <!-- Current user info -->
+      <?php $user_info = get_userdata($current_user->ID); 
+        //$user_info = get_userdata($current_user->ID);
+        // echo 'Username: ' . $user_info->user_login . "\n";
+        // echo 'User roles: ' . implode(', ', $user_info->roles) . "\n";
+        // echo 'User ID: ' . $user_info->ID . "\n";
+      ?>
+
+      <!-- Utility Nav -->
       <div class="utility-nav">
-        <a class="login-link" title="User Login/Logout" href="http://localhost:8888/community/login/"><img src="<?php bloginfo('template_url'); ?>/images/icons/icon_user.svg"></a><span class="v-rule"></span><a class="search-icon" title="Search the Wynwood website" href="#"><img src="<?php bloginfo('template_url'); ?>/images/icons/icon_search.svg"></a>        
+        <?php if ( !is_user_logged_in() ) { ?>
+           <a class="login-link" title="User Log In" href="http://localhost:8888/community/login/"><img src="<?php bloginfo('template_url'); ?>/images/icons/icon_user.svg"></a>
+        <?php } else { ?>
+            <a class="logout-link" title="User Log Out" href="<?php echo wp_logout_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/icons/icon_user.svg"><span>Sign Out</span></a>
+            <a class="favorites-link" href="<?php bloginfo('url'); ?>/my-favorites"><span><i class="fa fa-heart" aria-hidden="true"></i><?php echo do_shortcode('[user_favorite_count user_id="'.$user_info.'" site_id=""]'); ?></span></a>
+            <a class="my-account-link" href="<?php bloginfo('url'); ?>/my-account"><span><i class="fa fa-cog" aria-hidden="true"></i></span></a>
+        <?php  } ?>
+          <span class="v-rule"></span><a class="search-icon" title="Search the Wynwood website" href="#"><img src="<?php bloginfo('template_url'); ?>/images/icons/icon_search.svg"></a>       
+ 
       </div>
       <?php dynamic_sidebar('Utility Nav'); ?>
 

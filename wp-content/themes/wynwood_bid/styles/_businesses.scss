@@ -323,31 +323,31 @@
 // Edit Profile (Front End Editor)
 
 .toggle-profile-edit {
-	border: 2px solid $orange;
-	background: lighten($orange, 40%);
-	padding:  0 20px 20px 20px;
-	margin-bottom: 30px;
+	position: absolute;
+	top: 20px;
+	right: 2%;
 
 	a {
 		display: inline-block;
 		@extend .learn-more-link;
-		background: white;
-		color: $orange;
-		border: 2px solid $orange;
-		padding: 5px 10px;
-		margin: 0 5px 0 0;
+		background: none;
+		color: white;
+		border: 2px solid white;
+		padding: 10px 20px;
+		margin: 0;
 		transition: background .2s, color .2s;
 
 		&:hover {
-			border: 2px solid $orange;
-			background: $orange;
+			border: 2px solid $magenta;
+			background: $magenta;
 			color: white;
 			}
 		}
 	}
 
 .edit-biz-details-form {
-	//border-top: 4px dashed $lt-grey;
+	width: 60%;
+	min-width: 300px;
 	display: none;
 	padding-top: 30px;
 	clear: both;

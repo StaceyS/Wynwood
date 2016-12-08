@@ -125,12 +125,12 @@ $header-height: 90px;
 	display: inline-block;
 	height: 100%;
 	position: absolute;
-	right: 6%;
+	right: 1%;
 	top: 0;
 
 	a {
 		display: inline-block;
-		width: 60px;
+		width: auto;
 		height: 100%;
 		text-align: center;
 
@@ -142,8 +142,61 @@ $header-height: 90px;
 		    top: 35%;
 			}
 
-		&.login-link {}
-		}
+		&.login-link {
+			padding-right: 10px;
+			}
+
+		&.logout-link,
+		&.favorites-link,
+		&.my-account-link  {
+			span {
+				display: inline-block;
+				font: 700 12px/1.2 $roboto-reg;
+				text-transform: uppercase;
+				position: relative;
+				top: 25%;
+				padding: 0 5px;
+				color: $ltest-grey;
+				transition: color .2s;
+				}
+			}
+
+		&.logout-link {
+			&:hover {
+				span {color: white;}
+				}
+			}
+		
+		&.favorites-link,
+		&.my-account-link {
+			height: 85%;
+
+			span {
+				top: 30%;
+				}
+
+			i {
+				display: inline-block;
+				width: 10px;
+				height: 12px;
+				transition: color .2s;
+				padding: 0 5px;
+
+				&.fa-cog {
+					font-size: 16px;
+					position: relative;
+					padding-right: 10px;
+					}
+				}	
+
+			&:hover {
+				i {color: $magenta;}
+				}
+			}
+		&.search-icon {
+			padding: 0 15px;
+			}
+		} // end a
 
 	.v-rule {
 		display: inline-block;
@@ -184,18 +237,6 @@ $header-height: 90px;
 
 
 			}
-		}
-	}
-
-.utility-nav-option {
-	border: 1px solid orange;
-	
-	.login-link,
-	.search-icon {
-		display: inline-block;
-		width: 50px;
-		height: 50px;
-		border: 1px solid blue;
 		}
 	}
 
