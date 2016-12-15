@@ -47,7 +47,6 @@
 		&.active-view,
 		&:hover {
 			background-color: $mint;
-
 			}
 		}
 	}
@@ -61,6 +60,7 @@
 			&:hover {
 				$base-color: $mint;
 			    background: lighten($base-color, 20%);
+			    color: darken($base-color, 25%);
 				}
 			}
 		
@@ -84,6 +84,7 @@
 			width: 100%;
 			height: 150px;
 			transition: opacity .2s;
+			position: relative;
 
 			&:hover {
 				opacity: .85;
@@ -91,6 +92,38 @@
 			}
 		}
 
+	.deal-icon-wrapper {
+		display: inline-block;
+		width: auto;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		right: 10px;
+
+	    i {
+	    	display: block;
+			background: $magenta;
+		    color: darken($magenta, 35%);
+    		padding: 10px 15px 5px 15px;
+    		font-size: 16px;
+		    }
+
+	    span {
+	    	display: block;
+	    	font: 700 11px/1.2 $roboto-reg;
+	    	color: white;
+	    	text-transform: uppercase;
+			background: $magenta;
+		    }
+
+		 img {
+		 	//border: 1px solid blue;
+				width: 100%;
+			 	height: auto;
+			 	position: relative;
+			 	top: -2px;
+			 }
+		}
 
 	} // end results.list-view
 
@@ -179,6 +212,7 @@
 				line-height: 1.4;
 				}
 			}
+
 		}
 
 	.biz-summary {
@@ -224,7 +258,7 @@
 	h3 {
 		text-transform: none;
 		font-weight: 700;
-		margin: 20px 0 0 0;
+		margin: 20px 0 5px 0;
 		}
 
 	p, li {
@@ -243,6 +277,10 @@
 
 		}
 
+	.biz-contact {
+		p {margin: 0;}
+		}
+
 	.social-icons {
 		margin-left: -10px;
 
@@ -259,7 +297,17 @@
 				}
 			}
 		}
+		.biz-full-address {
+			display: inline;
+
+				&:hover {
+					text-decoration: none !important;
+					border-bottom: 1px solid $magenta;
+					}	
+			}
 	} // end .biz-detail-sidebar
+
+
 
 .deal-wrapper {
 	width: 94%;
@@ -274,6 +322,7 @@
 	p {
 		font-size: 14px;
 		line-height: 1.3;
+		margin: 0 0 5px 0;
 		}
 
 	a {
@@ -327,26 +376,13 @@
 	top: 20px;
 	right: 2%;
 
-	a {
-		display: inline-block;
-		@extend .learn-more-link;
-		background: none;
-		color: white;
-		border: 2px solid white;
-		padding: 10px 20px;
-		margin: 0;
-		transition: background .2s, color .2s;
-
-		&:hover {
-			border: 2px solid $magenta;
-			background: $magenta;
-			color: white;
-			}
+	.button-lg:hover {
+		background: white;
 		}
 	}
 
 .edit-biz-details-form {
-	width: 60%;
+	width: 100%;
 	min-width: 300px;
 	display: none;
 	padding-top: 30px;

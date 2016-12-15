@@ -1,10 +1,11 @@
 <?php // Business Directory - List & Map View?>
 
 <?php get_header(); ?>
+
 	<div class="hero-img" style="background: url(<?php bloginfo(template_url); ?>/images/layout/hero/wy_hero_images_businesses.jpg) no-repeat center center; background-size: cover;"></div>
 
 	<div class="main-content business-index clearfix">
-		<span class="section-marker">Business Directory</span>
+		<a class="section-marker" href="<?php bloginfo('url'); ?>/businesses">Business Directory</a>
 		<h1>Explore our 600&plus; businesses</h1>
 		<div class="grid-map-view-toggle">
 			<button class="grid-view active-view">Grid View</button>
@@ -70,7 +71,24 @@
 									}
 								 ?></h5>
 								<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>	
-								<a class="biz-profile-img" style="background: #ccc url(<?php echo $profile_image['url']; ?>) no-repeat center center; background-size: cover;" href="<?php the_permalink(); ?>" ></a>
+								<a class="biz-profile-img" style="background: #ccc url(<?php echo $profile_image['url']; ?>) no-repeat center center; background-size: cover;" href="<?php the_permalink(); ?>" >
+									<!-- Display deal icon if one exists -->
+									<?php if( have_rows('deals') ): ?>
+										<?php while( have_rows('deals') ): the_row(); 
+											// deals vars
+											//$deal_title = get_sub_field('deal_title');
+											$deal_start_date = get_sub_field('deal_start_date', false, false);
+											$deal_end_date = get_sub_field('deal_end_date', false, false);
+											// ** Make this deal display dynamically based on start/end date
+											?>
+											<div class="deal-icon-wrapper">
+												<i class="fa fa-usd" aria-hidden="true"></i>
+												<span>Deal</span>
+												<img src="<?php bloginfo('template_url');?>/images/icons/icon_deal_flag_bottom.svg" />
+											</div>
+										<?php endwhile; ?>
+									<?php endif; ?>
+								</a>
 								<a href="#" class="toggle-biz-details"><i class="fa fa-plus" aria-hidden="true"></i></a>
 							</div>
 							<div class="summary-card-details clearfix">

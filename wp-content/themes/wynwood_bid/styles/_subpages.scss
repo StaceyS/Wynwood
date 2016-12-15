@@ -1,2 +1,41 @@
 /*   SUBPAGES
 ------------------------- */
+
+// Favorites
+.my-favorites {
+
+	.section-marker {
+		background: $magenta;
+		}
+
+	.faves-section {
+		margin: 30px 0;
+
+		&.fave-businesses {
+			h2 {color: $mint;}
+			}
+		&.fave-events {
+			h2 {color: $cyan;}
+			}
+		&.fave-resources {
+			h2 {color: $magenta;}
+			}
+		&.fave-news {
+			h2 {color: $orange;}
+			}
+		h2 {
+			text-transform: uppercase;
+			padding-bottom: 5px;
+			//border-bottom: 2px solid $lt-grey;
+			margin-bottom: 15px;
+			}
+
+		li a {
+			@extend h3;
+			color: inherit;
+			text-transform: none;
+			}
+		}
+
+
+	}

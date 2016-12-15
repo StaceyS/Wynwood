@@ -61,19 +61,38 @@ blockquote {
 
 label {
   font: 600 16px/1.4 $roboto-cond;
-  //text-transform: uppercase;
   }
 
-select, input, textarea {
-  color: $input-color;
-  -webkit-appearance: none;
+select {
+  height: 40px;
+  color: $md-grey;
+  border: 1px solid $lt-grey;
+  font-size: 15px;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+  background: white;
+  // -webkit-appearance: none;
   box-shadow: none !important;
+  padding: 20px 15px;
+  }
+
+input, textarea {
+  color: $md-grey;
+  //-webkit-appearance: none;
+  box-shadow: none !important;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+  border: 1px solid $lt-grey;
+  padding: 20px 15px;
+  @extend p;
   }
 
 input[type='text'],
 input[type='password'] {
+  width: 100%;
   height: 20px;
-  padding: 10px;
   box-shadow: none !important;
   border: 1px solid $lt-grey;
   }
@@ -94,6 +113,16 @@ input[type="submit"] {
     background: white;
     color: $magenta;
     }
+  }
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 22px;
+  display: block;
+  background: $ltest-grey;
+  float: left;
+  padding: 0 14px;
+  margin: 0 15px 0 0;
   }
 
 #tinymce {
@@ -132,6 +161,25 @@ input[type="submit"] {
   text-transform: uppercase;
   }
 
+.button-lg {
+  display: inline-block;
+  //height: 18px;
+  border: 2px solid $magenta;
+  padding: 6px 8px 4px 8px;
+  margin: 5px 0;
+  background: $magenta; 
+  font: 700 13px/1.4 $roboto-reg;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  transition: background .2s, color .2s;
+
+  &:hover {
+    color: $magenta;
+    background: none;
+    }
+  }
+
 .biz-cta-button,
 .simplefavorite-button {
   display: inline-block;
@@ -166,8 +214,21 @@ input[type="submit"] {
     }
   }
 
+// Favorites
 .simplefavorite-button {
   height: 32px;
+  }
+
+// Hide Favorite button these pages ...
+
+.user-login,
+.account-dashboard,
+.user-account-general {
+
+  .simplefavorite-button {
+    display: none;
+    }
+
   }
 
 
@@ -246,3 +307,6 @@ input[type="submit"] {
       }
     }
   }
+
+
+

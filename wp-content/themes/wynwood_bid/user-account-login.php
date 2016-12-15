@@ -10,8 +10,8 @@
 		
 	  		<!-- <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1> -->
 			<h1><?php bloginfo('name'); ?></h1>
+			<p class="login-instructions">Don't have an account yet? <a href="#">Sign up</a></p>
 	  		<?php the_content(); ?>
-
 
 		<?php endwhile; ?>		
 	<?php endif; ?>

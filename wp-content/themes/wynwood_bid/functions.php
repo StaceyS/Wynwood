@@ -39,7 +39,8 @@ function register_my_menus() {
 	register_nav_menus(
 		array(
 			'menu-1' => __( 'Primary Nav' ),
-			'menu-2' => __( 'Footer Nav' )
+			'menu-2' => __( 'Footer Nav' ),
+			'menu-3' => __( 'Event Categories' )
 		)
 	);
 }
@@ -134,7 +135,7 @@ function boilerplate_scripts() {
 
     if (!is_admin()) {
         wp_deregister_script( 'jquery' );
-        wp_register_script( 'jquery', get_bloginfo('template_directory') . '/js/jquery-1.12.1.min.js',array(),"1.12.1",true);
+        wp_register_script( 'jquery', get_bloginfo('template_directory') . '/js/jquery-3.1.1.min.js',array(),"3.1.1",true);
         wp_enqueue_script( 'jquery' );
 	
 		wp_register_script('modernizr',
@@ -217,12 +218,12 @@ add_action('wp_tag_cloud', 'html5boilerplate_tag_cloud');
 
 // ======================== GOOGLE MAPS API ======================== 
 
-function my_acf_google_map_api( $api ){	
-	$api['key'] = 'AIzaSyB1h91LTtrATtXoLYLAwmUP1Sz3g6pheQ0';
-	return $api;
-}
+// function my_acf_google_map_api( $api ){	
+// 	$api['key'] = 'AIzaSyB1h91LTtrATtXoLYLAwmUP1Sz3g6pheQ0'; 
+// 	return $api;
+// }
 
-add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+// add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 // ======================== ACF FRONT END EDITOR ======================== 
 

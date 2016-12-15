@@ -13,9 +13,35 @@ jQuery(document).ready(function($){
 		return false;
 		});
 
+	// *** EVENTS CALENDAR *** 
 
+	// Hack to event category sidebar on month view
+	$('.tribe-events-month').closest('.main-content').addClass('month-view-styles');
+	$('.tribe-events-list').closest('.main-content').addClass('list-view-styles');
 
+	$('.tribe-bar-filters .tribe-events-button').after('<a class="clear-filters" href="/events"><i class="fa fa-times" aria-hidden="true"></i></a>');
+
+	// Override toggle visibility of filter bar functionality from plugin
+	$('#tribe-bar-collapse-toggle').click(function(){
+		return false;
+		});
+	// Clear the filter bar -- Not working yet
+	// https://theeventscalendar.com/support/forums/topic/is-it-possible-to-add-a-reset-or-clear-button-to-the-event-bar/
+	// $('.clear-filters').on('click', function(){
+	// 	$('#tribe-bar-form').tribe_clear_form();
+	// 	});
+
+	// If no category is selected, add 'current-menu-item' class to 'View All Events' option
+	// if ($('.tribe-events-event-categories .current-menu-item').length) {
+	// 	$('.view-all-events').removeClass('current-menu-item');
+	// 	}
+	// else {
+	// 	$('.view-all-events').addClass('current-menu-item');
+	// 	}
+
+	
 	// GOOGLE MAPS API + ADVANCED CUSTOM FIELDS PLUGIN
+	// -----------------------------------------------
 
 	/*
 	*  new_map
@@ -201,6 +227,7 @@ jQuery(document).ready(function($){
 	$('.edit-profile').click(function(){
 		if ($(this).hasClass('now-editing')) {
 			$(this).text('Edit Business Details');
+			return false;
 			}
 		else {
 			$(this).text('Preview Business Listing');

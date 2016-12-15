@@ -1,13 +1,16 @@
 <?php  /* Template Name: Business Detail */ ?>  
 
-<!-- ACF Front End forms: Register the necessary assets (CSS/JS), process the saved data, and redirect the url
-	 https://www.advancedcustomfields.com/resources/create-a-front-end-form/ 
-	 
-	 *** This is currently causing issues with the Google Maps display in the front end form/post editor
-	 *** Google maps display fine w/o this on both front end & default WP editor (dashboard)
+	<!-- GOOGLE MAPS API + ADVANCED CUSTOM FIELDS PLUGIN -->
 
-	 Maybe this plugin can help? https://wordpress.org/plugins/api-key-for-google-maps/screenshots/
-	 -->
+	<!-- ACF Front End forms: Register the necessary assets (CSS/JS), process the saved data, and redirect the url
+	https://www.advancedcustomfields.com/resources/create-a-front-end-form/ 
+	Not sure why, but there is a conflict between ACF + The Events Calendar plugin
+	When Google Maps API is registered in header.php or functions.php the plugin will not recognize it
+	and when it is regesterd only via The Events Calendar plugin, ACF does not recognize it.
+	Working as is, but there might be a better way. -->
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1h91LTtrATtXoLYLAwmUP1Sz3g6pheQ0"></script>
+	
 <?php acf_form_head(); ?>
 
 <?php get_header(); ?>
@@ -25,7 +28,7 @@
 		    	
 		    	if ( is_user_logged_in() ) {
 			    	echo "<div class='toggle-profile-edit'>";
-					echo "<a class='edit-profile' href='#'>Edit Business Details</a>";
+					echo "<a class='edit-profile button-lg' href='#'>Edit Business Details</a>";
 					echo "</div>"; 
 					}
 				else {}
@@ -34,7 +37,7 @@
 	</div>
 
 	<div class="main-content biz-detail-pg clearfix">
-		<span class="section-marker">Business Directory</span>
+		<a class="section-marker" href="<?php bloginfo('url'); ?>/businesses">Business Directory</a>
 
 		<div class="biz-details-wrapper">
 
@@ -93,7 +96,9 @@
 					<?php endif; ?>
 
 						<div class="biz-summary">
-							<img class="biz-profile-img" src="<?php echo $profile_image['url']; ?>" alt="<?php echo $profile_image['alt']; ?>" />
+							<?php if( !empty($profile_image) ): ?>
+								<img class="biz-profile-img" src="<?php echo $profile_image['url']; ?>" alt="<?php echo $profile_image['alt']; ?>" />
+							<?php endif; ?>
 							<h1><?php the_title(); ?></h1>
 							<?php echo $business_description; ?>
 						</div>
@@ -109,58 +114,62 @@
 								<?php endif; ?>
 
 							<!-- Not sure how to pull link to google maps. Tried echo $business_address['url']; -->
-							<p><a class="biz-full-address" href="#" target="blank"><?php echo $business_address['address']; ?></a></p>
+							<p><a class="biz-full-address" href="https://www.google.com/maps/place/?q=<?php echo $business_address['address']; ?>" target="blank"><?php echo $business_address['address']; ?></a></p>
+
 						</section>
 						<section class="operating-hrs">
-							<h3>Hours</h3>
+							<?php if( !empty($operating_hours) ): ?>
+								<h3>Hours</h3>
 
-							<?php if( have_rows('operating_hours') ): ?>
-								<?php while( have_rows('operating_hours') ): the_row(); ?>
+								<?php if( have_rows('operating_hours') ): ?>
+									<?php while( have_rows('operating_hours') ): the_row(); ?>
 
-									<ul class="hours">
+										<ul class="hours">
 
-									<?php if( have_rows('time_blocks') ): ?>
-									<?php while( have_rows('time_blocks') ): the_row(); 
+										<?php if( have_rows('time_blocks') ): ?>
+										<?php while( have_rows('time_blocks') ): the_row(); 
 
-										// time_blocks vars
-										$start_day = get_sub_field('start_day');
-										$end_day = get_sub_field('end_day');
-										$start_time = get_sub_field('start_time');
-										$start_time_mins = get_sub_field('start_time_mins');
-										$am_pm_start = get_sub_field('am_pm_start');
-										$end_time = get_sub_field('end_time');
-										$stop_time_mins = get_sub_field('stop_time_mins');
-										$am_pm_stop = get_sub_field('am_pm_stop');
+											// time_blocks vars
+											$start_day = get_sub_field('start_day');
+											$end_day = get_sub_field('end_day');
+											$start_time = get_sub_field('start_time');
+											$start_time_mins = get_sub_field('start_time_mins');
+											$am_pm_start = get_sub_field('am_pm_start');
+											$end_time = get_sub_field('end_time');
+											$stop_time_mins = get_sub_field('stop_time_mins');
+											$am_pm_stop = get_sub_field('am_pm_stop');
 
-										// Fix ACF from defaulting to changing "00" to "0"
-										if ($start_time_mins <= 0 ) {
-											$start_time_mins = "00";
-											}
+											// Fix ACF from defaulting to changing "00" to "0"
+											if ($start_time_mins <= 0 ) {
+												$start_time_mins = "00";
+												}
 
-										if ($stop_time_mins <= 0 ) {
-											$stop_time_mins = "00";
-											}
+											if ($stop_time_mins <= 0 ) {
+												$stop_time_mins = "00";
+												}
 
-										?>
+											?>
 
-										<li class="time_block">
-										   	<?php echo $start_day;
-											
-											// If start & end day are the same, only show start day
-											if ($start_day != $end_day ) { echo " - " . $end_day . ": "; }
-										   	else { echo ": "; }
-										   	
-										   	?>
+											<li class="time_block">
+											   	<?php echo $start_day;
+												
+												// If start & end day are the same, only show start day
+												if ($start_day != $end_day ) { echo " - " . $end_day . ": "; }
+											   	else { echo ": "; }
+											   	
+											   	?>
 
-										   	<?php echo $start_time; ?>:<?php echo $start_time_mins . " " . $am_pm_start; ?> - <?php echo $end_time; ?>:<?php echo $stop_time_mins . " " . $am_pm_stop; ?>
-										</li>
+											   	<?php echo $start_time; ?>:<?php echo $start_time_mins . " " . $am_pm_start; ?> - <?php echo $end_time; ?>:<?php echo $stop_time_mins . " " . $am_pm_stop; ?>
+											</li>
 
-										<?php endwhile; ?>
-									<?php endif; ?>
+											<?php endwhile; ?>
+										<?php endif; ?>
 
-									</ul>
+										</ul>
 
-								<?php endwhile; ?>
+									<?php endwhile; ?>
+								<?php endif; ?>
+
 							<?php endif; ?>
 						</section>
 
@@ -206,7 +215,7 @@
 								</section>
 
 								<section>
-									<a class="biz-cta-button" href="#">Get Directions <i class="fa fa-compass" aria-hidden="true"></i></a>
+									<a class="biz-cta-button" href="https://www.google.com/maps/place/?q=<?php echo $business_address['address']; ?>" target="blank">Get Directions <i class="fa fa-compass" aria-hidden="true"></i></a>
 									<!-- See 'Favorite Posts' plugin site for details https://favoriteposts.com/ -->
 									<?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
 								</section>
@@ -222,13 +231,14 @@
 					<h2>Editing: <?php the_title(); ?></h2>
 					<!-- *** See 'acf_form_head();' on line 9 for Google Maps API/display issues
 						 *** Also having issues with page redirect after form submission. Although URL looks -->
-					<?php //acf_form(); ?>
+
+					<?php //$previewPostLink the_permalink( $post->ID ); ?>
 
 					<?php $options = array( 
 						/* (string) The text displayed on the submit button */
 						'submit_value' => __("Update Profile", 'acf')
 						/* (string) The URL to be redirected to after the form is submit. Defaults to the current URL with a GET parameter '?updated=true'. A special placeholder '%post_url%' will be converted to post's permalink (handy if creating a new post) */
-						//'return' => '%post_url%'
+						//'return' => $previewPostLink
 						);?>
 
 					<?php acf_form( $options ); ?>

@@ -1,14 +1,35 @@
 /*  USER ACCOUNTS / LOGIN
 ------------------------- */
+
+.user-login,
+.account-dashboard,
+.user-account-general {
+	border-top-color: $magenta;
+
+	.section-marker {
+		background: $magenta;
+		}
+	}
+
 .user-login {
 	text-align: center;
 	padding-top: 60px;
-	border-top-color: $magenta;
 	
 	h1 {
 		//color: $magenta;
 
 		a {color: inherit;}
+		}
+
+	.login-instructions {
+		a {
+			@extend p;
+			color: $magenta;
+			border-bottom: 1px solid rgba($magenta,0);
+			transition: border-color .2s; 
+
+			&:hover {border-bottom-color: $magenta;}
+			}
 		}
 
 	// Theme My Login plugin files
@@ -21,15 +42,128 @@
 			padding: 10px;
 			}
 
-		input[type="submit"]{display: block;}
+		input[type="submit"]{
+			min-width: 150px;
+			display: block;
+			text-align: center;
+			}
 
 		.tml-rememberme-wrap {
 			display: none; 			// **** Fix this styling before launch
 			}
 		}
 
-	// Hide Favorite button on account/login screens
-	.simplefavorite-button {
-		display: none;
+	}
+
+// Account Dashboard
+
+.account-dashbaord-section {
+	width: 25%;
+	padding: 30px 8.3% 30px 0;
+	float: left;
+
+	h2 {
+		margin: 15px 0 10px;
 		}
+
+	p {
+		//min-height: 100px;
+
+		a {
+			display: block;
+			@extend p;
+			color: $magenta;
+			margin: 0 0 5px 0;
+			}
+		}
+
+	ul {
+		list-style: disc;
+		padding: 0 0 10px 20px;
+		}
+
+	li {
+		@extend p;
+		margin-bottom: 5px;
+		}
+
+
+
+	.biz-cta-button {
+		width: auto;
+		}
+	}
+
+.tml {
+
+	.message {
+		border: 2px solid $cyan;
+		background: rgba($cyan,.15);
+		}
+	
+	.tml-action-links {
+		display: block;
+
+		a {
+			@extend p;
+			color: $magenta;
+			border-bottom: 1px solid rgba($magenta,0);
+			transition: border-color .2s; 
+
+			&:hover {border-bottom-color: $magenta;}
+			}
+
+		}
+
+	label {
+		margin-top: 20px; 
+		}
+} // .tml
+
+
+// User Account (General)
+
+#your-profile {
+	width: 70%;
+
+	h3 {
+		padding-bottom: 5px;
+		border-bottom: 1px solid $md-grey;
+		margin-top: 30px;
+
+		&:first-of-type {
+			display: none;
+			}
+
+		}
+	
+	.tml-form-table {
+		width: 100%;
+		}
+
+	.description {
+		@extend p;
+		font-style: italic;
+		color: $md-grey;
+		}
+
+	.tml-submit-wrap {
+		padding-top: 30px !important;
+		}
+	} // end #your-profile
+
+
+
+.button-secondary {
+	border: 2px solid $cyan;
+	background: white;
+	padding: 6px 10px 4px;
+	margin: 10px 0; 
+	font: 600 14px/1.6 $roboto-reg;
+	text-transform: uppercase;
+	color: $cyan;
+	}
+
+.tml-user-admin-bar-front-wrap {
+	display: none;
 	}

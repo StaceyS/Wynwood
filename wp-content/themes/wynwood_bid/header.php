@@ -47,7 +47,7 @@
   <?php wp_head(); ?>
 
   <!-- GOOGLE MAPS API + ADVANCED CUSTOM FIELDS PLUGIN -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1h91LTtrATtXoLYLAwmUP1Sz3g6pheQ0"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1h91LTtrATtXoLYLAwmUP1Sz3g6pheQ0"></script> -->
 
 </head>
 
@@ -75,8 +75,8 @@
            <a class="login-link" title="User Log In" href="http://localhost:8888/community/login/"><img src="<?php bloginfo('template_url'); ?>/images/icons/icon_user.svg"></a>
         <?php } else { ?>
             <a class="logout-link" title="User Log Out" href="<?php echo wp_logout_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/icons/icon_user.svg"><span>Sign Out</span></a>
-            <a class="favorites-link" href="<?php bloginfo('url'); ?>/my-favorites"><span><i class="fa fa-heart" aria-hidden="true"></i><?php echo do_shortcode('[user_favorite_count user_id="'.$user_info.'" site_id=""]'); ?></span></a>
-            <a class="my-account-link" href="<?php bloginfo('url'); ?>/my-account"><span><i class="fa fa-cog" aria-hidden="true"></i></span></a>
+            <a class="favorites-link" href="<?php bloginfo('url'); ?>/my-favorites" title="My Favorites"><span><i class="fa fa-heart" aria-hidden="true"></i><?php echo do_shortcode('[user_favorite_count user_id="'.$user_info.'" site_id=""]'); ?></span></a>
+            <a class="my-account-link" href="<?php bloginfo('url'); ?>/my-account" title="My Account"><span><i class="fa fa-cog" aria-hidden="true"></i></span></a>
         <?php  } ?>
           <span class="v-rule"></span><a class="search-icon" title="Search the Wynwood website" href="#"><img src="<?php bloginfo('template_url'); ?>/images/icons/icon_search.svg"></a>       
  
