@@ -13,7 +13,7 @@ STYLESHEET COMPILED USING SASS
 html, body, div, span, object, iframe, h1, .edit-biz-details-form h2, #tribe-community-events .events-community-post-title input[type="text"], h2, h3, .my-favorites .faves-section li a, .tribe-events-meta-group-details dt, #tribe-community-events .title, h4, h5, .tribe-events-loop .type-tribe_events, #tribe-community-events th, h6, p, input, textarea, .tribe-events-sub-nav a, .event-detail-page .events-index-link, .event-details-section .tribe-events-venue-details, .event-details-section .tribe-event-schedule-details,
 .event-details-section .tribe-events-meta-group-venue,
 .event-details-section .tribe-events-event-cost, .tribe-events-meta-group-details, #not-user, .my-events-display-options, #tribe-community-events td, #tribe-community-events .row-actions a, #tribe-community-events small.req,
-#tribe-community-events small.note, #tribe-community-events input[type="text"], .user-login .login-instructions a, .account-dashbaord-section p a, .account-dashbaord-section li, .tml .tml-action-links a, #your-profile .description, blockquote, pre,
+#tribe-community-events small.note, #tribe-community-events input[type="text"], .user-login .login-instructions a, .account-dashbaord-section p a, .account-dashbaord-section li, #your-profile .description, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
@@ -193,7 +193,7 @@ h5, .tribe-events-loop .type-tribe_events, #tribe-community-events th {
 p, input, textarea, .tribe-events-sub-nav a, .event-detail-page .events-index-link, .event-details-section .tribe-events-venue-details, .event-details-section .tribe-event-schedule-details,
 .event-details-section .tribe-events-meta-group-venue,
 .event-details-section .tribe-events-event-cost, .tribe-events-meta-group-details, #not-user, .my-events-display-options, #tribe-community-events td, #tribe-community-events .row-actions a, #tribe-community-events small.req,
-#tribe-community-events small.note, #tribe-community-events input[type="text"], .user-login .login-instructions a, .account-dashbaord-section p a, .account-dashbaord-section li, .tml .tml-action-links a, #your-profile .description {
+#tribe-community-events small.note, #tribe-community-events input[type="text"], .user-login .login-instructions a, .account-dashbaord-section p a, .account-dashbaord-section li, #your-profile .description {
   font: 400 15px/1.6 "Roboto", sans-serif;
   margin-bottom: 15px; }
 
@@ -267,7 +267,7 @@ input[type="checkbox"] {
 #tinymce .event-details-section .tribe-events-event-cost,
 .event-details-section #tinymce .tribe-events-event-cost, #tinymce .tribe-events-meta-group-details, #tinymce #not-user, #tinymce .my-events-display-options, #tinymce #tribe-community-events td, #tribe-community-events #tinymce td, #tinymce #tribe-community-events .row-actions a, #tribe-community-events .row-actions #tinymce a, #tinymce #tribe-community-events small.req, #tribe-community-events #tinymce small.req,
 #tinymce #tribe-community-events small.note,
-#tribe-community-events #tinymce small.note, #tinymce #tribe-community-events input[type="text"], #tribe-community-events #tinymce input[type="text"], #tinymce .user-login .login-instructions a, .user-login .login-instructions #tinymce a, #tinymce .account-dashbaord-section p a, .account-dashbaord-section p #tinymce a, #tinymce .account-dashbaord-section li, .account-dashbaord-section #tinymce li, #tinymce .tml .tml-action-links a, .tml .tml-action-links #tinymce a, #tinymce #your-profile .description, #your-profile #tinymce .description {
+#tribe-community-events #tinymce small.note, #tinymce #tribe-community-events input[type="text"], #tribe-community-events #tinymce input[type="text"], #tinymce .user-login .login-instructions a, .user-login .login-instructions #tinymce a, #tinymce .account-dashbaord-section p a, .account-dashbaord-section p #tinymce a, #tinymce .account-dashbaord-section li, .account-dashbaord-section #tinymce li, #tinymce #your-profile .description, #your-profile #tinymce .description {
   padding: 15px 30px !important; }
 
 .half {
@@ -315,7 +315,7 @@ input[type="checkbox"] {
   display: inline-block;
   width: 184px;
   max-width: 90%;
-  height: 18px;
+  min-height: 18px;
   border: 2px solid #ed027e;
   padding: 6px 8px 4px 8px;
   margin: 5px 0;
@@ -428,6 +428,57 @@ input[type="checkbox"] {
     color: #231f20;
     margin: 5px 0; }
 
+.noscroll {
+  overflow: hidden; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content */
+.modal-content {
+  width: 60%;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 50px 5%;
+  border: 1px solid #888;
+  text-align: center; }
+  .modal-content .fa-heart-o {
+    font-size: 56px;
+    color: #ed027e;
+    margin-bottom: 20px; }
+  .modal-content h2 {
+    margin-bottom: 20px;
+    font-weight: 700; }
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
 /*  LAYOUT
 ------------------------- */
 html, body {
@@ -461,17 +512,16 @@ html, body {
   height: 100%; }
   #menu-primary-nav li.menu-item {
     display: block;
-    width: 13%;
     height: 100%;
     float: left;
     position: relative;
-    padding: 0 1%;
+    padding: 0 70px 0 10px;
     font: 24px/1.4 "Roboto Condensed", sans-serif;
     text-transform: uppercase; }
     #menu-primary-nav li.menu-item a {
       display: inline-block;
-      height: 60%;
-      padding: 20% 0 0 0;
+      height: 60px;
+      padding: 30px 0 0 0;
       position: relative; }
       #menu-primary-nav li.menu-item a:after {
         display: inline-block;
@@ -507,6 +557,7 @@ html, body {
       border-bottom: 1px solid rgba(255, 255, 255, 0.25);
       transition: background .2s; }
       #menu-primary-nav .sub-menu li a {
+        height: auto;
         padding: 0; }
         #menu-primary-nav .sub-menu li a:after {
           display: none; }
@@ -549,7 +600,7 @@ html, body {
       text-transform: uppercase;
       position: relative;
       top: 25%;
-      padding: 0 5px;
+      padding: 0 2px;
       color: #dbdbdb;
       transition: color .2s; }
     .utility-nav a.logout-link:hover span {
@@ -634,7 +685,7 @@ html, body {
     .footer .branding .event-details-section .tribe-events-event-cost,
     .event-details-section .footer .branding .tribe-events-event-cost, .footer .branding .tribe-events-meta-group-details, .footer .branding #not-user, .footer .branding .my-events-display-options, .footer .branding #tribe-community-events td, #tribe-community-events .footer .branding td, .footer .branding #tribe-community-events .row-actions a, #tribe-community-events .row-actions .footer .branding a, .footer .branding #tribe-community-events small.req, #tribe-community-events .footer .branding small.req,
     .footer .branding #tribe-community-events small.note,
-    #tribe-community-events .footer .branding small.note, .footer .branding #tribe-community-events input[type="text"], #tribe-community-events .footer .branding input[type="text"], .footer .branding .user-login .login-instructions a, .user-login .login-instructions .footer .branding a, .footer .branding .account-dashbaord-section p a, .account-dashbaord-section p .footer .branding a, .footer .branding .account-dashbaord-section li, .account-dashbaord-section .footer .branding li, .footer .branding .tml .tml-action-links a, .tml .tml-action-links .footer .branding a, .footer .branding #your-profile .description, #your-profile .footer .branding .description {
+    #tribe-community-events .footer .branding small.note, .footer .branding #tribe-community-events input[type="text"], #tribe-community-events .footer .branding input[type="text"], .footer .branding .user-login .login-instructions a, .user-login .login-instructions .footer .branding a, .footer .branding .account-dashbaord-section p a, .account-dashbaord-section p .footer .branding a, .footer .branding .account-dashbaord-section li, .account-dashbaord-section .footer .branding li, .footer .branding #your-profile .description, #your-profile .footer .branding .description {
       opacity: .3;
       clear: both; }
   .footer .social-links h3, .footer .social-links .my-favorites .faves-section li a, .my-favorites .faves-section li .footer .social-links a, .footer .social-links .tribe-events-meta-group-details dt, .tribe-events-meta-group-details .footer .social-links dt, .footer .social-links #tribe-community-events .title, #tribe-community-events .footer .social-links .title {
@@ -654,6 +705,8 @@ html, body {
     line-height: 2;
     margin: 0 5px 0 0;
     transition: background .2s, color .2s; }
+    .footer .social-links a i {
+      line-height: 2; }
     .footer .social-links a:hover {
       background: #4f4f4f;
       color: #ccc; }
@@ -748,7 +801,7 @@ html, body {
 .splash .event-details-section .tribe-events-event-cost,
 .event-details-section .splash .tribe-events-event-cost, .splash .tribe-events-meta-group-details, .splash #not-user, .splash .my-events-display-options, .splash #tribe-community-events td, #tribe-community-events .splash td, .splash #tribe-community-events .row-actions a, #tribe-community-events .row-actions .splash a, .splash #tribe-community-events small.req, #tribe-community-events .splash small.req,
 .splash #tribe-community-events small.note,
-#tribe-community-events .splash small.note, .splash #tribe-community-events input[type="text"], #tribe-community-events .splash input[type="text"], .splash .user-login .login-instructions a, .user-login .login-instructions .splash a, .splash .account-dashbaord-section p a, .account-dashbaord-section p .splash a, .splash .account-dashbaord-section li, .account-dashbaord-section .splash li, .splash .tml .tml-action-links a, .tml .tml-action-links .splash a, .splash #your-profile .description, #your-profile .splash .description {
+#tribe-community-events .splash small.note, .splash #tribe-community-events input[type="text"], #tribe-community-events .splash input[type="text"], .splash .user-login .login-instructions a, .user-login .login-instructions .splash a, .splash .account-dashbaord-section p a, .account-dashbaord-section p .splash a, .splash .account-dashbaord-section li, .account-dashbaord-section .splash li, .splash #your-profile .description, #your-profile .splash .description {
   font: 400 16px/1.5 "Roboto Condensed", sans-serif;
   text-transform: uppercase; }
 .splash section {
@@ -806,7 +859,7 @@ html, body {
   .splash .footer .event-details-section .tribe-events-event-cost,
   .event-details-section .splash .footer .tribe-events-event-cost, .splash .footer .tribe-events-meta-group-details, .splash .footer #not-user, .splash .footer .my-events-display-options, .splash .footer #tribe-community-events td, #tribe-community-events .splash .footer td, .splash .footer #tribe-community-events .row-actions a, #tribe-community-events .row-actions .splash .footer a, .splash .footer #tribe-community-events small.req, #tribe-community-events .splash .footer small.req,
   .splash .footer #tribe-community-events small.note,
-  #tribe-community-events .splash .footer small.note, .splash .footer #tribe-community-events input[type="text"], #tribe-community-events .splash .footer input[type="text"], .splash .footer .user-login .login-instructions a, .user-login .login-instructions .splash .footer a, .splash .footer .account-dashbaord-section p a, .account-dashbaord-section p .splash .footer a, .splash .footer .account-dashbaord-section li, .account-dashbaord-section .splash .footer li, .splash .footer .tml .tml-action-links a, .tml .tml-action-links .splash .footer a, .splash .footer #your-profile .description, #your-profile .splash .footer .description {
+  #tribe-community-events .splash .footer small.note, .splash .footer #tribe-community-events input[type="text"], #tribe-community-events .splash .footer input[type="text"], .splash .footer .user-login .login-instructions a, .user-login .login-instructions .splash .footer a, .splash .footer .account-dashbaord-section p a, .account-dashbaord-section p .splash .footer a, .splash .footer .account-dashbaord-section li, .account-dashbaord-section .splash .footer li, .splash .footer #your-profile .description, #your-profile .splash .footer .description {
     font: 300 12px/1.4 "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     text-transform: none;
@@ -842,6 +895,14 @@ html, body {
   .main-content.business-index .section-marker,
   .main-content.business-index .filter-sidebar {
     background: #00ae8d; }
+  .main-content.biz-detail-pg .section-marker,
+  .main-content.business-index .section-marker {
+    border: 2px solid #00ae8d;
+    transition: background .2s, color .2s; }
+    .main-content.biz-detail-pg .section-marker:hover,
+    .main-content.business-index .section-marker:hover {
+      color: #00ae8d;
+      background: white; }
 
 .grid-map-view-toggle {
   display: inline-block;
@@ -949,13 +1010,14 @@ html, body {
 .summary-card-details {
   display: none;
   padding: 25px 0;
-  position: absolute;
+  position: relative;
   left: 0;
   z-index: 7;
   background: #f2f2f2;
   margin-top: 20px; }
   .summary-card-details h2 {
-    font-size: 24px !important; }
+    font-size: 26px !important;
+    margin-bottom: 12px !important; }
   .summary-card-details .biz-detail-sidebar {
     width: 27%;
     float: left;
@@ -964,23 +1026,28 @@ html, body {
       text-transform: none;
       font-weight: 600;
       margin: 10px 0 0 0;
-      font-size: 16px; }
+      font-size: 17px; }
     .summary-card-details .biz-detail-sidebar p, .summary-card-details .biz-detail-sidebar input, .summary-card-details .biz-detail-sidebar textarea, .summary-card-details .biz-detail-sidebar .tribe-events-sub-nav a, .tribe-events-sub-nav .summary-card-details .biz-detail-sidebar a, .summary-card-details .biz-detail-sidebar .event-detail-page .events-index-link, .event-detail-page .summary-card-details .biz-detail-sidebar .events-index-link, .summary-card-details .biz-detail-sidebar .event-details-section .tribe-events-venue-details, .event-details-section .summary-card-details .biz-detail-sidebar .tribe-events-venue-details, .summary-card-details .biz-detail-sidebar .event-details-section .tribe-event-schedule-details, .event-details-section .summary-card-details .biz-detail-sidebar .tribe-event-schedule-details,
     .summary-card-details .biz-detail-sidebar .event-details-section .tribe-events-meta-group-venue,
     .event-details-section .summary-card-details .biz-detail-sidebar .tribe-events-meta-group-venue,
     .summary-card-details .biz-detail-sidebar .event-details-section .tribe-events-event-cost,
     .event-details-section .summary-card-details .biz-detail-sidebar .tribe-events-event-cost, .summary-card-details .biz-detail-sidebar .tribe-events-meta-group-details, .summary-card-details .biz-detail-sidebar #not-user, .summary-card-details .biz-detail-sidebar .my-events-display-options, .summary-card-details .biz-detail-sidebar #tribe-community-events td, #tribe-community-events .summary-card-details .biz-detail-sidebar td, .summary-card-details .biz-detail-sidebar #tribe-community-events .row-actions a, #tribe-community-events .row-actions .summary-card-details .biz-detail-sidebar a, .summary-card-details .biz-detail-sidebar #tribe-community-events small.req, #tribe-community-events .summary-card-details .biz-detail-sidebar small.req,
     .summary-card-details .biz-detail-sidebar #tribe-community-events small.note,
-    #tribe-community-events .summary-card-details .biz-detail-sidebar small.note, .summary-card-details .biz-detail-sidebar #tribe-community-events input[type="text"], #tribe-community-events .summary-card-details .biz-detail-sidebar input[type="text"], .summary-card-details .biz-detail-sidebar .user-login .login-instructions a, .user-login .login-instructions .summary-card-details .biz-detail-sidebar a, .summary-card-details .biz-detail-sidebar .account-dashbaord-section p a, .account-dashbaord-section p .summary-card-details .biz-detail-sidebar a, .summary-card-details .biz-detail-sidebar .account-dashbaord-section li, .account-dashbaord-section .summary-card-details .biz-detail-sidebar li, .summary-card-details .biz-detail-sidebar .tml .tml-action-links a, .tml .tml-action-links .summary-card-details .biz-detail-sidebar a, .summary-card-details .biz-detail-sidebar #your-profile .description, #your-profile .summary-card-details .biz-detail-sidebar .description {
-      font: 400 14px/1.5 "Roboto", sans-serif;
+    #tribe-community-events .summary-card-details .biz-detail-sidebar small.note, .summary-card-details .biz-detail-sidebar #tribe-community-events input[type="text"], #tribe-community-events .summary-card-details .biz-detail-sidebar input[type="text"], .summary-card-details .biz-detail-sidebar .user-login .login-instructions a, .user-login .login-instructions .summary-card-details .biz-detail-sidebar a, .summary-card-details .biz-detail-sidebar .account-dashbaord-section p a, .account-dashbaord-section p .summary-card-details .biz-detail-sidebar a, .summary-card-details .biz-detail-sidebar .account-dashbaord-section li, .account-dashbaord-section .summary-card-details .biz-detail-sidebar li, .summary-card-details .biz-detail-sidebar #your-profile .description, #your-profile .summary-card-details .biz-detail-sidebar .description {
+      font: 400 15px/1.4 "Roboto", sans-serif;
       margin-bottom: 8px; }
     .summary-card-details .biz-detail-sidebar .biz-full-address:hover {
       color: #ed027e !important; }
+    .summary-card-details .biz-detail-sidebar .phone a {
+      color: #231f20; }
+      .summary-card-details .biz-detail-sidebar .phone a:hover {
+        border-bottom-color: rgba(237, 2, 126, 0); }
     .summary-card-details .biz-detail-sidebar .hours {
       margin-bottom: 5px; }
       .summary-card-details .biz-detail-sidebar .hours li {
-        font-size: 14px;
-        line-height: 1.4; }
+        font-size: 15px;
+        line-height: 1.3;
+        margin: 5px 0; }
   .summary-card-details .biz-summary {
     width: 62%;
     float: right;
@@ -991,8 +1058,8 @@ html, body {
     .summary-card-details .biz-summary .event-details-section .tribe-events-event-cost,
     .event-details-section .summary-card-details .biz-summary .tribe-events-event-cost, .summary-card-details .biz-summary .tribe-events-meta-group-details, .summary-card-details .biz-summary #not-user, .summary-card-details .biz-summary .my-events-display-options, .summary-card-details .biz-summary #tribe-community-events td, #tribe-community-events .summary-card-details .biz-summary td, .summary-card-details .biz-summary #tribe-community-events .row-actions a, #tribe-community-events .row-actions .summary-card-details .biz-summary a, .summary-card-details .biz-summary #tribe-community-events small.req, #tribe-community-events .summary-card-details .biz-summary small.req,
     .summary-card-details .biz-summary #tribe-community-events small.note,
-    #tribe-community-events .summary-card-details .biz-summary small.note, .summary-card-details .biz-summary #tribe-community-events input[type="text"], #tribe-community-events .summary-card-details .biz-summary input[type="text"], .summary-card-details .biz-summary .user-login .login-instructions a, .user-login .login-instructions .summary-card-details .biz-summary a, .summary-card-details .biz-summary .account-dashbaord-section p a, .account-dashbaord-section p .summary-card-details .biz-summary a, .summary-card-details .biz-summary .account-dashbaord-section li, .account-dashbaord-section .summary-card-details .biz-summary li, .summary-card-details .biz-summary .tml .tml-action-links a, .tml .tml-action-links .summary-card-details .biz-summary a, .summary-card-details .biz-summary #your-profile .description, #your-profile .summary-card-details .biz-summary .description {
-      font: 400 14px/1.5 "Roboto", sans-serif; }
+    #tribe-community-events .summary-card-details .biz-summary small.note, .summary-card-details .biz-summary #tribe-community-events input[type="text"], #tribe-community-events .summary-card-details .biz-summary input[type="text"], .summary-card-details .biz-summary .user-login .login-instructions a, .user-login .login-instructions .summary-card-details .biz-summary a, .summary-card-details .biz-summary .account-dashbaord-section p a, .account-dashbaord-section p .summary-card-details .biz-summary a, .summary-card-details .biz-summary .account-dashbaord-section li, .account-dashbaord-section .summary-card-details .biz-summary li, .summary-card-details .biz-summary #your-profile .description, #your-profile .summary-card-details .biz-summary .description {
+      font: 400 15px/1.5 "Roboto", sans-serif; }
 
 .biz-full-address {
   border-bottom: 2px solid rgba(237, 2, 126, 0); }
@@ -1020,7 +1087,7 @@ html, body {
   .biz-detail-sidebar .event-details-section .tribe-events-event-cost,
   .event-details-section .biz-detail-sidebar .tribe-events-event-cost, .biz-detail-sidebar .tribe-events-meta-group-details, .biz-detail-sidebar #not-user, .biz-detail-sidebar .my-events-display-options, .biz-detail-sidebar #tribe-community-events td, #tribe-community-events .biz-detail-sidebar td, .biz-detail-sidebar #tribe-community-events .row-actions a, #tribe-community-events .row-actions .biz-detail-sidebar a, .biz-detail-sidebar #tribe-community-events small.req, #tribe-community-events .biz-detail-sidebar small.req,
   .biz-detail-sidebar #tribe-community-events small.note,
-  #tribe-community-events .biz-detail-sidebar small.note, .biz-detail-sidebar #tribe-community-events input[type="text"], #tribe-community-events .biz-detail-sidebar input[type="text"], .biz-detail-sidebar .user-login .login-instructions a, .user-login .login-instructions .biz-detail-sidebar a, .biz-detail-sidebar .account-dashbaord-section p a, .account-dashbaord-section p .biz-detail-sidebar a, .biz-detail-sidebar .account-dashbaord-section li, .account-dashbaord-section .biz-detail-sidebar li, .biz-detail-sidebar .tml .tml-action-links a, .tml .tml-action-links .biz-detail-sidebar a, .biz-detail-sidebar #your-profile .description, #your-profile .biz-detail-sidebar .description, .biz-detail-sidebar li {
+  #tribe-community-events .biz-detail-sidebar small.note, .biz-detail-sidebar #tribe-community-events input[type="text"], #tribe-community-events .biz-detail-sidebar input[type="text"], .biz-detail-sidebar .user-login .login-instructions a, .user-login .login-instructions .biz-detail-sidebar a, .biz-detail-sidebar .account-dashbaord-section p a, .account-dashbaord-section p .biz-detail-sidebar a, .biz-detail-sidebar .account-dashbaord-section li, .account-dashbaord-section .biz-detail-sidebar li, .biz-detail-sidebar #your-profile .description, #your-profile .biz-detail-sidebar .description, .biz-detail-sidebar li {
     font: 400 15px/1.6 "Roboto", sans-serif; }
     .biz-detail-sidebar p a, .biz-detail-sidebar input a, .biz-detail-sidebar textarea a, .biz-detail-sidebar .tribe-events-sub-nav a a, .tribe-events-sub-nav .biz-detail-sidebar a a, .biz-detail-sidebar .event-detail-page .events-index-link a, .event-detail-page .biz-detail-sidebar .events-index-link a, .biz-detail-sidebar .event-details-section .tribe-events-venue-details a, .event-details-section .biz-detail-sidebar .tribe-events-venue-details a, .biz-detail-sidebar .event-details-section .tribe-event-schedule-details a, .event-details-section .biz-detail-sidebar .tribe-event-schedule-details a,
     .biz-detail-sidebar .event-details-section .tribe-events-meta-group-venue a,
@@ -1028,7 +1095,7 @@ html, body {
     .biz-detail-sidebar .event-details-section .tribe-events-event-cost a,
     .event-details-section .biz-detail-sidebar .tribe-events-event-cost a, .biz-detail-sidebar .tribe-events-meta-group-details a, .biz-detail-sidebar #not-user a, .biz-detail-sidebar .my-events-display-options a, .biz-detail-sidebar #tribe-community-events td a, #tribe-community-events .biz-detail-sidebar td a, .biz-detail-sidebar #tribe-community-events .row-actions a a, #tribe-community-events .row-actions .biz-detail-sidebar a a, .biz-detail-sidebar #tribe-community-events small.req a, #tribe-community-events .biz-detail-sidebar small.req a,
     .biz-detail-sidebar #tribe-community-events small.note a,
-    #tribe-community-events .biz-detail-sidebar small.note a, .biz-detail-sidebar #tribe-community-events input[type="text"] a, #tribe-community-events .biz-detail-sidebar input[type="text"] a, .biz-detail-sidebar .user-login .login-instructions a a, .user-login .login-instructions .biz-detail-sidebar a a, .account-dashbaord-section p .biz-detail-sidebar a a, .biz-detail-sidebar .account-dashbaord-section li a, .account-dashbaord-section .biz-detail-sidebar li a, .biz-detail-sidebar .tml .tml-action-links a a, .tml .tml-action-links .biz-detail-sidebar a a, .biz-detail-sidebar #your-profile .description a, #your-profile .biz-detail-sidebar .description a, .biz-detail-sidebar li a {
+    #tribe-community-events .biz-detail-sidebar small.note a, .biz-detail-sidebar #tribe-community-events input[type="text"] a, #tribe-community-events .biz-detail-sidebar input[type="text"] a, .biz-detail-sidebar .user-login .login-instructions a a, .user-login .login-instructions .biz-detail-sidebar a a, .account-dashbaord-section p .biz-detail-sidebar a a, .biz-detail-sidebar .account-dashbaord-section li a, .account-dashbaord-section .biz-detail-sidebar li a, .biz-detail-sidebar #your-profile .description a, #your-profile .biz-detail-sidebar .description a, .biz-detail-sidebar li a {
       color: #ed027e;
       border-bottom: 1px solid rgba(237, 2, 126, 0);
       transition: border-color .2s; }
@@ -1038,7 +1105,7 @@ html, body {
       .biz-detail-sidebar .event-details-section .tribe-events-event-cost a:hover,
       .event-details-section .biz-detail-sidebar .tribe-events-event-cost a:hover, .biz-detail-sidebar .tribe-events-meta-group-details a:hover, .biz-detail-sidebar #not-user a:hover, .biz-detail-sidebar .my-events-display-options a:hover, .biz-detail-sidebar #tribe-community-events td a:hover, #tribe-community-events .biz-detail-sidebar td a:hover, .biz-detail-sidebar #tribe-community-events .row-actions a a:hover, #tribe-community-events .row-actions .biz-detail-sidebar a a:hover, .biz-detail-sidebar #tribe-community-events small.req a:hover, #tribe-community-events .biz-detail-sidebar small.req a:hover,
       .biz-detail-sidebar #tribe-community-events small.note a:hover,
-      #tribe-community-events .biz-detail-sidebar small.note a:hover, .biz-detail-sidebar #tribe-community-events input[type="text"] a:hover, #tribe-community-events .biz-detail-sidebar input[type="text"] a:hover, .biz-detail-sidebar .user-login .login-instructions a a:hover, .user-login .login-instructions .biz-detail-sidebar a a:hover, .account-dashbaord-section p .biz-detail-sidebar a a:hover, .biz-detail-sidebar .account-dashbaord-section li a:hover, .account-dashbaord-section .biz-detail-sidebar li a:hover, .biz-detail-sidebar .tml .tml-action-links a a:hover, .tml .tml-action-links .biz-detail-sidebar a a:hover, .biz-detail-sidebar #your-profile .description a:hover, #your-profile .biz-detail-sidebar .description a:hover, .biz-detail-sidebar li a:hover {
+      #tribe-community-events .biz-detail-sidebar small.note a:hover, .biz-detail-sidebar #tribe-community-events input[type="text"] a:hover, #tribe-community-events .biz-detail-sidebar input[type="text"] a:hover, .biz-detail-sidebar .user-login .login-instructions a a:hover, .user-login .login-instructions .biz-detail-sidebar a a:hover, .account-dashbaord-section p .biz-detail-sidebar a a:hover, .biz-detail-sidebar .account-dashbaord-section li a:hover, .account-dashbaord-section .biz-detail-sidebar li a:hover, .biz-detail-sidebar #your-profile .description a:hover, #your-profile .biz-detail-sidebar .description a:hover, .biz-detail-sidebar li a:hover {
         border-color: #ed027e; }
   .biz-detail-sidebar .biz-contact p, .biz-detail-sidebar .biz-contact input, .biz-detail-sidebar .biz-contact textarea, .biz-detail-sidebar .biz-contact .tribe-events-sub-nav a, .tribe-events-sub-nav .biz-detail-sidebar .biz-contact a, .biz-detail-sidebar .biz-contact .event-detail-page .events-index-link, .event-detail-page .biz-detail-sidebar .biz-contact .events-index-link, .biz-detail-sidebar .biz-contact .event-details-section .tribe-events-venue-details, .event-details-section .biz-detail-sidebar .biz-contact .tribe-events-venue-details, .biz-detail-sidebar .biz-contact .event-details-section .tribe-event-schedule-details, .event-details-section .biz-detail-sidebar .biz-contact .tribe-event-schedule-details,
   .biz-detail-sidebar .biz-contact .event-details-section .tribe-events-meta-group-venue,
@@ -1046,7 +1113,7 @@ html, body {
   .biz-detail-sidebar .biz-contact .event-details-section .tribe-events-event-cost,
   .event-details-section .biz-detail-sidebar .biz-contact .tribe-events-event-cost, .biz-detail-sidebar .biz-contact .tribe-events-meta-group-details, .biz-detail-sidebar .biz-contact #not-user, .biz-detail-sidebar .biz-contact .my-events-display-options, .biz-detail-sidebar .biz-contact #tribe-community-events td, #tribe-community-events .biz-detail-sidebar .biz-contact td, .biz-detail-sidebar .biz-contact #tribe-community-events .row-actions a, #tribe-community-events .row-actions .biz-detail-sidebar .biz-contact a, .biz-detail-sidebar .biz-contact #tribe-community-events small.req, #tribe-community-events .biz-detail-sidebar .biz-contact small.req,
   .biz-detail-sidebar .biz-contact #tribe-community-events small.note,
-  #tribe-community-events .biz-detail-sidebar .biz-contact small.note, .biz-detail-sidebar .biz-contact #tribe-community-events input[type="text"], #tribe-community-events .biz-detail-sidebar .biz-contact input[type="text"], .biz-detail-sidebar .biz-contact .user-login .login-instructions a, .user-login .login-instructions .biz-detail-sidebar .biz-contact a, .biz-detail-sidebar .biz-contact .account-dashbaord-section p a, .account-dashbaord-section p .biz-detail-sidebar .biz-contact a, .biz-detail-sidebar .biz-contact .account-dashbaord-section li, .account-dashbaord-section .biz-detail-sidebar .biz-contact li, .biz-detail-sidebar .biz-contact .tml .tml-action-links a, .tml .tml-action-links .biz-detail-sidebar .biz-contact a, .biz-detail-sidebar .biz-contact #your-profile .description, #your-profile .biz-detail-sidebar .biz-contact .description {
+  #tribe-community-events .biz-detail-sidebar .biz-contact small.note, .biz-detail-sidebar .biz-contact #tribe-community-events input[type="text"], #tribe-community-events .biz-detail-sidebar .biz-contact input[type="text"], .biz-detail-sidebar .biz-contact .user-login .login-instructions a, .user-login .login-instructions .biz-detail-sidebar .biz-contact a, .biz-detail-sidebar .biz-contact .account-dashbaord-section p a, .account-dashbaord-section p .biz-detail-sidebar .biz-contact a, .biz-detail-sidebar .biz-contact .account-dashbaord-section li, .account-dashbaord-section .biz-detail-sidebar .biz-contact li, .biz-detail-sidebar .biz-contact #your-profile .description, #your-profile .biz-detail-sidebar .biz-contact .description {
     margin: 0; }
   .biz-detail-sidebar .social-icons {
     margin-left: -10px; }
@@ -1078,7 +1145,7 @@ html, body {
   .deal-wrapper .event-details-section .tribe-events-event-cost,
   .event-details-section .deal-wrapper .tribe-events-event-cost, .deal-wrapper .tribe-events-meta-group-details, .deal-wrapper #not-user, .deal-wrapper .my-events-display-options, .deal-wrapper #tribe-community-events td, #tribe-community-events .deal-wrapper td, .deal-wrapper #tribe-community-events .row-actions a, #tribe-community-events .row-actions .deal-wrapper a, .deal-wrapper #tribe-community-events small.req, #tribe-community-events .deal-wrapper small.req,
   .deal-wrapper #tribe-community-events small.note,
-  #tribe-community-events .deal-wrapper small.note, .deal-wrapper #tribe-community-events input[type="text"], #tribe-community-events .deal-wrapper input[type="text"], .deal-wrapper .user-login .login-instructions a, .user-login .login-instructions .deal-wrapper a, .deal-wrapper .account-dashbaord-section p a, .account-dashbaord-section p .deal-wrapper a, .deal-wrapper .account-dashbaord-section li, .account-dashbaord-section .deal-wrapper li, .deal-wrapper .tml .tml-action-links a, .tml .tml-action-links .deal-wrapper a, .deal-wrapper #your-profile .description, #your-profile .deal-wrapper .description {
+  #tribe-community-events .deal-wrapper small.note, .deal-wrapper #tribe-community-events input[type="text"], #tribe-community-events .deal-wrapper input[type="text"], .deal-wrapper .user-login .login-instructions a, .user-login .login-instructions .deal-wrapper a, .deal-wrapper .account-dashbaord-section p a, .account-dashbaord-section p .deal-wrapper a, .deal-wrapper .account-dashbaord-section li, .account-dashbaord-section .deal-wrapper li, .deal-wrapper #your-profile .description, #your-profile .deal-wrapper .description {
     font-size: 14px;
     line-height: 1.3;
     margin: 0 0 5px 0; }
@@ -1111,10 +1178,13 @@ html, body {
 
 .toggle-profile-edit {
   position: absolute;
-  top: 20px;
-  right: 2%; }
-  .toggle-profile-edit .button-lg:hover {
-    background: white; }
+  top: 60px;
+  left: 6%; }
+  .toggle-profile-edit .button-lg {
+    font-size: 18px;
+    padding: 20px 30px; }
+    .toggle-profile-edit .button-lg:hover {
+      background: white; }
 
 .edit-biz-details-form {
   width: 100%;
@@ -1128,7 +1198,7 @@ html, body {
   .edit-biz-details-form .event-details-section .label.tribe-events-event-cost,
   .event-details-section .edit-biz-details-form .label.tribe-events-event-cost, .edit-biz-details-form .label.tribe-events-meta-group-details, .edit-biz-details-form .label#not-user, .edit-biz-details-form .label.my-events-display-options, .edit-biz-details-form #tribe-community-events td.label, #tribe-community-events .edit-biz-details-form td.label, .edit-biz-details-form #tribe-community-events .row-actions a.label, #tribe-community-events .row-actions .edit-biz-details-form a.label, .edit-biz-details-form #tribe-community-events small.label.req, #tribe-community-events .edit-biz-details-form small.label.req,
   .edit-biz-details-form #tribe-community-events small.label.note,
-  #tribe-community-events .edit-biz-details-form small.label.note, .edit-biz-details-form #tribe-community-events input.label[type="text"], #tribe-community-events .edit-biz-details-form input.label[type="text"], .edit-biz-details-form .user-login .login-instructions a.label, .user-login .login-instructions .edit-biz-details-form a.label, .edit-biz-details-form .account-dashbaord-section p a.label, .account-dashbaord-section p .edit-biz-details-form a.label, .edit-biz-details-form .account-dashbaord-section li.label, .account-dashbaord-section .edit-biz-details-form li.label, .edit-biz-details-form .tml .tml-action-links a.label, .tml .tml-action-links .edit-biz-details-form a.label, .edit-biz-details-form #your-profile .label.description, #your-profile .edit-biz-details-form .label.description {
+  #tribe-community-events .edit-biz-details-form small.label.note, .edit-biz-details-form #tribe-community-events input.label[type="text"], #tribe-community-events .edit-biz-details-form input.label[type="text"], .edit-biz-details-form .user-login .login-instructions a.label, .user-login .login-instructions .edit-biz-details-form a.label, .edit-biz-details-form .account-dashbaord-section p a.label, .account-dashbaord-section p .edit-biz-details-form a.label, .edit-biz-details-form .account-dashbaord-section li.label, .account-dashbaord-section .edit-biz-details-form li.label, .edit-biz-details-form #your-profile .label.description, #your-profile .edit-biz-details-form .label.description {
     font: italic 400 13px/1.4 "Roboto", sans-serif !important;
     color: #4f4f4f !important; }
     .edit-biz-details-form p.label label, .edit-biz-details-form input.label label, .edit-biz-details-form textarea.label label, .edit-biz-details-form .tribe-events-sub-nav a.label label, .tribe-events-sub-nav .edit-biz-details-form a.label label, .edit-biz-details-form .event-detail-page .label.events-index-link label, .event-detail-page .edit-biz-details-form .label.events-index-link label, .edit-biz-details-form .event-details-section .label.tribe-events-venue-details label, .event-details-section .edit-biz-details-form .label.tribe-events-venue-details label, .edit-biz-details-form .event-details-section .label.tribe-event-schedule-details label, .event-details-section .edit-biz-details-form .label.tribe-event-schedule-details label,
@@ -1137,7 +1207,7 @@ html, body {
     .edit-biz-details-form .event-details-section .label.tribe-events-event-cost label,
     .event-details-section .edit-biz-details-form .label.tribe-events-event-cost label, .edit-biz-details-form .label.tribe-events-meta-group-details label, .edit-biz-details-form .label#not-user label, .edit-biz-details-form .label.my-events-display-options label, .edit-biz-details-form #tribe-community-events td.label label, #tribe-community-events .edit-biz-details-form td.label label, .edit-biz-details-form #tribe-community-events .row-actions a.label label, #tribe-community-events .row-actions .edit-biz-details-form a.label label, .edit-biz-details-form #tribe-community-events small.label.req label, #tribe-community-events .edit-biz-details-form small.label.req label,
     .edit-biz-details-form #tribe-community-events small.label.note label,
-    #tribe-community-events .edit-biz-details-form small.label.note label, .edit-biz-details-form #tribe-community-events input.label[type="text"] label, #tribe-community-events .edit-biz-details-form input.label[type="text"] label, .edit-biz-details-form .user-login .login-instructions a.label label, .user-login .login-instructions .edit-biz-details-form a.label label, .edit-biz-details-form .account-dashbaord-section p a.label label, .account-dashbaord-section p .edit-biz-details-form a.label label, .edit-biz-details-form .account-dashbaord-section li.label label, .account-dashbaord-section .edit-biz-details-form li.label label, .edit-biz-details-form .tml .tml-action-links a.label label, .tml .tml-action-links .edit-biz-details-form a.label label, .edit-biz-details-form #your-profile .label.description label, #your-profile .edit-biz-details-form .label.description label {
+    #tribe-community-events .edit-biz-details-form small.label.note label, .edit-biz-details-form #tribe-community-events input.label[type="text"] label, #tribe-community-events .edit-biz-details-form input.label[type="text"] label, .edit-biz-details-form .user-login .login-instructions a.label label, .user-login .login-instructions .edit-biz-details-form a.label label, .edit-biz-details-form .account-dashbaord-section p a.label label, .account-dashbaord-section p .edit-biz-details-form a.label label, .edit-biz-details-form .account-dashbaord-section li.label label, .account-dashbaord-section .edit-biz-details-form li.label label, .edit-biz-details-form #your-profile .label.description label, #your-profile .edit-biz-details-form .label.description label {
       font: 700 18px/1.4 "Roboto Condensed", sans-serif !important;
       color: #231f20 !important; }
   .edit-biz-details-form .acf_postbox .field input[type="text"],
@@ -1177,6 +1247,14 @@ html, body {
   .main-content.event-detail-page .section-marker,
   .main-content.event-detail-page .filter-sidebar {
     background: #00abc4; }
+  .main-content.events-index-page .section-marker,
+  .main-content.event-detail-page .section-marker {
+    border: 2px solid #00abc4;
+    transition: background .2s, color .2s; }
+    .main-content.events-index-page .section-marker:hover,
+    .main-content.event-detail-page .section-marker:hover {
+      color: #00abc4;
+      background: white; }
   .main-content.events-index-page .filter-sidebar,
   .main-content.event-detail-page .filter-sidebar {
     display: none; }
@@ -1513,6 +1591,13 @@ html, body {
   right: 0;
   top: 0; }
 
+.event-cta-buttons-wrapper {
+  width: 65%;
+  position: relative;
+  right: 0;
+  float: right;
+  padding: 40px 0 50px; }
+
 h3.tribe-events-related-events-title, .my-favorites .faves-section li a.tribe-events-related-events-title, .tribe-events-meta-group-details dt.tribe-events-related-events-title, #tribe-community-events .tribe-events-related-events-title.title {
   clear: both;
   border-top: 1px solid #ccc;
@@ -1663,7 +1748,14 @@ table.events-community {
   .user-login .section-marker,
   .account-dashboard .section-marker,
   .user-account-general .section-marker {
-    background: #ed027e; }
+    background: #ed027e;
+    border: 2px solid #ed027e;
+    transition: background .2s, color .2s; }
+    .user-login .section-marker:hover,
+    .account-dashboard .section-marker:hover,
+    .user-account-general .section-marker:hover {
+      color: #ed027e;
+      background: white; }
 
 .user-login {
   text-align: center;
@@ -1685,9 +1777,28 @@ table.events-community {
     .user-login .tml input[type="submit"] {
       min-width: 150px;
       display: block;
-      text-align: center; }
+      text-align: center;
+      margin: auto; }
     .user-login .tml .tml-rememberme-wrap {
       display: none; }
+
+.tml .message {
+  border: 2px solid #00abc4;
+  background: rgba(0, 171, 196, 0.15); }
+.tml .tml-action-links {
+  display: inline-block;
+  display: none;
+  text-align: center;
+  margin: 0; }
+  .tml .tml-action-links a {
+    font: 400 15px/1.6 "Roboto", sans-serif;
+    color: #ed027e;
+    border-bottom: 1px solid rgba(237, 2, 126, 0);
+    transition: border-color .2s; }
+    .tml .tml-action-links a:hover {
+      border-bottom-color: #ed027e; }
+.tml label {
+  margin-top: 20px; }
 
 .account-dashbaord-section {
   width: 25%;
@@ -1701,7 +1812,7 @@ table.events-community {
   .account-dashbaord-section .event-details-section .tribe-events-event-cost a,
   .event-details-section .account-dashbaord-section .tribe-events-event-cost a, .account-dashbaord-section .tribe-events-meta-group-details a, .account-dashbaord-section #not-user a, .account-dashbaord-section .my-events-display-options a, .account-dashbaord-section #tribe-community-events td a, #tribe-community-events .account-dashbaord-section td a, .account-dashbaord-section #tribe-community-events .row-actions a a, #tribe-community-events .row-actions .account-dashbaord-section a a, .account-dashbaord-section #tribe-community-events small.req a, #tribe-community-events .account-dashbaord-section small.req a,
   .account-dashbaord-section #tribe-community-events small.note a,
-  #tribe-community-events .account-dashbaord-section small.note a, .account-dashbaord-section #tribe-community-events input[type="text"] a, #tribe-community-events .account-dashbaord-section input[type="text"] a, .account-dashbaord-section .user-login .login-instructions a a, .user-login .login-instructions .account-dashbaord-section a a, .account-dashbaord-section li a, .account-dashbaord-section .tml .tml-action-links a a, .tml .tml-action-links .account-dashbaord-section a a, .account-dashbaord-section #your-profile .description a, #your-profile .account-dashbaord-section .description a {
+  #tribe-community-events .account-dashbaord-section small.note a, .account-dashbaord-section #tribe-community-events input[type="text"] a, #tribe-community-events .account-dashbaord-section input[type="text"] a, .account-dashbaord-section .user-login .login-instructions a a, .user-login .login-instructions .account-dashbaord-section a a, .account-dashbaord-section li a, .account-dashbaord-section #your-profile .description a, #your-profile .account-dashbaord-section .description a {
     display: block;
     color: #ed027e;
     margin: 0 0 5px 0; }
@@ -1713,19 +1824,10 @@ table.events-community {
   .account-dashbaord-section .biz-cta-button, .account-dashbaord-section #tribe-community-events .button, #tribe-community-events .account-dashbaord-section .button {
     width: auto; }
 
-.tml .message {
-  border: 2px solid #00abc4;
-  background: rgba(0, 171, 196, 0.15); }
-.tml .tml-action-links {
-  display: block; }
-  .tml .tml-action-links a {
-    color: #ed027e;
-    border-bottom: 1px solid rgba(237, 2, 126, 0);
-    transition: border-color .2s; }
-    .tml .tml-action-links a:hover {
-      border-bottom-color: #ed027e; }
-.tml label {
-  margin-top: 20px; }
+.tml-user-url-wrap,
+.tml-user-description-wrap,
+.tml-display-name-wrap {
+  display: none; }
 
 #your-profile {
   width: 70%; }
@@ -1850,7 +1952,7 @@ table.events-community {
   p, input, textarea, .tribe-events-sub-nav a, .event-detail-page .events-index-link, .event-details-section .tribe-events-venue-details, .event-details-section .tribe-event-schedule-details,
   .event-details-section .tribe-events-meta-group-venue,
   .event-details-section .tribe-events-event-cost, .tribe-events-meta-group-details, #not-user, .my-events-display-options, #tribe-community-events td, #tribe-community-events .row-actions a, #tribe-community-events small.req,
-  #tribe-community-events small.note, #tribe-community-events input[type="text"], .user-login .login-instructions a, .account-dashbaord-section p a, .account-dashbaord-section li, .tml .tml-action-links a, #your-profile .description,
+  #tribe-community-events small.note, #tribe-community-events input[type="text"], .user-login .login-instructions a, .account-dashbaord-section p a, .account-dashbaord-section li, #your-profile .description,
   h2,
   h3,
   .my-favorites .faves-section li a,
@@ -1938,7 +2040,7 @@ table.events-community {
     .splash .footer .event-details-section .tribe-events-event-cost,
     .event-details-section .splash .footer .tribe-events-event-cost, .splash .footer .tribe-events-meta-group-details, .splash .footer #not-user, .splash .footer .my-events-display-options, .splash .footer #tribe-community-events td, #tribe-community-events .splash .footer td, .splash .footer #tribe-community-events .row-actions a, #tribe-community-events .row-actions .splash .footer a, .splash .footer #tribe-community-events small.req, #tribe-community-events .splash .footer small.req,
     .splash .footer #tribe-community-events small.note,
-    #tribe-community-events .splash .footer small.note, .splash .footer #tribe-community-events input[type="text"], #tribe-community-events .splash .footer input[type="text"], .splash .footer .user-login .login-instructions a, .user-login .login-instructions .splash .footer a, .splash .footer .account-dashbaord-section p a, .account-dashbaord-section p .splash .footer a, .splash .footer .account-dashbaord-section li, .account-dashbaord-section .splash .footer li, .splash .footer .tml .tml-action-links a, .tml .tml-action-links .splash .footer a, .splash .footer #your-profile .description, #your-profile .splash .footer .description {
+    #tribe-community-events .splash .footer small.note, .splash .footer #tribe-community-events input[type="text"], #tribe-community-events .splash .footer input[type="text"], .splash .footer .user-login .login-instructions a, .user-login .login-instructions .splash .footer a, .splash .footer .account-dashbaord-section p a, .account-dashbaord-section p .splash .footer a, .splash .footer .account-dashbaord-section li, .account-dashbaord-section .splash .footer li, .splash .footer #your-profile .description, #your-profile .splash .footer .description {
       opacity: 1; } }
 /*  CROSS-BROWSER
 ------------------------- */

@@ -1,4 +1,4 @@
-<?php // Business Directory - List & Map View?>
+<?php // Template Name: Business Directory - List & Map View?>
 
 <?php get_header(); ?>
 
@@ -93,10 +93,9 @@
 							</div>
 							<div class="summary-card-details clearfix">
 								<aside class="biz-detail-sidebar">
-									<!-- Not sure how to pull link to google maps. Tried echo $business_address['url']; -->
-									<p><a class="biz-full-address" href="#" target="blank"><?php echo $business_address['address']; ?></a></p>
+									<p><a class="biz-full-address" href="https://www.google.com/maps/place/?q=<?php echo $business_address['address']; ?>"  target="blank"><?php echo $business_address['address']; ?></a></p>
 									<p class="biz-website"><a href="<?php echo $biz_website; ?>" target="blank">Website</a></p>
-									<p class="biz-email"><a href="<?php echo $biz_email; ?>"><?php echo $biz_email; ?></a></p>
+									<!-- <p class="biz-email"><a href="<?php echo $biz_email; ?>"><?php echo $biz_email; ?></a></p> -->
 									<p class="phone"><a href="<?php echo $biz_phone; ?>"><?php echo $biz_phone; ?></a></p>
 									<!-- operating hours -->
 									<?php if( have_rows('operating_hours') ): ?>
@@ -105,50 +104,88 @@
 											<ul class="hours">
 												<h3>Hours</h3>
 
-											<?php if( have_rows('time_blocks') ): ?>
-											<?php while( have_rows('time_blocks') ): the_row(); 
+												<?php if( have_rows('time_blocks') ): ?>
+												<?php while( have_rows('time_blocks') ): the_row(); 
 
-												// time_blocks vars
-												$start_day = get_sub_field('start_day');
-												$end_day = get_sub_field('end_day');
-												$start_time = get_sub_field('start_time');
-												$start_time_mins = get_sub_field('start_time_mins');
-												$am_pm_start = get_sub_field('am_pm_start');
-												$end_time = get_sub_field('end_time');
-												$stop_time_mins = get_sub_field('stop_time_mins');
-												$am_pm_stop = get_sub_field('am_pm_stop');
+													// time_blocks vars
+													$start_day = get_sub_field('start_day');
+													$end_day = get_sub_field('end_day');
+													$start_time = get_sub_field('start_time');
+													$start_time_mins = get_sub_field('start_time_mins');
+													$am_pm_start = get_sub_field('am_pm_start');
+													$end_time = get_sub_field('end_time');
+													$stop_time_mins = get_sub_field('stop_time_mins');
+													$am_pm_stop = get_sub_field('am_pm_stop');
 
-												// Fix ACF from defaulting to changing "00" to "0"
-												if ($start_time_mins <= 0 ) {
-													$start_time_mins = "00";
-													}
+													// Fix ACF from defaulting to changing "00" to "0"
+													if ($start_time_mins <= 0 ) {
+														$start_time_mins = "00";
+														}
 
-												if ($stop_time_mins <= 0 ) {
-													$stop_time_mins = "00";
-													}
+													if ($stop_time_mins <= 0 ) {
+														$stop_time_mins = "00";
+														}
 
+													?>
+
+													<li class="time_block">
+													   	<?php echo $start_day;
+														
+														// If start & end day are the same, only show start day
+														if ($start_day != $end_day ) { echo "-" . $end_day . ": "; }
+													   	else { echo ": "; }
+													   	
+													   	?>
+
+													   	<?php echo $start_time; ?>:<?php echo $start_time_mins . $am_pm_start; ?> - <?php echo $end_time; ?>:<?php echo $stop_time_mins . $am_pm_stop; ?>
+													</li>
+
+													<?php endwhile; ?>
+												<?php endif; ?>
+
+											</ul> <!-- end .hours -->
+
+																	<!-- Display social links section only when at least one social account exists -->
+											<?php if( have_rows('social_media') ): ?>
+												<?php while( have_rows('social_media') ): the_row(); 
+
+													// $social_media vars
+													$facebook = get_sub_field('facebook');
+													$twitter = get_sub_field('twitter');
+													$instagram = get_sub_field('instagram');
+													$yelp = get_sub_field('yelp');
 												?>
+													<section class="social-links">
+														<div class="social-icons">
+															
+															<!-- Only show icons for existing social accounts -->
+															<?php if ($facebook): ?>
+																<a href="<?php echo $facebook; ?>" target="_blank" title="Like <?php the_title(); ?> on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+															<?php endif ?>
 
-												<li class="time_block">
-												   	<?php echo $start_day;
-													
-													// If start & end day are the same, only show start day
-													if ($start_day != $end_day ) { echo " - " . $end_day . ": "; }
-												   	else { echo ": "; }
-												   	
-												   	?>
+															<?php if ($twitter): ?>
+																<a href="https://twitter.com/<?php echo $twitter; ?>" target="_blank" title="Follow <?php the_title(); ?> on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+															<?php endif ?>
 
-												   	<?php echo $start_time; ?>:<?php echo $start_time_mins . " " . $am_pm_start; ?> - <?php echo $end_time; ?>:<?php echo $stop_time_mins . " " . $am_pm_stop; ?>
-												</li>
+															<?php if ($instagram): ?>
+																<a href="https://www.instagram.com/<?php echo $instagram; ?>" target="_blank" title="Follow <?php the_title(); ?> on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+															<?php endif ?>
 
+															<?php if ($yelp): ?>
+																<a href="<?php echo $yelp; ?>" target="_blank" title="Review <?php the_title(); ?> on Yelp"><i class="fa fa-yelp" aria-hidden="true"></i></a>
+															<?php endif ?>
+
+													    </div>
+														<?php include 'favorite-button.php'; ?>
+													</section>
+
+														
 												<?php endwhile; ?>
-											<?php endif; ?>
-
-											</ul>
+											<?php endif; ?>	 
 
 										<?php endwhile; ?>
 									<?php endif; ?>
-									<!-- <a class="biz-cta-button" href="#" title="Add to Favorites">Favorite <i class="fa fa-heart" aria-hidden="true"></i></a> -->
+
 								</aside>
 
 								<div class="biz-summary">

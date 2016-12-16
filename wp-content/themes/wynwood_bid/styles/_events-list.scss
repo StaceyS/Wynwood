@@ -10,6 +10,16 @@
 		background: $cyan;
 		}
 
+	.section-marker {
+		border: 2px solid $cyan;
+		transition: background .2s, color .2s;
+
+		&:hover {
+			color: $cyan;
+			background: white;
+			}
+		}
+
 
 	.filter-sidebar {
 		display: none;
@@ -535,6 +545,14 @@
 	position: absolute;
 	right: 0;
 	top: 0;
+	}
+
+.event-cta-buttons-wrapper {
+	width: 65%;
+	position: relative;
+	right: 0;
+	float: right;
+	padding: 40px 0 50px;
 	}
 
 // Single - Related Events 

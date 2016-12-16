@@ -8,6 +8,13 @@
 
 	.section-marker {
 		background: $magenta;
+		border: 2px solid $magenta;
+		transition: background .2s, color .2s;
+
+		&:hover {
+			color: $magenta;
+			background: white;
+			}
 		}
 	}
 
@@ -46,6 +53,7 @@
 			min-width: 150px;
 			display: block;
 			text-align: center;
+			margin: auto;
 			}
 
 		.tml-rememberme-wrap {
@@ -54,6 +62,36 @@
 		}
 
 	}
+
+.tml {
+
+	.message {
+		border: 2px solid $cyan;
+		background: rgba($cyan,.15);
+		}
+	
+	.tml-action-links {
+		display: inline-block;
+		display: none; // Adding this manually
+		text-align: center;
+		margin: 0;
+
+		a {
+			font: 400 15px/1.6 $roboto-reg;
+			color: $magenta;
+			border-bottom: 1px solid rgba($magenta,0);
+			transition: border-color .2s; 
+
+			&:hover {border-bottom-color: $magenta;}
+			}
+
+		}
+
+	label {
+		margin-top: 20px; 
+		}
+} // .tml
+
 
 // Account Dashboard
 
@@ -94,31 +132,17 @@
 		}
 	}
 
-.tml {
+// My Profile Page
 
-	.message {
-		border: 2px solid $cyan;
-		background: rgba($cyan,.15);
-		}
-	
-	.tml-action-links {
-		display: block;
+.tml-user-url-wrap,
+.tml-user-description-wrap,
+.tml-display-name-wrap {
+	// Hidden per Kivvit request
+	// h3 "About Yourself" hidden in script.js 
+	display: none;
+	}
 
-		a {
-			@extend p;
-			color: $magenta;
-			border-bottom: 1px solid rgba($magenta,0);
-			transition: border-color .2s; 
 
-			&:hover {border-bottom-color: $magenta;}
-			}
-
-		}
-
-	label {
-		margin-top: 20px; 
-		}
-} // .tml
 
 
 // User Account (General)

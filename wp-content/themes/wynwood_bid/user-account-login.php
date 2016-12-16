@@ -8,11 +8,14 @@
 	<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 		
-	  		<!-- <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1> -->
 			<h1><?php bloginfo('name'); ?></h1>
-			<p class="login-instructions">Don't have an account yet? <a href="#">Sign up</a></p>
+			<p class="login-instructions">Don't have an account yet? <a href="<?php bloginfo(url); ?>/community/register/">Sign up</a>
+			<br />Already have an account? <a href="<?php bloginfo(url); ?>/community/login">Sign in</a></p>
 	  		<?php the_content(); ?>
+			
 
+			<p class="login-instructions"><a href="<?php bloginfo(url); ?>/community/lostpassword/">Forgot your password?</a></p>
+		
 		<?php endwhile; ?>		
 	<?php endif; ?>
 

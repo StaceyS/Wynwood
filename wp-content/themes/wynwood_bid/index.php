@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 	<?php if (have_posts()) : ?>
+
+		<h1>Default index page template</h1>
 	
 		<?php $date = ''; ?>
 		<?php while (have_posts()) : the_post(); ?>

@@ -39,6 +39,7 @@ jQuery(document).ready(function($){
 	// 	$('.view-all-events').addClass('current-menu-item');
 	// 	}
 
+	$('.event-cta-buttons-wrapper .tribe-events-gmap').addClass('biz-cta-button').html('Get Directions <i class="fa fa-compass" aria-hidden="true"></i>');
 	
 	// GOOGLE MAPS API + ADVANCED CUSTOM FIELDS PLUGIN
 	// -----------------------------------------------
@@ -197,19 +198,52 @@ jQuery(document).ready(function($){
 
 	// ** BUSINESS DIRECTORY (LIST VIEW) **
 
+	
 	// Set width of summary card details equalt to the parent '.results.list-view' div
 	var listWidth = $('.results.list-view').width();
 
 	$('.summary-card-details').width(listWidth);
 
-	// ... and on resize
-	$(window).resize(function(listWidth){
+	// Fix positioning of business listing details section so it's left-aligned with the grid
+	var singleListingWidth = $('.business-index .single-listing').outerWidth();
+	var betweenListItems = listWidth * .03; // get the actual width of the margin
+	
+	var secondLeftMargin = betweenListItems + singleListingWidth; // amount the 2nd box needs to be offset
+	secondLeftMargin = -secondLeftMargin;
+
+	var thirdLeftMargin = (betweenListItems * 2) + (singleListingWidth * 2); // amount the 3rd box needs to be offset
+	thirdLeftMargin = -thirdLeftMargin;
+
+	$('.business-index .single-listing:nth-child(3n+4)').css('clear','both');
+	$('.business-index .single-listing:nth-child(3n+2) .summary-card-details').css('left',secondLeftMargin);
+	$('.business-index .single-listing:nth-child(3n+3) .summary-card-details').css('left',thirdLeftMargin);
+
+
+	// ... and do all the same stuff on resize
+	$(window).resize(function(listWidth, singleListingWidth, betweenListItems, secondLeftMargin, thirdLeftMargin){
 		listWidth = $('.results.list-view').width();
 		$('.summary-card-details').width(listWidth);
+
+		singleListingWidth = $('.business-index .single-listing').outerWidth();
+		betweenListItems = listWidth * .03;
+		
+		secondLeftMargin = betweenListItems + singleListingWidth;
+		secondLeftMargin = -secondLeftMargin;
+
+		thirdLeftMargin = (betweenListItems * 2) + (singleListingWidth * 2);
+		thirdLeftMargin = -thirdLeftMargin;
+
+		$('.business-index .single-listing:nth-child(3n+4)').css('clear','both');
+		$('.business-index .single-listing:nth-child(3n+2) .summary-card-details').css('left',secondLeftMargin);
+		$('.business-index .single-listing:nth-child(3n+3) .summary-card-details').css('left',thirdLeftMargin);
 		});
+
 
 	// Show/hide biz listing details on click
 	$('.toggle-biz-details').click(function(){
+		// $('.active-card').toggleClass('active-card');
+		// $('.active-details').toggleClass('active-details');
+		// $('.active-card .summary-card-details').fadeToggle();
 		$(this).closest('.single-listing').children('.summary-card-details').fadeToggle();
 		$(this).toggleClass('active-details');
 		$(this).closest('.summary-card').toggleClass('active-card');
@@ -237,6 +271,44 @@ jQuery(document).ready(function($){
 			$(this).toggleClass('now-editing');
 			return false;
 		});
+
+
+	// WP USER PROFILE
+	$('#your-profile h3:contains("About Yourself")').hide();
+
+
+	// FAVORITES MODAL
+	// Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("favorite-create-account");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal and prevent the full page from scrolling
+	// btn.onclick = function() {
+	//     //modal.style.display = "block";
+	// 	$('#myModal').delay(200).fadeIn(400);
+	// 	$('html').addClass('noscroll');
+	// }
+
+	// // When the user clicks on <span> (x), close the modal
+	// span.onclick = function() {
+	//     //modal.style.display = "none";
+	//     $('#myModal').fadeOut();
+	// 	$('html').removeClass('noscroll');			
+	// }
+
+	// // When the user clicks anywhere outside of the modal, close it
+	// window.onclick = function(event) {
+	//     if (event.target == modal) {
+	//         //modal.style.display = "none";
+ //    		$('#myModal').fadeOut();
+	// 		$('html').removeClass('noscroll');			
+	//     }
+	// }
 
 
 } ); // End EVERTYTHING!!!

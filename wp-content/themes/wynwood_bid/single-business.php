@@ -200,11 +200,11 @@
 										<?php endif ?>
 
 										<?php if ($twitter): ?>
-											<a href="<?php echo $twitter; ?>" target="_blank" title="Follow <?php the_title(); ?> on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+											<a href="https://twitter.com/<?php echo $twitter; ?>" target="_blank" title="Follow <?php the_title(); ?> on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 										<?php endif ?>
 
 										<?php if ($instagram): ?>
-											<a href="<?php echo $instagram; ?>" target="_blank" title="Follow <?php the_title(); ?> on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+											<a href="https://www.instagram.com/<?php echo $instagram; ?>" target="_blank" title="Follow <?php the_title(); ?> on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 										<?php endif ?>
 
 										<?php if ($yelp): ?>
@@ -216,8 +216,9 @@
 
 								<section>
 									<a class="biz-cta-button" href="https://www.google.com/maps/place/?q=<?php echo $business_address['address']; ?>" target="blank">Get Directions <i class="fa fa-compass" aria-hidden="true"></i></a>
-									<!-- See 'Favorite Posts' plugin site for details https://favoriteposts.com/ -->
-									<?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+									
+									<?php include 'favorite-button.php'; ?>
+
 								</section>
 								
 							<?php endwhile; ?>

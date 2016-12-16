@@ -242,7 +242,42 @@ function custom_acf_deregister_styles()
 }
 
 
-//add_cap($role,$cap,$grant);
-//add_cap("business_ownder", "edit_posts", true);
-//remove_menu_page('Posts', 'Posts', 'edit_posts','posts','menu_function');
+// ======================== ACCOUNT SIGNUP / USER REGISTRATION ======================== 
+
+
+// Allow user role selection during signup
+// http://wordpress.stackexchange.com/questions/195603/how-to-add-users-roles-dropdown-in-registration-in-wordpress
+
+//1. Add a new form element...
+add_action( 'register_form', 'myplugin_register_form' );
+function myplugin_register_form() {
+
+    global $wp_roles;
+
+    echo '<select name="role" class="input">';
+    // foreach ( $wp_roles->roles as $key=>$value ):
+	   // 	echo '<option value="'.$key.'">'.$value['name'].'</option>';
+    // endforeach;
+    echo '<option value="subscriber">Wynwood Guest</option>';
+    echo '<option value="business_owner">Wynwood Business Owner</option>';
+    echo '</select>';
+}
+
+//2. Add validation.
+add_filter( 'registration_errors', 'myplugin_registration_errors', 10, 3 );
+function myplugin_registration_errors( $errors, $sanitized_user_login, $user_email ) {
+
+    if ( empty( $_POST['role'] ) || ! empty( $_POST['role'] ) && trim( $_POST['role'] ) == '' ) {
+       $errors->add( 'role_error', __( '<strong>ERROR</strong>: You must include a role.', 'mydomain' ) );
+    }
+    return $errors;
+}
+
+//3. Finally, save our extra registration user meta.
+add_action( 'user_register', 'myplugin_user_register' );
+function myplugin_user_register( $user_id ) {
+   $user_id = wp_update_user( array( 'ID' => $user_id, 'role' => $_POST['role'] ) );
+}
+
+
  

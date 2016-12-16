@@ -4,6 +4,8 @@
 
 		<?php if (is_category()) : ?>
 
+			<?php //if (is_tax()): ?>
+
 			<h1>Archive for the &ldquo;<?php single_cat_title(); ?>&rdquo; category</h1>
 
 	 	<?php elseif( is_tag() ) : ?>

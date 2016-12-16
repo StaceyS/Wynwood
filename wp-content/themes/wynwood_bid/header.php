@@ -53,6 +53,8 @@
 
 <body class="<?php echo $post->post_name; ?>">
 
+    <?php include 'modals.php'; ?>
+
     <header class="header clearfix">
   		<a class="header-logo" href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/layout/wynwood_logo_knockedout.svg"></a>
   			<?php wp_nav_menu( array( 

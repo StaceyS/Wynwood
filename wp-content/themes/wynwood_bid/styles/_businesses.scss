@@ -9,6 +9,16 @@
 	.filter-sidebar {
 		background: $mint;
 		}
+
+	.section-marker {
+		border: 2px solid $mint;
+		transition: background .2s, color .2s;
+
+		&:hover {
+			color: $mint;
+			background: white;
+			}
+		}
 	}
 
 .grid-map-view-toggle {
@@ -117,7 +127,6 @@
 		    }
 
 		 img {
-		 	//border: 1px solid blue;
 				width: 100%;
 			 	height: auto;
 			 	position: relative;
@@ -175,13 +184,16 @@
 	display: none;
 	//width: 100%; <-- width set in script.js
 	padding: 25px 0;
-	position: absolute;
+	position: relative;
 	left: 0;
 	z-index: 7;
 	background: lighten($lt-grey, 15%);
 	margin-top: 20px;
 
-	h2 {font-size: 24px !important;}
+	h2 {
+		font-size: 26px !important;
+		margin-bottom: 12px !important;
+		}
 
 	.biz-detail-sidebar {
 		width: 27%;
@@ -192,11 +204,11 @@
 			text-transform: none;
 		    font-weight: 600;
 		    margin: 10px 0 0 0;
-		    font-size: 16px;
+		    font-size: 17px;
 			}
 
 		p {
-			font: 400 14px/1.5 $roboto-reg;
+			font: 400 15px/1.4 $roboto-reg;
 			margin-bottom: 8px;
 			}
 
@@ -204,12 +216,21 @@
 			color: $magenta !important;
 			}
 
+		.phone a {
+			color: $black;
+
+			&:hover {
+				border-bottom-color: rgba($magenta, 0);
+				}
+			}
+
 		.hours {
 			margin-bottom: 5px;
 
 			li {
-				font-size: 14px;
-				line-height: 1.4;
+				font-size: 15px;
+				line-height: 1.3;
+				margin: 5px 0;
 				}
 			}
 
@@ -221,9 +242,10 @@
 		padding-right: 3%;
 
 		p {
-			font: 400 14px/1.5 $roboto-reg;
+			font: 400 15px/1.5 $roboto-reg;
 			}
 		}
+
 	}
 
 .biz-full-address {
@@ -373,11 +395,16 @@
 
 .toggle-profile-edit {
 	position: absolute;
-	top: 20px;
-	right: 2%;
+	top: 60px;
+	left: 6%;
 
-	.button-lg:hover {
-		background: white;
+	.button-lg{
+		font-size: 18px;
+		padding: 20px 30px;
+
+		&:hover {
+			background: white;
+			}
 		}
 	}
 
