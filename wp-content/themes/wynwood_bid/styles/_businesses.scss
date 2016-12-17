@@ -28,9 +28,10 @@
 	right: 0;
 	top: 0;
 
-	button {
+	a {
+		display: inline-block;
 		width: 95px;
-		height: 75px;
+		height: 30px;
 		text-align: center;
 		padding-top: 45px; // align text to bottom
 		margin-left: -5px;
@@ -259,7 +260,89 @@
 
 
 
-// ...
+// RESULTS - MAP VIEW
+
+.main-content.map-view {
+	width: 100%;
+	padding: 30px 0 0 0;
+	top: 0;
+
+	h1 {
+		padding: 0 1.5%;
+		margin-bottom: 0;
+		position: relative;
+		top: -10px;
+		}
+
+	.filter-sidebar {
+		height: 100%;
+		padding: 0;
+		margin-top: 0;
+
+		a {
+			width: 90.5%;
+			padding: 4px 5% 3px 5%;
+			}
+		}
+
+	.cat-list-toggle {
+
+		a {	
+			display: inline-block;
+			width: 40%;
+			font-size: 12px;
+			text-transform: uppercase;
+			background: darken($mint, 5%);
+			float: left;
+			padding: 8px 5% 6px;
+			transition: background .2s;
+
+			&.active {
+				background: $mint;
+				}
+
+			&:hover {
+				background: darken($mint, 5%);
+				color: inherit;
+				}
+			}
+		}
+	}
+
+.results.map-view {
+	width: 82%;
+	padding: 0;
+
+	.acf-map {
+		height: 100%;
+		margin: 0;
+
+		.marker {display: none;}
+		}
+
+	// Google Maps tool tip
+	.gm-style-iw {
+		width: 300px !important;
+
+		a {
+			color: $black;
+			transition: color .2s;
+
+			&:hover {
+				color: $magenta;
+				}
+			}
+		h5 {
+			color: $mint;
+			padding: 8px 0 2px;
+			}
+
+		.address {
+			line-height: 1.3;
+			margin: 4px 0;
+			}
+		}
+	}
 
 
 // * BUSINESS DETAIL PG 

@@ -111,9 +111,8 @@
 								<div class="acf-map">
 									<div class="marker" data-lat="<?php echo $business_address['lat']; ?>" data-lng="<?php echo $business_address['lng']; ?>"></div>
 								</div>
-								<?php endif; ?>
+							<?php endif; ?>
 
-							<!-- Not sure how to pull link to google maps. Tried echo $business_address['url']; -->
 							<p><a class="biz-full-address" href="https://www.google.com/maps/place/?q=<?php echo $business_address['address']; ?>" target="blank"><?php echo $business_address['address']; ?></a></p>
 
 						</section>

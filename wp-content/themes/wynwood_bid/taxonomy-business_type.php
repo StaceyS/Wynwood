@@ -1,4 +1,4 @@
-<?php // Template Name: Business Directory (by Business Type) - List & Map View?>
+<?php // Template Name: Custom Taxonomy Archive (Businesss List)?>
 
 <?php get_header(); ?>
 

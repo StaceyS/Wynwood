@@ -910,9 +910,10 @@ html, body {
   position: absolute;
   right: 0;
   top: 0; }
-  .grid-map-view-toggle button {
+  .grid-map-view-toggle a {
+    display: inline-block;
     width: 95px;
-    height: 75px;
+    height: 30px;
     text-align: center;
     padding-top: 45px;
     margin-left: -5px;
@@ -925,13 +926,13 @@ html, body {
     outline: none;
     vertical-align: bottom;
     transition: background-color .2s; }
-    .grid-map-view-toggle button.grid-view {
+    .grid-map-view-toggle a.grid-view {
       background: #ccc url(../images/layout/grid_view.svg) no-repeat center -5px;
       background-size: 90% auto; }
-    .grid-map-view-toggle button.map-view {
+    .grid-map-view-toggle a.map-view {
       background: #ccc url(../images/layout/map_view.svg) no-repeat center -2px;
       background-size: 80% auto; }
-    .grid-map-view-toggle button.active-view, .grid-map-view-toggle button:hover {
+    .grid-map-view-toggle a.active-view, .grid-map-view-toggle a:hover {
       background-color: #00ae8d; }
 
 .main-content.business-index .filter-sidebar a.active, .main-content.business-index .filter-sidebar a:hover {
@@ -1066,6 +1067,59 @@ html, body {
   .biz-full-address:hover {
     text-decoration: underline;
     border-bottom: none; }
+
+.main-content.map-view {
+  width: 100%;
+  padding: 30px 0 0 0;
+  top: 0; }
+  .main-content.map-view h1, .main-content.map-view .edit-biz-details-form h2, .edit-biz-details-form .main-content.map-view h2, .main-content.map-view #tribe-community-events .events-community-post-title input[type="text"], #tribe-community-events .events-community-post-title .main-content.map-view input[type="text"] {
+    padding: 0 1.5%;
+    margin-bottom: 0;
+    position: relative;
+    top: -10px; }
+  .main-content.map-view .filter-sidebar {
+    height: 100%;
+    padding: 0;
+    margin-top: 0; }
+    .main-content.map-view .filter-sidebar a {
+      width: 90.5%;
+      padding: 4px 5% 3px 5%; }
+  .main-content.map-view .cat-list-toggle a {
+    display: inline-block;
+    width: 40%;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #009578;
+    float: left;
+    padding: 8px 5% 6px;
+    transition: background .2s; }
+    .main-content.map-view .cat-list-toggle a.active {
+      background: #00ae8d; }
+    .main-content.map-view .cat-list-toggle a:hover {
+      background: #009578;
+      color: inherit; }
+
+.results.map-view, .list-view-styles .map-view#tribe-events, .map-view.tribe-related-events {
+  width: 82%;
+  padding: 0; }
+  .results.map-view .acf-map, .list-view-styles .map-view#tribe-events .acf-map, .map-view.tribe-related-events .acf-map {
+    height: 100%;
+    margin: 0; }
+    .results.map-view .acf-map .marker, .list-view-styles .map-view#tribe-events .acf-map .marker, .map-view.tribe-related-events .acf-map .marker {
+      display: none; }
+  .results.map-view .gm-style-iw, .list-view-styles .map-view#tribe-events .gm-style-iw, .map-view.tribe-related-events .gm-style-iw {
+    width: 300px !important; }
+    .results.map-view .gm-style-iw a, .list-view-styles .map-view#tribe-events .gm-style-iw a, .map-view.tribe-related-events .gm-style-iw a {
+      color: #231f20;
+      transition: color .2s; }
+      .results.map-view .gm-style-iw a:hover, .list-view-styles .map-view#tribe-events .gm-style-iw a:hover, .map-view.tribe-related-events .gm-style-iw a:hover {
+        color: #ed027e; }
+    .results.map-view .gm-style-iw h5, .list-view-styles .map-view#tribe-events .gm-style-iw h5, .map-view.tribe-related-events .gm-style-iw h5, .results.map-view .gm-style-iw .tribe-events-loop .type-tribe_events, .tribe-events-loop .results.map-view .gm-style-iw .type-tribe_events, .list-view-styles .map-view#tribe-events .gm-style-iw .tribe-events-loop .type-tribe_events, .tribe-events-loop .list-view-styles .map-view#tribe-events .gm-style-iw .type-tribe_events, .map-view.tribe-related-events .gm-style-iw .tribe-events-loop .type-tribe_events, .tribe-events-loop .map-view.tribe-related-events .gm-style-iw .type-tribe_events, .results.map-view .gm-style-iw #tribe-community-events th, #tribe-community-events .results.map-view .gm-style-iw th, .list-view-styles .map-view#tribe-events .gm-style-iw #tribe-community-events th, #tribe-community-events .list-view-styles .map-view#tribe-events .gm-style-iw th, .map-view.tribe-related-events .gm-style-iw #tribe-community-events th, #tribe-community-events .map-view.tribe-related-events .gm-style-iw th {
+      color: #00ae8d;
+      padding: 8px 0 2px; }
+    .results.map-view .gm-style-iw .address, .list-view-styles .map-view#tribe-events .gm-style-iw .address, .map-view.tribe-related-events .gm-style-iw .address {
+      line-height: 1.3;
+      margin: 4px 0; }
 
 .biz-details {
   width: 55%;

@@ -251,10 +251,11 @@ jQuery(document).ready(function($){
 		});
 
 	// Toggle results view
-	$('.grid-map-view-toggle button').click(function(){
-		$('.active-view').toggleClass('active-view');
-		$(this).toggleClass('active-view');
-		});
+	// Don't need this now that map & grid use separate templates
+	// $('.grid-map-view-toggle button').click(function(){
+	// 	$('.active-view').toggleClass('active-view');
+	// 	$(this).toggleClass('active-view');
+	// 	});
 
 
 	// Toggle 'Edit/Preview' Profile

@@ -1,4 +1,4 @@
-<?php // Template Name: Business Directory - List & Map View?>
+<?php // Template Name: Business Directory - List View?>
 
 <?php get_header(); ?>
 
@@ -7,9 +7,9 @@
 	<div class="main-content business-index clearfix">
 		<a class="section-marker" href="<?php bloginfo('url'); ?>/businesses">Business Directory</a>
 		<h1>Explore our 600&plus; businesses</h1>
-		<div class="grid-map-view-toggle">
-			<button class="grid-view active-view">Grid View</button>
-			<button class="map-view">Map View</button>
+		<div class="grid-map-view-toggle clearfix">
+			<a href="<?php bloginfo('url'); ?>/explore/business-directory-grid-view/" class="grid-view active-view">Grid View</a>
+			<a href="<?php bloginfo('url'); ?>/explore/business-directory-map-view/" class="map-view">Map View</a>
 		</div>
 
 			<aside class="filter-sidebar">
